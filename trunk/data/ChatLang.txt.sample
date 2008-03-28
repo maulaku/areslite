@@ -1,0 +1,86 @@
+100|From
+101|On
+102|You have been muzzled
+103|You have been unmuzzled
+104|Welcome to my chat room
+105|have fun!
+106|this is an example motd file
+107|edit text, save it and use command /loadmotd
+108|Channel
+109|statistics
+110|Server address
+111|Server started on
+112|Uptime
+113|Accepted connections
+114|Received messages
+115|Peak user count
+116|Current user count
+117|msgs sent
+118|flooding users disconnected
+119|killed users
+120|Users
+121|files
+122|muzzled
+123|Last seen
+124|Unknown
+125|Unban failed, user
+126|not banned
+127|Unban Range
+128|not found
+129|Ban Range
+130|Already banned
+131|Ban failed, user
+132|User
+133|banned
+134|users banned
+135|Range
+136|ranges banned
+137|You are muzzled
+138|not ignored
+139|Can''t ignore
+140|too many ignored users
+141|already ignored
+142|ignored
+143|Welcome to the 
+144| channel
+145|Permission denied
+146|Unknown command
+147|executed
+148|OpType
+149|nothing to change
+150|missing argument
+151|not in list
+152|already in list
+153|You have been killed
+154|Someone has joined this room using your nickname
+155|Illegal nickname
+156|Flood protection
+157|Login timeout
+158|Pong timeout
+159|Already logged
+160|You have moderator privileges in this room
+161|type /Help to get a list of the available commands
+162|You no longer have moderator privileges in this room
+163|has been disconnected
+164|Connection rejected, banned user
+165|Connection rejected, banned range
+166|Reconnecting too fast
+167|Too many users from the same IP
+168|Updating channelList
+169|ChannelList updated
+170|Warning no caches available
+171|Linked Channels
+172|searching hosts
+173|Login error
+174|Nickname already registered
+175|Password too short
+176|Username successfully registered
+177|Login granted
+178|Registered nickname
+179|accounts saved
+180|Logged
+181|Use /Register [password] and /Login [password] to authenticate your nickname in this room
+182|channels
+183|someone is already logged in with your nickname
+184|idles
+185|returned from an idle state (idle time

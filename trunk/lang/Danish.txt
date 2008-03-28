@@ -1,0 +1,599 @@
+﻿# Af Marlle
+#
+# ver 1.0.1    08-12-06
+# 
+
+FONT NAME="Tahoma" SIZE="8"
+
+108|Bortfiltrerede filer og filer som kan være skadelige.
+110|Port til vært-kanalen:
+113|Vis tid og dato for chat-hændelser
+114|Når du er væk fra computeren vil Ares automatisk skive den nedenstående meddelelse.
+115|Blokér alle private meddelelser
+116|Svar på private chatvinduer med nedenstående meddelelse
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Acceptér inkommende forbindelser på port:
+127|Uploadingers samtidigt
+128|Uploadingers per bruger (0=ubegrænset)
+129|Total uploadhastighed (kB/s 0=ubegrænset)
+130|Hurtigere når computeren ikke bruges
+131|Total Downloadhastighed (kB/s 0=ubegrænset)
+133|Downloadede filer gemmes i
+134|Find ny mappe nu
+135|Sæt som standard mappe
+136| Tryk på 'søg' for at søge din computer igenmem
+137|Søg
+138|Afbryd
+139|Markér alt
+140|Fjern alle markeringer
+141|Markér de mapper du vil ha skal deles. 
+142|Symbolforklaring
+143|En eller flere mapper og/eller undermapper.
+144|Alt i denne mappe deles. 
+146|Min computer er bag en firewall eller kan ikke modtage indkommende forbindelser
+149|Start Ares når Windows startes
+150|Log automatisk på netværket ved start
+151|Ares åbnes minimeret
+152|Afslut Ares når jeg trykker på "luk" knappen
+153|Her kan du vælge hvilke mapper du vil gøre tilgænglige for andre brugere. Det er dog kun du som kan ændre indholdet i disse mapper.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Vis forbindingsstatus i navnelisten (genstart for at fjerne)
+161|Vis procent for overførsel
+162|Vis ikke store informationsruder
+163|Sæt video på pause når jeg skifter side
+164|Bekræft när jag afbryder Downloads
+193|Brugernavn:
+194|Hastighed:
+195|Ok
+196|Afbryd
+197|Verkställ
+199|Tryk
+200|Søg efter tekst
+201|Lydfiler
+202|Videofiler
+203|Afspilningslister
+204|Alle filer
+205|Tøm søgelisten
+206|Avanceret søgning
+208|Enkel søgning
+210|Filer
+211|Forbind
+212|Forbind
+213|Log af
+214|Instillinger
+217|Søgefelt
+230|Mediebibliotek
+231|Del og organisér dine mediefiler
+232|Søg
+233|Søg efter filer på Ares' netærk
+234|Trafik
+235|Se pågående overførsler
+236|Webbrowser
+237|Åben Webbrowser
+238|Medieafspiller
+239|Afspil dine mediefiler
+240|Chat
+241|Træf nye venner på chatten
+242|Fuldskærm
+243|Vis på hele skærmen
+244|Mindre
+245|Formindsker Videostørrelsen
+246|Størrér
+247|Øger Videostørrelsen
+248|Originalstørrelse
+249|Tilpas til originalstørrelse
+250|Lämna kanal
+251|Opdatér listen
+252|Log på kanalen
+253|Send privat meddelelse
+254|Se denne brugers filer
+255|Start en kanal
+256|Instillinger for fildeling
+257|Søg igennem dine undladte mapper efter nye filer
+258|Mapper
+259|Vis/skjul mapper
+260|Detaljer
+261|Vis/skjul detaljer
+262|Markerede/afmærkede som undladt
+263|Fjern
+264|Føj til afspilningslisten
+265|Forbind til vært igen
+266|Overførsler
+267|Send fil
+268|Tag imod indkommende filer
+269|Vis overførsler
+270|Skjul overførsler
+271|Redigerer
+272|Markerer alt
+273|Kopierer
+274|Öppna i Anteckningar
+275|Privat
+276|Fortæl når jeg ikke er ved computeren
+277|Blokér denne vært
+278|Afbryd alle
+279|Forbinder til Værten, vent...
+280|Forbidnelsen blev afbrudt
+281|Forbindelsen blev afbrudt af modparten
+282|Værten kunne ikke nås
+283|Åben nu!
+284|Skapar förhandsgranskning
+285|Kopiér fil
+286|Mute
+289|Afbryd overførsel
+290|Afbryd makeret overførsel
+291|Pause/fortsæt
+292|Pause/fortsæt markeret download
+293|Afspil
+294|Afspil markeret fil
+295|Åben filens mappe
+296|Åben filens mappe/Åben mappen for downloadede filer
+297|Fjern færdige overførsler fra listen
+298|Fjern færdige og manuelt stoppede overførsler fra listen
+299|Tilføj fil i afspilningslisten
+300|Tilføj mappe i afspilningslisten
+301|Fjern markeret fil
+302|Tøm afspilningsliste
+303|Hent/Gem afspilningsliste
+305|Hen afspilningsliste
+306|Gem afspilningsliste
+307|Fjern alle
+308|Fjern markerede
+309|Sortér
+310|Bokstavsordning, stigende
+311|Boktavsordning, faldende
+312|Bland listen
+313|Hop til fil
+314|Bland
+315|Repetér
+316|Ny søgning
+317|Søger på ny
+318|Download
+319|Download den valgte fil
+321|Vis/Skjul søgefelt
+322|Tilbage
+323|Fremad
+324|Stop
+325|Opdatere
+326|Start afspilning
+327|Pause
+328|Sidste
+329|Næste
+330|Lydstyrke
+331|Vis afspilningsliste
+332|Luk afspilningsliste
+335|Afspilningsliste
+336|Skjul detaljer
+337|Deles
+338|Skjul mappe
+339|Tryk for at dele, tryk igen for ikke at dele
+340|I Kø
+341|Prøv også
+342|Brugerinformation
+348|Overførsler
+350|Chat
+351|Private meddelelser
+352|Frakoblede
+353|Fillistning
+354|Privat meddelanden
+355|Del filer
+356|Automatisk søgning
+357|Indstil manuelt
+358|Mappe til downloaded filer
+359|Alment
+360|Netværk
+361|Forbind som
+363|Filer
+364|filer
+365|Kunne ikke forbinde
+366|Sågs sist
+367|Tilgængelighed
+368|Forbinder...
+369|Forbinder til netværket
+372|Forbinder, logger på...
+373| Kunne ikke vise
+375|Fejl, afslutter forbindingen
+376|ingen mapper fundet
+377|Søgning klar
+378|hittade mapp
+379|Søger, vent vengligst...
+380|Søgningen gav ingen resultater
+383|Vil du virkelig tømme søgelisten?
+384|Tøm søgelisten
+390|Din chatpartner vil sende en eller flere filer, vil du starte overførslen?
+391|Indkommende filoverførsel
+398|Vil du virkelig afbryde denne download
+399|Afbryd download
+407|mapper filer
+408|Fejl ved sending, forbindingen afsluttedes af modparten
+409|Fejl ved sending, sluttedes ventene på svar fra modparten
+410|Smidt ud
+411|Smidt ud, buffer overflow
+412|Logget ind, henter brugerliste...
+413|Emnet er ændret
+414|, som deles
+415|filer, har stigit in
+416|har lämnat
+417|Frakoblet, for lang tid uden aktivitet
+418|Du er "muted"
+419|Billeder og video
+420|Downloaded
+421|Kanal du er vært for
+422|Kanal
+423|Størrelse for de undtagede filer
+424|Total størrelse
+425|Sat i kø
+426|Sat i kø
+428|Kanalens navn:
+429|Felaktigt navn
+430|Vælg et navn med mindst fyrre tegn
+431|Vært
+432|Vill du virkelig lukke og slukke for kanalen?
+433|Alle brugere i kanalen vil blive frakoblet
+434|Forbinder til kanal
+435|Ledige pladser
+436|KB/s
+437|Du er allerde vært for en kanal med navnet
+438|FILEN DELES IKKE
+439|Du kan ikke ændrer mening. 
+440|ADVARSEL - Sletter fra harddisken
+441|Vil du fjerne filen
+442|Vil du fjerne filerne
+443|Overførsel
+444|Filoverførslen er allerede startet
+445|Se overførselssiden
+446|Dobbelt forespørgsel
+447|Den markerede fil findes allerrede i mediebiblioteket
+448|Se mediebibliotekssiden
+449|Dublét
+450|Den her medietype filtreredes bort
+451|Bortfiltrér medier;
+452|Skjul Ares
+453|Vis Ares
+454|resultat for
+455|resultat for
+456|min undtagelse mappe
+458|venter...
+459|*DEN HER FIL FINDES ALLEREDE I DIT MEDIEBIBLIOTEK*
+460|*DU LOADER ALLEREDE DEN HER FIL*
+461|Arbejder
+462|Sat på Pause
+464|Overførsel på pause
+465|Stoppet
+466|Klar
+467|Downloader
+468|Tomgång
+469|Søger
+470|Forbinder
+471|ADVARSEL
+472|Søger
+473|Brugere
+474|Forbinder
+475|Chat - forbinder værten
+476|Du
+477|Banlyst (ophæves når du genstarter Ares)
+478| Søger efter
+479|Hvad som helst
+480|Prioritet 
+481|Din køliste
+482|Højeste
+483|Højeste
+484|Normal
+485|Mindre
+486|Mindste
+487|Ignorér/Ignorér ikke
+488|Stilhed!
+489|Tillad tale
+490|Banlys
+491|Uphæv banlysning
+492|Døde
+494|Options for undladte filer
+495|Åben/Afspil
+496|Åben i ekstern afspiller
+497|Åben filens destination
+498|Søg efter filer som indeholder:
+499|Find fler fra samme
+500|Páus alle/genoptag alle
+501|Vis afspilningsliste
+502|Afslut
+504|Blokér bruger
+505|Slut deling af fil
+506|Tilpas til vinduestørrelse
+508|Afbryd søgning
+509|Markér alt
+510|Kopiér til urklipp
+511|Åben i antegninger?
+512|Søg nu
+513|Dato
+514|Viser kø
+515|Viser hvem der står i kø til dig
+516|Vis uploads
+517|Se uploads
+518|Filter
+519|Efter mappe
+520|Efter kategori
+521|Gruppér efter sökväg
+522|Gruppér efter filtype og metadata
+523|Brugere
+524|Titel
+525|Artist
+526|Bithastighed
+527|År
+528|Version
+529|Filtype
+530|Färger
+531|Forfattere
+532|Mappe
+533|Længde
+534| 
+535| 
+536|Opløsning
+537|Medietype
+538|Sprog
+539|Kategori
+540|Downloaded
+541|Søger
+542|Uploaded
+543|Uploads
+544|Downloads
+545|Album
+546|Foretag
+547|Dato
+548|Mængde efterspurgte data
+549|Filstørrelse
+550|Størrelse
+551|Format
+552|Filnavn
+553|URL
+554|Navn
+555|Emne
+556|Velkommen til  
+557|-kanalen
+558|Hastighed
+559|Album
+560|Forfatterer
+561|Artist
+562|Kategori
+563|Foretag
+564|Genre
+565|Alle
+566|Audio
+567|Video
+568|Billeder
+569|Dokument
+570|Andet
+571|Program
+581|Efter kategori
+582|Efter mappe
+583|Undtagede filer
+584|Dit mediebibliotek
+585|Søg efter videofiler
+586|Søg efter lydfiler
+587|Søg efter mediefiler
+588|Søg efter billeder
+589|Søg efter dokumenter
+590|Søg efter programmer
+594|Type
+595|Fil
+596|Uploaded
+597|Status
+598|Medietype
+599|Sökväg
+600|Begärd
+601|idag
+602|totalt
+603|Genre
+604|Tid kvar
+605|Klart
+606|Hastighed
+607|Kommentarer
+608|Tid Tilbage
+609|Data afsendt
+610|Data modtaget
+611|Antal kilder
+612|kilder
+613|kilde
+614|Båndbredde
+615|ukendt
+616|ukendt
+617|af
+618|Uploader
+630|Frakoblinger (døde)
+631|på
+632|på
+633|Du er tysset ned
+634|DU er blevet tysset på
+635|Du har fået talerettigheden
+636|tillad tale
+637|Motd loadet
+638|rader 
+639|Kunne ikke banlyse brugeren
+640| - hittades inte
+641|Ip-intervallet
+642|Ip-intervallet
+643|Er ikke banlyst længere
+644|Kunne ikke ophæve banlysning for anvenderen
+645|har ikke banlyst
+646|Listen over banlyste er tømt
+648|har banlyst
+649|Interval
+650|interval har banlyst
+651|brugere har banlyst
+653|Atatistik
+654|Serveradresse
+655|Serveren loades
+656|Tid oppe
+657|Accepterede forbindelser
+658|Mottagna meddelanden
+659|Højeste antal brugere
+660|Antal brugere nu
+661|Redan bannlyst
+662|Meddelelsen er sendt
+663|floodare har bannlysts
+664|Døde brugere
+665|Du er nu vært for chat-rummet. 
+666|Skriv
+667|for at få en en liste over indbyggede kommandoer. 
+668|Ændr kanalens emne
+669|Send en smiley
+670|Vis statistik for kanalen
+671|Skru ned
+672|Tillad tale
+673|Log af
+674|Banlys
+675|Ophæv banlysning
+676|Banlys ip-interval
+677|Ophæv banlysning for ip-interval
+678|Tøm listen over banlyste
+679|Viser velkomstmeddelelse
+680|Öppna tekstfilen med välkomstmeddelandet
+681|Ladda välkomstmeddelande från tekstfil
+682|Viser listen over banlyste
+683|Tøm skærmen
+684|Viser kommandon
+685|Dette er et eksempel på en motd-fil
+686|Redigér teksten, gem den og anvend kommandot /loadmotd
+687|Velkommen til mit chatroom!
+688|Ha det godt, og tillykke med fødsels dagen :o)
+689|Anslutning från
+690|I banlyst IP-Interval
+691|Ikke logget på
+692|Anslutning har nekats (bannlyst användare)
+693|inte ignorerad
+694|Kunde inte ignorera
+695|för många ignorerade användare
+696|ignoreras redan
+697|Ignoreret
+698|nertystad
+699|                                                                     Valg af Sprog: \nlDansk oversættelse af Marlle
+700|Kanaler
+701|Deles
+703|Modtager listen, vent venligst...
+704|Listen er tom, forsøg igen senere
+705|Søger
+708|og deler
+709|filer
+710|Du er forbundet som
+711|Skjul søgefeltet
+712|Tilgængelig Diskplads:
+713|Tager imod filliste:
+714|Klar:
+715|Dårlig
+716|Medel
+717|God
+718|Meget god
+719|Ares søger nu efter mediefiler.\nl\nlHver gang Ares finder nye filer i de mapper har valgt som du deler, vil hashværdigen (En slags ID-Nummer) blive beregnet for enkelt fil.\nlTiden dette tager afhænger af filernes mængde, størrelse, type og din internet hastighed.\nl\nlØverst ser du den fil der beregnes just nu. Du kan ændre Ares's cpu-priortet.\nlHvis du vælger en høj prioritet vil beregningen gå hurtigere, men kan få computeren til at blive \nlustabil medens beregningen er igang.\nl\nlTak for at du anvender Ares som dit fildelingsprogram.
+720|Beregn hashværdien
+721|Søger efter medier
+724|Afbryd upload
+725|Andet
+726|Audio
+727|Programmer/Software
+728|Video
+729|Dokumenter
+730|Billeder
+731|Startede
+732|Källor
+733|Færdigt:
+734|Antal forsøg
+735|Interval mellem førsøgene
+736|Tid siden første førsøg
+738|Giv up om
+741|Gem som
+742|Mindst
+743|Højst
+744|Lige med
+745|Omkring
+746|Lengerer end
+747|Korterer end
+748|Mindrer end
+749|Størrer end
+750|Bremset lokalt
+751|Downloads samtidigt
+752|Ukendt kommando
+753|Proxy
+755|Anvend ikke proxy
+756|Anvend Sock4-proxy
+757|Anvend Sock5-proxy
+758|Proxy'ens adresse
+759|Brugernavn
+760|Password
+761|En brugere ser på dit mediebibliotek
+762|Tillad andre brugere at se mit mediebibliotek
+763|Ares har spottet at du anvender en firewall. Som den nu er installeret nu kan du få problemer med at hente vise filer og/eller få lave hastigheder.\nlDu bør installerer din firewall så den tillader trafik på den port Ares anvender.\nlVil du have at Ares skal gøre dette for dig?
+764|Installationer for Firewall
+765|Ares har spottet at du anvender en firewall. Hvis du vil være vært for et chatroom bliver du nød til at acceptere indkommende forbindelser på din firewall eller router. Dette kan i nogle tilfælde ikke lade sig gøre.\nlVil du have at Ares skal prøve at gøre dette for dig?
+766|Chat med den markerede bruger
+767|Send mappe
+768|Log af
+769|Søg efter kanal
+770|Lad brugeren gå forest i køen
+771|Kunne ikke tage imod brugerens filliste
+772|Filtyper du vil dele med andre
+773|Mørk baggrund
+775|Hent HashLink
+776|Fyll i HashLink här
+777|Eksportér HashLink
+778|Filen er skadet
+779|Kunne ikke få adgang til filen
+785|Tilad andre at se dine filer
+787|Tidspunkt Hentet
+788|Senest Downloaded
+789|Tillad andre brugere at se din mappestruktur
+790|Åbner mappen
+791|Acceptér filoverføringer automatisk
+792|Vis brugerens ip-adresse
+793|Vis frånkopplade for brugeren
+794|Vis statistik for brugeren
+795|HashLinks
+796|Anvend Ed2k-links
+797|Anvend Magnet-links
+799|Kontrolpanel
+800|Konfigurér Ares
+801|Test forbindelsen
+802|Tester...
+803|Testen mislykkedes
+804|Testen lykkedes
+805|Proxy-serverer
+806|Anvend nu
+807|Hent liste
+808|Gem liste
+809|Anvend flere proxy-serverer
+810|Ny side
+811|Gå til
+812|Vis en meddelelse når nogen logger på/af
+813|Favoriter
+814|Tilføj til favoritter
+815|Sidste
+816|Søg efter andre filer
+817|Log af kilden
+818|Du skal til at åbne en fil der kan skade din computer. Filen kan indeholde en virus eller tjoan.\\nlEr du sikker på at du vil forsætte?
+819|Optaget
+820|Chatroom
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+

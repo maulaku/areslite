@@ -1,0 +1,699 @@
+﻿# :: Deutsche Übersetzung von Ares                                                                                 
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# :: übersetzt von ReemE                                                                                                   
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# :: Falls ihr Verbesserungen oder Vorschläge habt, dann mailt diese doch bitte zu mir!
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# :: ReemE at everymail dot net                                                                         
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+FONT NAME="TAHOMA" SIZE="8"
+620|Übersetzt von ReemE
+621|
+100|Wenn Sie ihr eigenes LAN Filesharing Network aufmachen wollen, müssen Sie Ares Im Cache-Server Modus laufen lassen. Geben sie ihre LAN IP Adresse ein und achten Sie darauf, dass die anderen User im Feld unten auf ihre Adresse verweisen.
+101|Privates Netzwerk aktivieren
+102|Cache-Server Host:
+103|Ares im Cache-Server Modus laufen lassen
+104|Meine LAN IP:
+105|Ares als Supernode laufen lassen.
+106|Hier können Sie Dateien, die eventuell gefährlich sein könnten, filtern lassen.
+107|Dateien als schon heruntergeladen markieren.
+108|Ausführbare und gefährliche Dateien filtern. 
+109|Wenn ihr Computer nicht hinter einer Firewall ist  und Verbindungen akzeptieren kann, können Sie einen Chat Channel aufmachen, der in der öffentlichen Ares Channel List zu sehen ist. Falls Sie den Port der eingehenden Verbindungen konfigurieren müssen,  können Sie das hier tun. Falls Sie nicht sicher sind, geben Sie 0 ein.
+110|Host Channel Port:
+113|Datum/Uhrzeit des Chats anzeigen
+114|Wenn Sie nicht am Computer sind, können Sie den Away Status aktivieren. Ares antwortet dann allen Privaten Chatanfragen mit einer Away Message. Diese können Sie hier festlegen:
+115|Alle privaten Chatanfragen blockieren
+116|Einer privaten Chatanfrage mit der Away Message antworten.
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+125|Wenn Sie Dateien freigeben, arbeitet Ares als Fileserver. Ares akzeptiert dann Verbindungen (TCP Port). Hier können Sie den Port ändern. Wenn Sie keine schnelle Internetverbindung haben, sollten sie weniger Uploads zur gleichen Zeit erlauben.
+126|Verbindungen an folgendem Port akzeptieren:
+127|gleichzeitige Upload(s) 
+128|Upload(s) pro User     (0=kein Limit)
+129|Upload Bandbreite (kb/s 0=no Limit)
+130|wenn abwesend Bandbreite erhöhen
+131|Download Bandbreite (kb/s 0=kein Limit)
+132|Hier können bestimmen, wo die Downloads gespeichert werden. Änderungen werden erst nach einem Neustart von Ares wirksam und auch nur an neu angefangenen Downloads.
+133|Downloads werden in diesem Ordner gespeichert:
+134|Ordner ändern
+135|Änderungen zurücksetzen
+136|Auf 'Suche Starten' klicken um ihr System zu durchsuchen
+137|Suche Starten
+138|Suche Beenden
+139|Alle Markieren
+140|Markierung aufheben
+141|Markieren Sie die Ordner, die Sie freigeben wollen.
+142|Legende
+143|Nur ein Unterordner ist freigegeben
+144|Alle Dateien in diesem Ordner sind freigegeben
+145|Ares ist ein komplett dezentralisiertes Peer-to-Peer Filesharing Programm. Das Netzwerk besteht aus Leaf Nodes und Supernodes. Wenn Sie eine schnelle Internet Verbindung haben und nicht hinter einer Firewall sind, können Sie ihr Ares als Supernode laufen lassen. Als Supernode brauchen Sie mehr Bandbreite und mehr CPU Leistung, aber ist sehr wichtig für das Netzwerk. DSL Verbindung, 1GHz+ CPU und min. 128 MB Ram sind dafür erforderlich. Hier können Sie den Supernode Modus aktivieren/deaktivieren.
+146|Mein PC ist hinter einer Firewall und/oder kann kein Supernode sein
+147|akzeptierter Port (0=Zufall)
+148|Willkommen zu dem Ares Setup. Sie können mit dem dem Menü auf der linken Seite durch die verschiedenen Optionen navigieren.
+149|Ares zusammen mit Windows starten
+150|Auto-Connect wenn Sie Ares starten
+151|Ares minimiert starten
+152|Ares schließen, wenn sie auf den Beenden Button klicken
+153|Hier können sie die Ordner, die Sie freigeben wollen, markieren und es so für andere User verfügbar machen. Andere User können nichts an Ihren Dateien verändern.
+154|Automat. Suche
+155|Automatisch nach Audio-, Bild- und Videodateien auf ihrem Computer suchen.
+156|Manuell auswählen
+157|Liste der freigegebenen Ordner anschauen
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Status in Windows anzeigen
+161|Transfer Status anzeigen
+162|Hinweise blocken
+163|Video pausieren, wenn Sie nicht im Theater sind
+164|Nachfrage bei Download Abbruch
+192|Hier können Sie ihren Nickname und ihre Bandbreite eingeben.
+193|Nickname:
+194|Bandbreite:
+195|Ok
+196|Abbrechen
+197|Übernehmen
+198|Passwort
+199|Schließen
+200|nach Text suchen
+201|Audio Dateien
+202|Video Dateien
+203|Playlist Dateien
+204|Alle Dateien
+205|Such History löschen
+206|Erweiterte Suche
+208|Einfache Suche
+210|gefunden
+211|Datei
+212|Verbinden
+213|Verbindung trennen
+214|Einstellungen
+215|Schließen
+216|Ansicht
+217|Suchfeld
+218|Details
+219|Ordner
+220|Web
+221|Websuche
+222|nach Musik suchen
+223|nach Videos suchen
+224|nach Software suchen
+225|Hilfe
+227|Homepage
+228|Filesharing
+229|Über
+230|Bibliotek
+231|Dateien organisieren und freigeben
+232|Suche
+233|Nach Dateien im Ares Netzwerk suchen
+234|Transfer
+235|Status der Downloads und Uploads
+236|Web
+237|Ins Internet gehen
+238|Theater
+239|Ihre Dateien abspielen
+240|Chat
+241|Treffen Sie neue Freunde im Ares Chat
+242|Vollbild
+243|Vollbild Modus festlegen
+244|kleiner
+245|Video Größe verkleinern
+246|größer
+247|Video Größe vergrößern
+248|Ursprüngliche Größe
+249|Größe anpassen
+250|Channel verlassen
+251|Liste aktualisieren
+252|Channel betreten
+253|Eine Private Nachricht an diesen User senden
+254|User's Dateien anschauen
+255|Einen Channel aufmachen
+256|Share Einstellungen - Hier klicken um Dateien hinzuzuügen
+257|Durchsuchen Sie ihre Bibliothek noch einmal
+258|Ordner
+259|Ordner anzeigen/verstecken
+260|Details
+261|anzeigen/verstecken Details
+262|freigeben/nicht freigeben
+263|Datei löschen
+264|Zur Playlist hinzufügen
+265|Wieder zum Host verbinden
+266|Datei
+267|Datei senden
+268|eingehende Dateien akzeptieren
+269|Transfers anzeigen
+270|Transfers verstecken
+271|ändern
+272|Alles markieren
+273|Kopieren
+274|Im Editor öffnen
+275|Privatsphäre
+276|in 'Away' Modus gehen
+277|diesen Host blockieren
+278|Alles Abbrechen
+279|Verbindung wird hergestellt, bitte warten...
+280|Verbindung hergestellt
+281|Verbindung ist geschlossen worden
+282|Remote Host nicht erreichbar
+283|Ok, Öffnen
+284|Vorschau wird erstellt
+285|Datei wird kopiert
+286|Ton aus
+289|Abbrechen
+290|Markierten Download löschen
+291|Pause/Wiederaufnehmen
+292|Markierten Download pausieren/wiederaufnehmen  
+293|Abspielen
+294|Markierte Datei abspielen
+295|Datei lokalisieren
+296|Dateiordner lokalisieren
+297|Idle löschen
+298|Vollständige und abgebrochene Downloads löschen
+299|Datei zur Playlist hinzufügen
+300|Ordner zur Playlist hinzufügen
+301|Markierte Datei entfernen
+302|Playlist löschen
+303|Playlist laden/speichern
+304|Dieses Fenster an das andere ankleben
+305|Playlist laden
+306|Playlist speichern
+307|Alle entfernen
+308|Markierte entfernen
+309|sortieren
+310|austeigend sortieren
+311|absteigend sortieren
+312|Liste durchmischen
+313|zu einer Datei springen
+314|Zufall
+315|wiederholen
+316|neue Suche
+317|eine neue Suche starten
+318|Download
+319|Markierte Datei downloaden
+321|Suchfeld anzeigen/verstecken
+322|Zurück
+323|Vorwärts
+324|Stop
+325|Aktualisieren
+326|Abspielen
+327|Pausieren
+328|Vorherige
+329|Nächste
+330|Lautstärke
+331|Playlist anzeigen
+332|Playlist schließen
+333|Float
+334|Playlist in einem anderen Fenster öffnen
+335|Playlist
+336|Details verstecken
+337|freigegeben
+338|Ordner verstecken
+339|Markieren Sie Dateien um sie freizugeben
+340|in Warteschlange
+341|Probieren Sie auch
+342|Persönliche Details
+344|Extra
+345|Suche
+348|Transfer
+349|Privates Netzwerk
+350|Chat
+351|Private Messages
+352|nicht verbunden
+353|File posting
+354|Private Messages
+355|Fileshare
+356|Auto-Scan
+357|Manuell Konfigurieren
+358|Download Ordner
+359|Allgemein
+360|Netzwerk
+361|verbunden als
+362|User
+363|Dateien
+364|Dateien
+365|Es war leider nicht möglich eine Verbindung herzustellen
+366|zum letzten Mal gesehen
+367|Verfügbarkeit
+368|verbinde
+369|Verbindung wird hergestellt
+370|Download ist abgeschlossen, mit OK Datei starten
+371|hat ein neues Update. Wollen Sie das Update downloaden und installieren?
+372|Verbunden
+373|Dateien konnten nicht angeschaut werden.
+374|Suche angehalten.
+375|Begrungs Fehler, Verbindung wurde gesperrt.
+376|keine Ordner gefunden
+377|Scan abgeschlossen
+378|Ordner gefunden
+379|Suche, bitte warten...
+380|Suche ohne Ergebnisse abgeschlossen
+381|Wollen Sie ihren Nickname jetzt auswählen?
+382|Wählen Sie ihren Nickname
+383|Wollen Sie wirklich ihre Suchhistory löschen?
+384|Suchhistory löschen 
+385|Das Passwort, das Sie eingegeben haben, ist nicht korrekt
+386|Bitte geben sie ein gültiges Passwort ein
+387|Password überprüfen
+388|Bitte geben Sie das alte Passwort ein
+389|Bitte geben Sie ein Passwort ein
+390|Ihre Chatgruppe will Ihnen mehrere Dateien senden, wollen Sie eine Datei Session Starten?
+391|Datei Session
+392|Ein neues Update von Ares ist erschienen, wollen Sie es jetzt downloaden und installieren?
+393|ES GIBT EINE NEUE VERSION VON ARES ZU DOWNLOADEN
+394|downloadet die neueste Version
+395|Neue Version wurde heruntergeladen und in folgenden Ordner gespeichert:
+396|Klicken Sie auf OK um eine neue Version zu installieren
+397|Update erfolgreich abgeschlossen
+398|Wollen Sie diesen Download wirklich abbrechen?
+399|Download abbrechen
+400|Neues Passwort
+401|Bitte geben Sie ihr neues Passwort ein
+402|Passwort erfolgreich geändert
+403|Passwort wurde geändert
+404|Bitte beachten Sie, dass die nur eine Datei downloaden können, wenn Sie ihre Upload Bandbreite einschränken.
+405|Achtung
+407|Ordner gefunden
+408|Begrng gescheitert, Verbindung von User getrennt.
+409|Begrng gescheiter, warten bis die Verbindung akzeptiert wird.
+410|Verbindung wurde getrennt.
+411|Verbindung wurde geschlossen, Buffer Overflow.
+412|Userliste wird empfangen
+413|Überschrift wurde geändert
+414|(
+415|Dateien freigegeben) hat den Channel betreten
+416|hat den Channel verlassen
+417|Verbindung wurde getrennt, Timeout...
+418|Sie wurden ignoriert
+419|Bilder & Videos
+420|gedownloadet
+421|Aufgemachte Channel
+422|Channel
+423|freigegebe Dateigröße
+424|gesamte Größe
+425|in Warteschlange
+426|in Warteschlange
+427|empfangen
+428|Channel Name:
+429|Flascher Name
+430|Bitte wählen sie einen Channelnamen mit mindestens 4 Buchstaben
+431|Host ::
+432|Sind Sie sich sicher diese Channel zu schließen?
+433|Users im Channel würden getrennt werden
+434|Verbindung zu Chat Channel wird hergestellt
+435|Freie Slots
+436|Kb/sec
+437|Sie haben schon einen Channel mit dem gleichen Namen aufgemacht
+438|DATEI NICHT FREIGEGEBEN
+439|Es gibt keine 'rückgängig machen' Möglichkeit
+440|WARNUNG, Datei auf der Festplatte wird gelöscht
+441|Gelöschte Datei
+442|Gelöschte Dateien
+443|Übertragen
+444|Dateitransfer läuft schon
+445|Bitte schauen Sie in das Transferfenster
+446|Duplicated request
+447|Markierte Datei ist schon in ihrer Bibliothek vorhanden
+448|Bitte schauen Sie in ihr Bibliothekfenster
+449|geklonte Datei
+450|Diese Art von Dateien wird gefiltert
+451|gefilterte Dateien;
+452|Ares ausblenden
+453|Ares anzeigen
+454|Ergebnis für
+455|Ergebnisse für
+456|Mein freigegener Ordner
+458|bitte warten...
+459|*DIESE DATEI IST SCHON IN IHRER BIBLIOTHEK VORHANDEN*
+460|*SIE DOWNLOADEN DIESE DATEI SCHON*
+461|Arbeiten
+462|Pausiert
+463|gelöscht
+464|Download pausiert
+465|Abgebrochen
+466|Vollständig
+467|Downloaden
+468|Idlen
+469|Suchen
+470|Verbinden
+471|WARNUNG
+472|Suchen
+473|User
+474|Verbindung zu User wird hergestellt...
+475|Chat - Verbindung wird hergestellt...
+476|Sie
+477|gebannt (Nach Neustart wird Ban aufgehoben)
+478|Suchen nach 
+479|irgendwas
+480|Hash Priorität
+481|Server Warteschlange
+482|Höchste
+483|Höher
+484|Normal
+485|Tiefer
+486|Am tiefsten
+487|Ignorieren/nicht Ignorieren
+488|Muzzlen
+489|Unmuzzlen
+490|Bannen
+491Entbannnen
+492|Kill
+493|Neues Fenster
+494|Einstellungen tauschen
+495|Öffnen
+496|Extern Öffnen
+497|Datei lokalisieren
+498|nach Dateien, die Text enthalten, suchen
+499|Mehr vom Gleichen finden
+500|Pausieren/Wiederaufnehmen
+501|Playlist anschauen
+502|Ares Beenden
+503|aus der Warteschlange entfernen
+504|User blockieren
+505|Datei nicht freigeben
+506|zu Bildschirm anpassen
+507|Grab Frame
+508|Stop
+509|Alle Markieren
+510|zu Zwischenablage kopieren
+511|im Editor öffnen
+512|Jetzt suchen
+513|Datum
+514|Warteschlange anzeigen
+515|schauen wer in ihrer Warteschlange ist
+516|Upload anzeigen
+517|Uploads anschauen
+518|Filter
+519|Normale Ansicht
+520|Virtuelle Ansicht
+521|Bibliothek in virtueller Ansicht anzeigen
+522|Bibliothek in normaler Ansicht anzeigen
+523|User
+524|Titel
+525|Interpret
+526|Qualität
+527|Jahr
+528|Version
+529|Dateityp
+530|Farben
+531|Autor
+532|Ordner
+533|Länge
+534|empfangen
+535|gesendet
+536|Auflösung
+537|Medientyp
+538|Sprache
+539|Kategorie
+540|Download
+541|gerade am Scannen
+542|Upload
+543|Uploads
+544|Downloads
+545|Album
+546|Firma
+547|Datum
+548|Angeforderte Größe
+549|Dateigröße
+550|Größe
+551|Format
+552|Dateiname
+553|URL
+554|Name
+555|Topic
+556|Willkommen im
+557Channel
+558|Speed
+559|nach Album sortieren
+560|nach Autor sortieren
+561|nach Interpret sortieren
+562|nach Kategorie sortieren
+563|nach Firma sortieren
+564|nach Genre sortieren
+565|Alle
+566|Audio
+567|Video
+568|Bilder
+569|Dokument
+570|andere
+571|Software
+581|Virtuelle Ordner
+582|Freigegebene Ordner
+583|Freiegegebene Dateien
+584|Deine Bibliothek
+585|nach Video files
+586|nach Audio Dateien suchen
+587|nach Mediendaten suchen
+588|nach Bild Dateien suchen
+589|nach Dokumenten suchen
+590|nach Software suchen
+591|Würden Sie den gerade losgelassenen Ordner hinzufügen
+592|Ordner wird nach einem Neustart freigegeben
+593|Order freigeben
+594|Typ
+595|Datei
+596|hochgeladen
+597|Status
+598|Medientyp
+599|Ort
+600|angefordert
+601|heute
+602|total
+603|Genre
+604|verbleibend
+605|Fortschritt
+606|Transfer Geschwindigkeit
+607|Kommentare
+608|Vorrausichtlich verbleibende Zeit
+609|Datengröße übermittelt
+610|Datenumfang heruntergeladen
+611|Anzahl der Quellen
+612|Quellen
+613|Quelle
+614|Bandbreite
+615|Unbekannt
+616|unbekannt
+617|von
+618|Uploaden
+619|Laden
+630|Verbindung geschlossen (killed)
+631|auf
+632|von
+633|Sie wurden  gemuzzled
+634|wurde gemuzzled
+635|Sie wurden ungemuzzled
+636|wurde ungemuzzled
+637|Motd geladen
+638|Zeilen
+639|Bann gescheitert, User
+640|nicht gefunden
+641|Bann Range
+642|Unbann Range
+643|nicht gebannt
+644|Unban gescheitert, User
+645|nicht gebannt
+646|Bannliste gelöscht
+648|gebannt
+649|Range
+650|Ranges gebannt
+651|Users gebannt
+653|Statistiken
+654|Server Adresse
+655|Server startete am 
+656|Uptime
+657|Akzeptierte Verbindungen
+658|Empfangene Nachrichten
+659|Meiste User
+660|User zur Zeit
+661|schon gebannt
+662|Nachrichten gesendet
+663|Spaming User gelöscht
+664|User gekickt
+665|Sie haben nun einen Chatraum aufgemacht
+666|Typ
+667|um eine Liste aller verfügbaren Befehle zu sehen
+668|änder die Channel Überschrift
+669|sendet ein Emote an den Channel
+670|zeigt Channel Statistiken
+671|muzzlet User
+672|unmuzzlet User
+673|kickt User
+674|bannt User
+675|unbannt User
+676|bann IP Range
+677|unban IP Range
+678|Bannliste löschen
+679|Willkommen Text anschauen
+680|Wilkommen Textdatei öffnen
+681|Willkommen Text aus Datei laden
+682|Bannliste anzeigen
+683|Seiten clearen
+684|zeigt Befehle
+685|Das ist eine Beispiles motd Datei
+686|ändert text, speichert es und benutze Befehl /loadmotd
+687|Wilkommen in meinem Chatraum
+688|have Fun!
+689|Verbindung von
+690|in einer gebannten Range
+691|Nicht geloggt
+692|Verbindung abgewiesen (gebannter User)
+693|nicht ignoriert
+694|kann nicht ignoriert werden
+695|zu viele ignorierte User
+696|schon ignoriert
+697|ignoriert
+698|gemuzzled
+699|Sprache:
+700|Channels
+701|Freigegeben
+703|Liste wird empfangen, bitte warten...
+704|Liste ist leer, bitte probieren Sie es später noch einmal.
+705|Suchend
+706|Zurück zur Suche
+707|verfügbare Dateien
+708|::
+709|Dateien freigegeben
+710|Verbunden als
+711|Suchfeld ausblenden
+712|Verfügbarer Speicherplatz
+713|Dateien werden angeschaut:
+714|Anschauen fertigestelt:
+715|schlecht
+716|durchschnittlich
+717|gut
+718|sehr gut
+719|Ares durchsucht nun ihr System\nl\nlWenn Ares neue Dateien in ihren freigegebenen Ordern findet. müssen diese gehasht werden.\nlDas könnte einige Minuten dauern, abhängig von der Größe und der Geschwindigkeit ihres CPUs.\nl\nlSie können oben sehen welche Datei gerade gehasht wird.\nlSie können auch Hash Priorität ändern.
+720|Hash Berechnung wird vorgenommen
+721|Medien Dateien werden gesucht 
+722|Ares durchsucht nun ihr System.\nl\nlWenn Sie das erste Mal Ares starten, sucht es nach Audio und Video Dateien.\nlSie können manuell entscheiden welche Dateien Sie freigeben wollen und welche nicht.
+723|Manuell Konfigurieren
+724|Upload Abbrechen
+725|andere
+726|Audio
+727|Software
+728|Video
+729|Dokumente
+730|Bilder
+731|gestartet
+732|verfügbare Quellen
+733|eigentlicher Fortschritt
+734|gesamte Versuche
+735|Versuch Interval
+736|Letzte Nachfrage
+738|Expiration
+739|Ares: Einstellungen
+740|Ergebnisse nach Verfügbarkeit sortieren
+741|Speichern Unter
+742|mindestens
+743|bestens
+744|gleich
+745|circa
+746|länger als
+747|kürzer als
+748|kleiner als
+749|größer als
+750|pausiert
+751|gleichzeitige Download(s)
+752|Unbekannter Befehl
+753|Proxy
+754|Ares kann mit Proxy Servern zusammenarbeiten. Hier können Sie ihre Proxy Server Einstellungen vornehmen. Änderungen werden nach einem Neustart übernommen.
+755|keinen Proxy benutzen
+756|Sock4 Proxy benutzen
+757|Sock5 Proxy benutzen
+758|Proxy Server Adresse
+759|Username
+760|Passwort
+761|ein andere User schaut sich ihre Bibliothek an
+762|Durchsuchung meiner Bibliothek erlauben
+763|Ares hat bemerkt, dass eine Firewall auf diesem PC aktiviert wurde. Wenn Sie ihr derzeitigen Einstellungen beibehalten, könnten Schwierigkeiten im Download und Upload Bereich auftreten.\nlSie sollten den gebrauchten Port an ihrer Firewall freigeben.\nlSoll Ares das für Sie erledigen?
+764|Firewall Einstellungen
+765|Ares hat bemerkt, dass eine Firewall auf diesem PC aktiviert wurde.  Wenn Sie einen Chatraum aufmachen wollen, müssen Sie Änderungen vornehmen.\nlSoll Ares das für Sie erledigen?
+766|Mit diesem User chatten
+767|Ordner senden
+768|Offline
+769|Channel Suche
+770|Einen Upload Platz garantieren
+771|Suche nicht erfolgreich, Liste nicht erreichbar
+772|Dateitypen
+773|dunkler Hintergrund
+774|Version Checken
+775|Download HashLink
+776|HashLink hier einfügen
+777|HashLink exportieren
+778|Datei fehlerhaltig
+779|Datei Fehler
+780|www.fileportal.net|Fileportal
+781|www.slyck.com|Slyck
+782|www.pctechtalk.com|PCTechTalk
+783|www.unitethecows.com|Unite The Cows
+784|www.zeropaid.com|Zeropaid
+785|User erlauben meine Dateien zu durchsuchen
+786|beschäftigt
+787|gedownloadet am
+788|Letzte Downloads
+789|Dateien anschauen erlauben
+790|Ordner öffnen
+791|Automatisch ankommende Dateien akzeptieren
+792|Users IP Adresse anzeigen
+793|Offline User finden
+794|Users Statistiken anzeigen
+795|Hashlinks
+796|Ed2k Links benutzen
+797|Magnet Links benutzen
+798|Ares Hashlinks sind Links zu Dateien im Ares Netzwerk. Mit diesen Links können Sie Dateien downloaden ohne sie suchen zu müssen. Auf Homepages, die Ares Hashlinks anbieten, müssen Sie einfach nur auf den Link klicken und Ares wird die gewünschte Datei automatisch downloaden. Ares unterstützt nicht nur Ares Hashlinks sondern auch Magnet und Edonkey Links. Hier können Sie auswählen welche Links sie unterstützen und benutzen wollen.
+799|Control Panel
+800|Configure and control your Ares
+801|Check connection
+802|Testing...
+803|Test failed
+804|Test passed
+805|Proxy bouncer
+806|Currently using
+807|Load list
+808|Save list
+809|Use multiple proxy servers
+810|New window
+811|Go
+812|Show Join/Part notice
+813|Favorites
+814|Add to Favorites
+815|Last
+816|Search for Other files
+817|Disconnect
+818|You are about to open a potentially dangerous file type. The file may contain a virus or trojan.\\nlAre you sure you want to continue?
+819|Busy
+820|Chatroom
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

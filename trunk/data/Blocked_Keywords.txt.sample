@@ -1,0 +1,6 @@
+﻿BANANDKILL={nopqrst,testban}
+PMBANANDKILL={nopqrst,testban}
+DISCONNECT={ehilm,testkill}
+PMDISCONNECT={ehilm,testkill}
+FILTER={abcdef,testfilter}
+PMFILTER={abcdef,testfilter}

@@ -1,0 +1,24 @@
+object frmChatTab: TfrmChatTab
+  Left = 190
+  Top = 115
+  AutoScroll = False
+  BorderIcons = [biMinimize]
+  Caption = 'Channel'
+  ClientHeight = 211
+  ClientWidth = 347
+  Color = clBtnFace
+  DefaultMonitor = dmDesktop
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  OnClose = TntFormClose
+  OnCreate = FormCreate
+  OnDestroy = TntFormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+end

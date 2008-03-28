@@ -1,0 +1,597 @@
+﻿Tämän käännöksen on tehnyt:
+
+Jussi "Juzu89" Nieminen 
+
+FONT NAME="Tahoma" SIZE="8"
+
+108|Suodata suoritettavat tiedostot ja potentiaalisesti vaaralliset tiedostotyypit
+110|Isäntäkanavan portti:
+113|Näytä chat-tapahtuman paikka/aika
+114|Kun olet poissa, voit aktivoida poissaolo statuksen. Ares vastaa yksityisiin chat-pyyntöihin poissaolo- viestillä. Täällä voit muokata oman poissaoloviestisi.
+115|Estä kaikki ykstyiset viestit.
+116|Vastaa poissaoloviestillä yksityis chatteihin
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Hyväksy tulevat yhteydet portissa:
+127|Latauksia kerralla
+128|Latauksia per käyttäjä     (0=ei rajaa)
+129|Lähetysten maksiminopeus (kb/s 0=ei rajaa)
+130|Kasvata toimettomana
+131|Latausten maksiminopeus (kb/s 0=no limit)
+133|Lataukset tallennetaan kansioon:
+134|Muuta kansiota
+135|Palauta alkuperäinen kansio
+136|Paina 'Aloita skannaus' skannataksesi tietokoneesi
+137|Skannaa
+138|Lopeta
+139|Valitse kaikki
+140|Poista valinta
+141|Tarkista tiedosto(t) jotka haluat jakaa yhteisön kanssa.
+142|Legend
+143|Tämä tiedosto ei ole jaossa, mutta siihen liittyvät tiedostot ovat jaossa.
+144|Tiedosto on jaossa, kaikki tiedostot tässä kansiossa ovat jaossa.
+146|Tietokonettani suojaa palomuuri tai en pysty vastaanottamaan saapuvia yhteyksiä
+149|Käynnistä Ares, kun Windows käynnistyy
+150|Yhdistä verkkoon automaattisesti, kun käynnistän Areksen
+151|Aloita Ares pienennettynä
+152|Sammuta Ares kun painan sulje-nappia
+153|Tämä ruutu antaa sinun valita, minkä kansion haluat jakaa, tehden siitä mahdollisen muille ladata. Muut käyttäjät eivät voi muuttaa näiden kansioiden sisältöä.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Näytä tila pääikkunan otsikossa
+161|Näytä siirtoprosentti
+162|Estä suuret viittaukset
+163|Pysäytä video, kun vaihdan ikkunaa
+164|Pyydä varmistusta latauksia peruuttaessa
+193|Käyttäjänimi:
+194|Nopeus:
+195|Ok
+196|Peruuta
+197|Hyväksy
+199|Sulje
+200|Etsi tekstiä201Äänitiedostot
+202|Video tiedostot
+203|Soittolisa tiedostot
+204|Mikä tahansa tiedosto
+205|Tyhjennä hakuhistoria
+206|Edistynyt haku
+208|Yksinkertainen haku
+210|Löytyi
+211|Pää
+212|Yhdistä
+213|Katkaise yhteys
+214|Asetukset
+217|Hakukenttä
+230|Kirjasto
+231|Jaa ja organisoi mediaasi
+232|Haku
+233|Etsi tiedostoja Ares-verkosta
+234|Lataukset/lähetykset
+235|Latausten ja lähetysten kehitys
+236|Netti
+237|Selaile Internettiä
+238|Elokuvateatteri
+239|Toista Medioitasi
+240|Chat
+241|Tapaa uusia ystäviä Ares-chatissa
+242|Koko ruutu
+243|Aseta koko ruutuun
+244|Pienempi
+245|Pienennä videon kokoa
+246|Isompi
+247|Suurenna videon kokoa
+248|Alkuperäinen koko
+249|Sovita ruutuun/Laita alkuperäiseen videokokoon
+250|Poistu kanavalta
+251|Virkistä lista
+252|Liity kanavalle
+253|Lähetä yksityinen viesti
+254|Selaa käyttäjän tiedostoja
+255|Perusta kanava:
+256|Jakoasetukset - Paina täältä muokataksesi jaettuja kansioita
+257|Uudelleenskannaa kirjastosi
+258|Kansiot
+259|Näytä/Piilota kansioita
+260|Yksityiskohdat
+261|Näytä/Piilota yksityiskohtia
+262|Jaa/Ota pois jaosta
+263|Poista tiedosto
+264|Lisää tiedosto soittolistaan
+265|Yhdistä uudelleen isäntään
+266|Tiedosto
+267|Lähetä tiedosto
+268|Hyväksy tulevat tiedostot
+269|Näytä siirrot
+270|Piilota siirrot
+271|Muokkaa
+272|Valitse kaikki
+273|Kopioi
+274|Avaa Notepadissa
+275|Yksityisyys
+276|Aseta tilakseni Poissa
+277|Estä tämä isäntä
+278|Peruuta kaikki
+279|Yhdistetään isäntään, odota...
+280|Yhteys tehty
+281|Yhteys suljettu etäiskäyttäjältä
+282|Etäis-isäntä tavoittamattomissa
+283|Ok avaa se!
+284|Valmistellaan esikatselua
+285|Kopioidaan tiedostoa
+286|Mykistä
+289|Peruuta
+290|Peruuta valitut lataukset
+291|Keskeytä/Jatka
+292|Keskeytä/Jatka valitut lataukset
+293|Toista/Esikatsele
+294|Toista/Esikatsele valittu tiedosto
+295|Paikanna tiedosto
+296|Paikanna valittu tiedosto/Avaa tuleva tiedosto kansio
+297|Poista toimettomat
+298|Poista valmiit/peruutetut lataukset
+299|Lisää tiedosto soittolistaan
+300|Lisää kansio soittolistaan
+301|Poista valittu tiedosto
+302|Tyhjennä soittolista
+303|Lataa/Tallenna soittolista
+305|Lataa soittolista
+306|Tallenna soittolista
+307|Poista kaikki
+308|Poista valitut
+309|Lajittele
+310|Aakkosjärjestys A-Ö
+311|Aakkosjärjestys Ö-A
+312|Sekoita lista
+313|Hyppää tiedostoon
+314|Sekoita
+315|Toista
+316|Uusi haku
+317|Make a new search
+318|Lataa
+319|Lataa valittu tiedosto
+321|Näytä/Piilota Hakukenttä
+322|Takaisin
+323|Eteenpäin
+324|Stoppaa
+325|Päivitä
+326|Toista
+327|Pysäytä
+328|Edellinen
+329|Seuraava
+330|Äänenvoimakkuus
+331|Näytä soittolista
+332|Sulje soittolista
+335|Soittolista
+336|Piilota yksityiskohdat
+337|Jaettu
+338|Piilota kansiot
+339|Valitse jakaaksesi, poista valinta ottaaksesi tiedoston pois jaosta
+340|jonossa
+341|Kokeile myös
+342|Henkilökohtaiset yksityiskohdat
+348|Tiedostojen siirto
+350|Chat
+351|Yksityiset viestit
+352|Et ole yhdistetty
+353|Tiedostoa lähetetään
+354|Yksityiset viestit
+355|Tiedostojen jako
+356|Auto-skannaus
+357|Oma asetus
+358|Latauskansio
+359|Yleiset
+360|Verkko
+361|Yhdistettynä nimellä
+363|Tiedostot
+364|tiedostot
+365|Ei voi yhdistää
+366|Viimeksi nähty
+367|Saatavuus
+368|Yhdistetään
+369|Yhdistetään verkkoon
+372|Yhdistetty, kätellään...
+373| Selaaminen epäonnistui
+375|Kättelyvirhe, estetään yhteys
+376|hakemistoja ei löytynyt
+377|Skannaus suoritettu
+378|hakemisto löydetty
+379|Hakua suoritetaan, odota...
+380|Haku suoritettu, ei tuloksia
+383|Haluatko varmasti tyhjentää hakuhistorian?
+384|Tyhjennä hakuhistoria
+390|Chat-ryhmäsi haluaa lähettää sinulle yhden tai useamman tiedoston, haluatko vastaanottaa?
+391|Tiedostolähetys tulossa
+398|Haluatko varmasti peruuttaa latauksen?
+399|Peruuta lataus
+407|hakemistoja löydetty
+408|Kättelyvirhe, etäkäyttjä nollasi yhteyden
+409|Kättelyvirhe, aikaraja ylittyi odotettaessa etäkäyttäjän vastausta
+410|Yhteys katkaistu
+411|Yhteys katkaistu, puskurin ylivuoto
+412|Kirjauduttu, vastaanotetaan käyttäjälistaa...
+413|Aihe vaihtunut
+414|jaetaan
+415|tiedostoa, liittyi
+416|on liittynyt
+417|Yhteys katkaistu, lähetyksen aikaraja ylittyi
+418|Sinulle laitettiin kuonokoppa
+419|Kuvat & Videot
+420|Ladattu
+421|Isännöity kanava
+422|Kanava
+423|Jaettu koko
+424|Yhteiskoko
+425|jonossa
+426|Jonossa
+428|Kanavan nimi:
+429|Väärä nimi.
+430|Valitse jokin, jossa on väh. 4 kirjainta
+431|Isännöity
+432|Haluatko varmasti sulkea kanavan?
+433|Kanavalla olevat käyttäjien yhteys katkaistaisiin
+434|Yhdistetään etäkanavaan
+435|Vapaita paikkoja
+436|KB/sek
+437|Isännöit jo kanavaa nimeltä
+438|TIEDOSTO EI OLE JAOSSA
+439|Ei ole peruuta-vaihtoehtoa
+440|VAROITUS, kovalevytiedoston poisto
+441|Poista tiedosto
+442|Poista tiedostoja
+443|Lähetetty
+444|Tiedostoa lähetetään jo
+445|Vilkaisepa lähetys-välilehteä
+446|Kopiotu pyyntö
+447|Valittu tiedosto on jo kirjastossasi
+448|Vilkaisepa kirjasto-välilehteä
+449|Kopiotu tiedosto
+450|Tämä mediatyyppi on suodatettu
+451|Suodatettu Media';
+452|Piilota Ares
+453|Näytä Ares
+454|tulos hakusanalle
+455|tulosta hakusanalle
+456|jaettu kansioni
+458|odota...
+459|*TIEDOSTO ON JO KIRJASTOSSASI**
+460|*LATAAT JO TÄTÄ TIEDOSTOA*
+461|Käsitellään
+462|Pysäytetty
+464|Leech Paused
+465|Peruutettu
+466|Suoritettu
+467|Ladataan
+468|Toimeton
+469|Etsitään
+470|Yhdistetään
+471|VAROITUS
+472|Etsitään
+473|Käyttäjät
+474|Yhdistetään etäkäyttäjään
+475|Chat - yhdistetään etäisäntään
+476|Sinä
+477|bannattu (bannaus poistetaan, kun käynnistät ohjelman uudelleen)
+478| Etsitään asiaa
+479|mikä tahansa
+480|Hash prioriteetti
+481|Serveri jono
+482|Korkein
+483|Korkeampi
+484|Normaali
+485|Alempi
+486|Alin
+487|Hylkää/Hyväksy
+488|Pistä kuonokoppa
+489|Poista kuonokoppa
+490|Bannaa
+491|Poista bannaus
+492|Tapa
+494|Jakoasetukset
+495|Avaa/Toista
+496|Avaa ulkoinen
+497|Paikanna tiedosto
+498|Etsi tiedostoja, jotka sisältävät tekstin:
+499|Löydä lisää samasta
+500|Pysäytä kaikki/Jatka kaikkia
+501|Näytä soittolista
+502|Lopeta Ares
+504|Estä käyttäjä
+505|Ota tiedosto pois jaosta
+506|Sovita ruutuun
+508|Lopeta haku
+509|Valitse kaikki
+510|Kopioi työpöydälle
+511|Avaa Notepadissa
+512|Hae nyt
+513|Päivämäärä
+514|Näytä jono
+515|Katso ketkä ovat jonossasi
+516|Näytä lähetykset
+517|Näe lähetykset
+518|Filtteri
+519|Perusnäkymä
+520|Virtuaalinen näkymä
+521|Näytä kirjasto virtuaalisessa näkymässä
+522|Näytä kirjasto perusnäkymässä
+523|Käyttäjä
+524|Otsikko
+525|Artisti
+526|Laatu
+527|Vuosi
+528|Versio
+529|Tiedostotyyppi
+530|Värit
+531|Julkaisija
+532|Kansio
+533|Kesto
+534|saatu
+535|lähetetty
+536|Resoluutio
+537|Mediatyyppi
+538|Kieli
+539|Kategoria
+540|Lataa
+541|Skannaus käynnissä
+542|Lähetys
+543|Lähetykset
+544|Lataukset
+545|Albumi
+546|Yhtiö
+547|Päiväys
+548|Vaadittu koko
+549|Tiedoston koko
+550|Koko
+551|Formaatti
+552|Tiedostonimi
+553|URL
+554|Nimi
+555|Aihe
+556|Tervetuloa 
+557| kanavalle
+558|Nopeus
+559|Ryhmitä albumin mukaan
+560|Ryhmitä julkaisijan mukaan
+561|Ryhmitä artistin mukaan
+562|Ryhmitä kategorian mukaan
+563|Ryhmitä yhtiön mukaan
+564|Ryhmitä lajin mukaan
+565|Kaikki
+566|Ääni/Musiikki
+567|Video
+568|Kuva
+569|Dokumentti
+570|Muu
+571|Ohjelmisto
+581|Jaetut virtuaalikansiot
+582|Jaetut kansiot
+583|Jaetut tiedostot
+584|Kirjastosi
+585|Hae Videotiedostoja
+586|Hae ääni- tai musiikkitiedostoja
+587|Hae yleistä mediaa
+588|Hae kuvia
+589|Hae dokumentteja
+590|Hae ohjelmistoja
+594|Tyyppi
+595|Tiedosto
+596|Lähetetty
+597|Tila
+598|Mediatyyppi
+599|Sijainti
+600|Vaadittu
+601|tänään
+602|yhteensä
+603|Laji
+604|Jäljellä
+605|Kehitys
+606|Kokonaislähetysnopeus
+607|Kommentit
+608|Arvioitu jäljellä oleva aika
+609|Volyymi lähetetty
+610|Volyymi ladattu
+611|Lähteiden lukumäärä
+612|lähteet
+613|lähde
+614|Nopeudet
+615|Tuntematon
+616|tuntematon
+617|of
+618|Ladataan
+630|yhteys katkaistu (tapettiin)
+631|on
+632|from
+633|Sinulle on laitettu kuonokoppa
+634|sai juuri kuonokopan
+635|Kuonokoppasi on poistettu
+636|sai ottaa kuonokopan pois
+637|Motd ladattu
+638|rivit
+639|Bannaus epäonnistui, käyttäjä:
+640|ei löytynyt
+641|Bannauskantama
+642|Bannauksen poistokantama
+643|bannaus poistettu
+644|Bannauksen poisto epäonnistui, käyttäjä:
+645|ei bannattu
+646|Bannauslista tyhjennetty
+648|bannattu
+649|Kantama
+650|kantamaa bannattu
+651|käyttäjiä bannattu
+653|tilastot
+654|Serverin osoite
+655|Serveri aloitti:
+656|Käytettävyysaika
+657|Hyväksyttyjä yhteyksiä
+658|Vastaanotettuja viestejä
+659|Suurin käyttäjämäärä
+660|Tämänhetkinen käyttäjämäärä
+661|Jo bannattuja
+662|viestejä lähetetty
+663|floodaavia käyttäjiä potkittu
+664|tapettuja käyttäjiä
+665|isännöit nyt chat-huonetta
+666|kirjoita
+667|näyttääksesi listan komennoista
+668|Muuta kanavan aihetta
+669|Lähetä tunne kanavalle
+670|Näytä kanavan tilastot
+671|Laita käyttäjälle kuonokoppa
+672|Poista käyttäjän kuonokoppa
+673|Potkaise käyttäjä
+674|Bannaa käyttäjä
+675|Poista bannaus käyttäjältä
+676|Bannaa ip-kantama
+677|Poista ip-kantaman bannaus
+678|Tyhjennä bannauslista
+679|Näytä tervehdysteksti
+680|Avaa tervehdystekstin tekstitiedosto
+681|Lataa tervehdysteksti tiedostosta
+682|Näytä bannauslista
+683|Tyhjennä ruutu
+684|Näytä komennot
+685|tämä on esimerkki motd-tiedostosta
+686|muokkaa tekstiä, tallenna se ja käytä komentoa /loadmotd
+687|Welcome to my chat room
+688|have fun!
+689|Yhteys
+690|bannatulla kantamalla
+691|Ei kirjautunut
+692|Yhteys hylätty(bannattu käyttäjä)
+693|ei hylätty
+694|Ei voi hylätä
+695|liian monta huomioimatonta käyttäjää
+696|hylätty jo
+697|hylätty
+698|hiljennetty
+699|Haluttu kieli
+700|Kanavat
+701|Jaettu
+703|Vastaanotetaan listaa, odota...
+704|Lista tyhjä, yritä uudestaan myöhemmin
+705|Skannataan
+708|jaetaan
+709|tiedostot
+710|yhdistetty nimellä
+711|Piilota hakukenttä
+712|Käytettävää tilaa
+713|Selaus käynnissä:
+714|Selaus suoritettu:
+715|Huono
+716|Keskiverto
+717|Hyvä
+718|Todella hyvä
+719|Skannaus on käynnissä Ares-ohjelmassasi.\nl\nlKun Ares löytää uutta mediaa jaetuista kansioistasi, sen täytyy suorittaa uniikki Hash-tunniste jokaiselle uudelle tiedostolle.\nlTämä voi kestää, riippuenhashattavien tiedostojen koosta ja tietokoneesi nopeudesta.\nl\nlVoit nähdä mitä tiedostoa hashataan suoraan tästä yläpuolelta.\nlVoit myös muuttaa prioriteettiä, jonka Ares antaa hashaukseen.\nlTiedä, että korkean riman prioriteetti lyhentää hash arvojen suorittamiseen tarvittavaa aikaa, mutta voi hidastaa tietokonettasi.\nlOlemme iloista että olet valinnut Areksen ohjelmaksesi.
+720|Hash-laskenta menossa
+721|Mediahaku käynnissä 
+724|Peruuta lataus
+725|Muu
+726|Ääni/Musiikki
+727|Ohjelmisto
+728|Video
+729|Dokumentti
+730|Kuva
+731|Alkoi
+732|Käytettävissä olevat lähteet
+733|Varsinainen kehitys
+734|Yrityksiä yhteensä
+735|Uusinnan tauko
+736|Viimeinen vaatimus
+738|Päättyminen
+741|Tallenna nimellä
+742|Vähintään
+743|Parhaillaan
+744|Samanlainen kuin
+745|Noin
+746|Pidempi kuin
+747|Lyhyempi kuin
+748|Pienempi kuin
+749|Isompi kuin
+750|Keskeytetty paikallisesti
+751|latauksia sallittu kerralla
+752|Tuntematon komento
+753|Proxy
+755|Älä käytä proxya
+756|Käytä Sock4 proxya
+757|Käytä Sock5 proxya
+758|Proxy serverin osoite
+759|Käyttäjänimi
+760|Salasana
+761|Etäkäyttäjä selailee kirjastoasi
+762|Salli kirjastoni selailu
+763|Ares on havainnut että sinulla on palomuuri päällä koneessasi. Jos pidät nykyiset asetuksesi, voit kokeavaikeuksia ladatessasi ja hitaita lataus/lähetysnopeuksia.\nlSinun pitäisi asettaa palomuurisi hyväksymään tuleva liikenne Areksen dataportista.\nlHaluaisitko että Ares tekee sen sinulle?
+764|Palomuuriasetukset
+765|Ares on havainnut että sinulla on palomuuri päällä koneessasi. Jos haluat isännöidä chathuoneen sinun täytyy sallia tulevat yhteydet chathuoneen portista.\nlHaluaisitko että Ares tekee sen sinulle?
+766|Suora chat
+767|Lähetä kansio
+768|Ei yhdistetty
+769|Kanavahaku
+770|Anna latauspaikka
+771|Selaus epäonnistui, lista ei ole saatavana
+772|Jaettavat tiedostotyypit
+773|Tumma tausta
+775|Lataa HashLink
+776|Aseta HashLink tänne
+777|Exporttaa HashLink
+778|Tiedosto turmeltunut
+779|Tiedostonsaantivirhe
+785|Anna selailla
+787|Ladattu
+788|Tuoreet lataukset
+789|Salli normaali kansioiden selailu
+790|Avaa kansio
+791|Hyväksy tiedostot automaattisesti
+792|Näytä käyttäjän IP-osoite
+793|Löydä käyttäjät, jotka eivät ole yhdistetty verkkoon
+794|Näytä käyttäjän tiedot
+795|Hashlinkit
+796|Käsittele Ed2k linkit
+797|Käsittele Magneetti linkit
+799|Ohjauspaneeli
+800|Muokkaa ja kontrolloi Arestasi
+801|Tarkista yhteys
+802|Testataan...
+803|Testaus epäonnistui
+804|Testaus onnistui
+805|Proxy ovimies
+806|Tällä hetkellä käytössä
+807|Lataa lista
+808|Tallenna lista
+809|Käytä useita proxy-servereitä
+810|Uusi välilehti
+811|Go!
+812|Näytä liittymis/osallistumis-huomautus.
+381|Haluaisitko valita käyttäjänimesi nyt?
+813|Lempparit
+814|Lisää lemppareihin
+815|Viimeinen
+816|Hae muita tiedostoja
+817|Katkaise lähteen yhteys
+818|Olet avaamassa potentiaalisesti vaarallisen tiedostotyypin. Tiedosto saattaa sisältää viruksen tai troijalaisen.\nlHaluatko varmasti jatkaa?
+819|Kiireinen
+820|Chatroom
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+

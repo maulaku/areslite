@@ -1,0 +1,178 @@
+# UI settings
+# CREDIT fields appear in Ares' control panel->skin
+CREDIT Name                 "OS Themes"
+CREDIT Author               "Ares Dev Team"
+CREDIT URL                  "http://aresgalaxy.sourceforge.net"
+CREDIT Details             "\nlAres OS Themed Skin"
+CREDIT Version              "0.0.1"
+CREDIT Date                 "2007/02/25"
+
+# COLOR define general color settings
+# available color constants: 
+# clActiveBorder, clActiveCaption, clAppWorkspace, clBackground, clBtnFace,
+# clBtntext, clBtnShadow, clBtnHighlight, clCaptionText, clGray, cl3DLight,
+# cl3DDkShadow, clWindow, clWindowText, clWindowFrame, clScrollbar, clSilver,
+# clInfoBk, clInfoText, clMenu, clMenuText, clMenuHighLight, clmenubar, clInactiveBorder,
+# clInactiveCaption, clInactiveCaptionText, clHotLight, clHighLight, clHighLightText
+COLOR DLProgBar.Progress      "166AEE"
+COLOR ClientFrame.Border      "clGray"
+COLOR DLProgBar.Complete      "008000"
+COLOR DLProgBar.PartialDL     "FFFFBB"
+COLOR DLProgBar.PartialUL     "B8EFEE"
+COLOR DLProgBar.MissinPart    "C0C0C0"
+COLOR DLProgBar.CompletePart  "008000"
+COLOR DLProgBar.PartInProg    "FF0000"
+COLOR DLProgBar.DLsource      "FFDF00"
+COLOR DLProgBar.ICHbar        "00FF00"
+COLOR ULProgBar.Complete      "008000"
+COLOR ULProgBar.Cancelled     "F1EFE2"
+COLOR ULProgBar.Progress      "FFDF00"
+COLOR ULProgBar.Overlay       "F1EFE2"
+COLOR ULProgBar.Part          "008000"
+COLOR HintGraph.Ink           "005AFF"
+COLOR HintGraph.BackGround    "FFFFFF"
+COLOR HintGraph.Grid          "ECE9D8"      
+COLOR Listviews.AltRow        "FFFFFF" 
+COLOR Listviews.HotColor      "E9E9E9"
+COLOR Transfer.AltRow         "FFFFFF"
+COLOR Hint.BackGround         "clInfoBk"
+COLOR Hint.Font               "000000"
+COLOR Player.BackGround       "F1EFE2"
+COLOR Player.Font             "000000"
+COLOR Listviews.BackGround    "FFFFFF"
+COLOR Listviews.HeaderBK      "EEF3FA"
+COLOR Listviews.HeaderFont    "000000"
+COLOR Listviews.Font          "000000"
+COLOR Listviews.Font2         "808080"
+COLOR Listviews.Font3         "95BFFF"
+COLOR Listviews.VLines        "ECE9D8"
+COLOR Listviews.TLines        "ECE9D8"
+COLOR Listviews.HeaderBorder  "D4D8DF"
+COLOR SearchPNL.BackGround    "FCFCFC"
+COLOR SearchPNL.Font          "000000"
+COLOR LibDetPNL.BackGround    "FCFCFC"
+COLOR LibDetPNL.Font          "000000"
+COLOR ToolBar.BackGround      "FFFFFF"
+COLOR ToolBar.Font            "000000"
+COLOR Panels.BackGround       "clBtnFace"
+COLOR Panels.Font             "000000"
+COLOR Panels.Separator        "clgray"
+COLOR Caption.Font            "FFFFFF"
+
+# COLORENUM define chatroom's colors
+# available color enums:
+# black,maroon,green,orange,navy,purple,teal
+# gray,silver,red,lime,yellow,blue,fuchsia,aqua,white
+COLORENUM Chat.BackGround          "White"
+COLORENUM Chat.Font                "Black"
+COLORENUM Chat.Nick                "Black"
+COLORENUM Chat.NickPM              "Gray"
+COLORENUM Chat.Public              "Blue"
+COLORENUM Chat.Join                "Green"
+COLORENUM Chat.Part                "Orange"
+COLORENUM Chat.Emote               "Purple"
+COLORENUM Chat.Notification        "Navy"
+COLORENUM Chat.Error               "Red"
+
+# General Theme settings, acceptable values are 'True' or 'False'
+BOOL 3DProgBars               True
+BOOL XPThemedButtons          True
+BOOL XPThemedPanels           False
+BOOL XPThemedHeaders          True
+
+# BITMAP defines filename of imported bitmap
+BITMAP Chat                   "chat.bmp"
+BITMAP MimeSmall              "mimesmall.bmp"
+BITMAP LibBig                 "libbig.bmp"
+BITMAP Emoticons              "emotic.bmp"
+BITMAP TabsBig                "tabsbig.bmp"
+BITMAP Transfer               "transfer.bmp"
+BITMAP TabsSmall              "tabssmall.bmp"
+BITMAP ScreenLogo             "logo.bmp"
+BITMAP SearchPNL              "searchpnl.bmp"
+BITMAP MShareSet              "mshareset.bmp"
+BITMAP WebAnim                "webanim.bmp"
+BITMAP SearchStars            "searchstars.bmp"
+
+
+# maintabs 
+# height of tabs
+PANELTABS height=			45
+# number of pixels relative to tab's left corner where Ares paints tab's caption
+PANELTABS captionLeft=			40
+# number of pixels relative to tab's top corner where Ares paints tab's caption
+PANELTABS captionRight=			8
+# number of pixels relative to tab's top corner where Ares paints tab's caption
+PANELTABS captionTop=			15
+# number of pixels relative to component's left corner where Ares paints the first tab
+PANELTABS ButtonsLeft=                  5
+
+# Tabs are painted by copying 3 images from source (BitmapFile), left, middle and right
+# These Points store two values:left and width
+# Tab component's BackGround Image
+PANELTABS CopyPointLeft=		0,4
+PANELTABS CopyPointMiddle=		5,13
+PANELTABS CopyPointRight=		17,5
+# Copy coordinates are given for tab's 5 possible states: off,Hover,DownHover, Down and Clicked
+PANELTABS OffCopyPointA=		4,1
+PANELTABS OffCopyPointB=		4,9
+PANELTABS OffCopyPointC=		13,1
+PANELTABS HoverCopyPointA=		23,6
+PANELTABS HoverCopyPointB=		29,7
+PANELTABS HoverCopyPointC=		37,7
+PANELTABS DownHoverCopyPointA=		87,6
+PANELTABS DownHoverCopyPointB=		93,7
+PANELTABS DownHoverCopyPointC=		99,7
+PANELTABS DownCopyPointA=		66,6
+PANELTABS DownCopyPointB=		72,7
+PANELTABS DownCopyPointC=		79,7
+PANELTABS ClickedCopyPointA=		45,6
+PANELTABS ClickedCopyPointB=		51,7
+PANELTABS ClickedCopyPointC=		58,7
+
+
+# see PANELTABS' comments, the following settings apply to smalltabs eg. search and chat tabs
+SMALLTABS BitmapFile=			smalltabsBitmap.bmp
+SMALLTABS height=			25
+SMALLTABS captionLeft=			6
+SMALLTABS captionTop=			8
+SMALLTABS ButtonsLeft=                  5
+# background image
+SMALLTABS CopyPointLeft=		44,1
+SMALLTABS CopyPointMiddle=		44,7
+SMALLTABS CopyPointRight=		44,1
+# tabs states
+SMALLTABS OffCopyPointA=		16,2
+SMALLTABS OffCopyPointB=		18,9
+SMALLTABS OffCopyPointC=		28,2
+SMALLTABS HoverCopyPointA=		30,2
+SMALLTABS HoverCopyPointB=		32,9
+SMALLTABS HoverCopyPointC=		42,2
+SMALLTABS DownHoverCopyPointA=		0,1
+SMALLTABS DownHoverCopyPointB=		1,13
+SMALLTABS DownHoverCopyPointC=		14,2
+SMALLTABS DownCopyPointA=		0,1
+SMALLTABS DownCopyPointB=		1,13
+SMALLTABS DownCopyPointC=		14,2
+SMALLTABS ClickedCopyPointA=		0,1
+SMALLTABS ClickedCopyPointB=		1,13
+SMALLTABS ClickedCopyPointC=		14,2
+# Smalltabs may have a 'close' button, the following rects define where to copy state images from
+SMALLTABS OffBtnCloseCopy=              52,0,13,13
+SMALLTABS HoverBtnCloseCopy=            52,12,13,13
+# where CloseButton if any should be painted (relative to tab's coordinates)
+SMALLTABS CloseButtonLeft=		17
+SMALLTABS CloseButtonTop=		8
+
+# Image of owner draw listviews header
+LISTVIEW headerBitmap=			listviewbitmap.bmp
+LISTVIEW headerCopyPointA=		0,2
+LISTVIEW headerCopyPointB=		2,3
+LISTVIEW headerHoverCopyPointA=		5,2
+LISTVIEW headerHoverCopyPointB=		7,3		
+LISTVIEW headerDownCopyPointA=		10,2
+LISTVIEW headerDownCopyPointB=		12,3
+LISTVIEW headerDownCopyPointC=		15,2
+
+
+

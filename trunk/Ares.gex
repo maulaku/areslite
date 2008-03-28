@@ -1,0 +1,14 @@
+[General]
+Name=Ares
+Project=1
+[Classes]
+Count=9
+Class0="TFreedObject","","FastMM4","0","D:\자료\aresregular207_02252007\aresregular207_02252007\FastMM4.pas"
+Class1="Tares_frmmain","TTntForm, IAsyncExCallBack","ufrmmain","108","D:\자료\aresregular207_02252007\aresregular207_02252007\ufrmmain.pas"
+Class2="Tfrmpvt","TTntForm","ufrmpvt","0","D:\자료\aresregular207_02252007\aresregular207_02252007\ufrmpvt.pas"
+Class3="Tfrmemoticon","TForm","ufrmemoticon","0","D:\자료\aresregular207_02252007\aresregular207_02252007\ufrmemoticon.pas"
+Class4="Tfrmhint","tform","ufrmhint","0","D:\자료\aresregular207_02252007\aresregular207_02252007\ufrmhint.pas"
+Class5="Tfrmctrlvol","TForm","uctrvol","0","D:\자료\aresregular207_02252007\aresregular207_02252007\uctrvol.pas"
+Class6="Tfrmpreview","TTntForm","ufrmpreview","0","D:\자료\aresregular207_02252007\aresregular207_02252007\ufrmpreview.pas"
+Class7="TfrmChatTab","tTntForm","ufrmChatTab","0","D:\자료\aresregular207_02252007\aresregular207_02252007\ufrmChatTab.pas"
+Class8="TPlaylistForm","TForm","uplaylistfrm","0","D:\자료\aresregular207_02252007\aresregular207_02252007\uplaylistfrm.pas"

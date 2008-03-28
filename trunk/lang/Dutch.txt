@@ -1,0 +1,608 @@
+﻿# Nederlandse vertaling
+# van http://www.museekster.com
+# 
+# Op- of aanmerkingen?
+# Mail naar info at museekster dot com
+#      veel plezier!
+#
+#
+
+FONT NAME="Tahoma" SIZE="8"
+
+108|Filter executable bestanden en andere potentieel gevaarlijke bestanden.
+110|Beheer chatroom poort:
+113|Toon datum/tijd in chat 
+114|Wanneer je weg bent, kan je de status "Afwezig" activeren. Ares reageert dan met een "Afwezig" bericht als je priveberichten krijgt. Hier kan je je bericht instellen.
+115|Blokkeer alle prive berichten
+116| "Afwezig" bericht bij ontvangst privebericht. Geef hieronder de tekst op.
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Accepteer inkomende verbindingen op poort:
+127|upload(s) totaal toegestaanl
+128|upload(s) per gebruiker (0=geen limiet)
+129|Upload bandbreedte (kb/s 0=geen limiet)
+130|Verhoog limiet als pc niet wordt gebruikt
+131|Download bandbreedte (kb/s 0=geen limiet)
+133|Downloads worden bewaard in de volgende map:
+134|Wijzig map
+135|Herstel naar de standaardmap
+136|Klik op 'Start scan' om je pc te scannen
+137|Start scan
+138|Stop scan
+139|Selecteer alles
+140|Deselecteer alles
+141|Selecteer de map(pen) die je in Ares wilt delen.
+142|Legenda
+143|Deze map word niet gedeeld, maar de submappen wel.
+144|Map word gedeeld, alle bestanden in deze map worden gedeeld.
+146|Mijn computer zit achter een firewall en/of kan geen supernode zijn
+149|Start Ares als Windows start
+150|Maak verbinding zodra ik Ares start
+151|Start Ares geminimaliseerd
+152|Sluit Ares af wanneer ik op de sluitknop klik
+153|Dit scherm laat je kiezen welke mappen je wilt delen met andere Aresgebruikers. Zij kunnen deze mappen niet veranderen of iets toevoegen vanaf hun computer.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Toon status in titelbalk
+161|Toon transferpercentage
+162|Verberg aanwijzingen
+163|Pauzeer video bij het wisselen van venster
+164|Vraag om een bevestiging bij het stoppen van een download
+193|Bijnaam:
+194|Snelheid:
+195|Ok
+196|Stop
+197|Pas toe
+199|Sluit
+200|Zoek naar tekst
+201|Audiobestanden
+202|Videobestanden
+203|Playlist/Speellijst bestanden
+204|Elk bestand
+205|Verwijder de zoekgeschiedenis
+206|Geavanceerd zoeken
+208|Eenvoudig zoeken
+210|Gevonden
+211|Bestand
+212|Verbind
+213|Verbreek
+214|Voorkeur
+217|Zoekveld
+230|Bestandenoverzicht
+231|Deel en sorteer je bestanden
+232|Zoek
+233|Zoek naar bestanden op het Ares Netwerk
+234|Transfers
+235|Voortgang van de Up- en Downloads
+236|Web
+237|Surf op Internet
+238|Player
+239|Speel je bestanden af
+240|Chat
+241|Ontmoet nieuwe vrienden in de Ares chat
+242|Volledig scherm
+243|Activeer fullscreen modus
+244|Kleiner
+245|Verklein beeld
+246|Groter
+247|Vergroot beeld
+248|Originele grootte
+249|Pas aan/Oorspronkelijke grootte
+250|verlaat chatroom
+251|Ververs de lijst
+252|Ga de chatroom in
+253|Zend een privebericht naar deze gebruiker
+254|Bekijk bestanden van gebruiker
+255|Open een eigen chatroom
+256|Deel opties - Klik hier om gedeelde mappen toe te voegen
+257|Herscan je bestandenoverzicht
+258|Mappen
+259|Toon/Verberg mappen
+260|Details
+261|Toon/Verberg details
+262|Deel/Deel niet
+263|verwijder bestand
+264|Voeg bestand toe aan de playlist/speellijst
+265|Verbind opnieuw
+266|Bestand
+267|Stuur bestand
+268|Accepteer binnenkomende bestanden
+269|Toon Transfers
+270|Verberg Transfers
+271|Pas aan
+272|Selecteer alles
+273|Kopieer
+274|Open in Kladblok
+275|Privacy
+276|Activeer status "Afwezig"
+277|Blokkeer deze gebruiker
+278|Stop alles
+279|Verbinden met host, even geduld...
+280|Gelukt verbinding te krijgen
+281|verbinding verbroken door partij aan de andere kant
+282|Host aan andere kant is onbereikbaar
+283|Ok open het!
+284|Bezig met genereren preview
+285|Bezig met kopieren bestand
+286|Mute
+289|Stop
+290|Stop de gekozen transfer
+291|Pauzeer/Hervat
+292|Pauzeer/Hervat gekozen download
+293|Speel/Preview
+294|Speel bestand af (Preview)
+295|Toon locatie bestand
+296|Toon locatie geselecteerd bestand/Open map waar downloads binnenkomen
+297|Verwijder inactieve transfers
+298|Verwijder voltooide/gestopte transfers
+299|Voeg bestand toe aan playlist
+300|Voeg map toe aan playlist
+301|verwijder gekozen bestand
+302|Wis playlist
+303|Laad/bewaar playlist
+305|Laad playlist
+306|Bewaar playlist
+307|Verwijder Alles
+308|Verwijder het geselecteerde
+309|Ordenen
+310|Oplopend sorteren
+311|Aflopend sorteren
+312|Willekeurig sorteren
+313|Zoek naar bestand
+314|Willekeurige volgorde
+315|Herhaal
+316|Nieuwe zoekopdracht
+317|Geef een nieuwe zoekopdracht
+318|Download
+319|Download gekozen bestand
+321|Toon/Verberg zoekscherm
+322|Terug
+323|Voorwaarts
+324|Stop
+325|Herlaad
+326|Speel
+327|Pauze
+328|Vorige
+329|Volgende
+330|Volume
+331|Toon playlist
+332|Sluit playlist
+335|Playlist
+336|Verberg details
+337|Gedeeld
+338|Verberg mappen
+339|Markeer om bestanden te delen, de-markeer om bestanden niet te delen
+340|In de wacht
+341|Probeer ook
+342|Persoonlijke details
+348|Transfer
+350|Chat
+351|Prive berichten
+352|Niet verbonden
+353|Bestand posting
+354|Prive berichten
+355|Fileshare
+356|Auto-scan
+357|Handmatige configuratie
+358|Download map
+359|Algemeen
+360|Netwerk
+361|verbonden als
+363|Bestanden
+364|bestanden
+365|Kan geen verbinding maken
+366|Laatst gezien
+367|Beschikbaarheid
+368|Maakt verbinding
+369|Verbinden met netwerk...
+372|Verbonden, bezig met handshake...
+373| Browse mislukt
+374| Browse gestopt
+375|Fout tijdens handshake, verbinding wordt geblokkeerd
+376|geen directories gevonden
+377|Scan compleet
+378|map gevonden
+379|Bezig met zoeken, even geduld a.u.b....
+380|Zoekopdracht klaar zonder resultaten
+383|Weet je zeker dat je de geschiedenis wil opschonen?
+384|verwijder de zoekgeschiedenis
+390|Je chat maatje wil je nog een bestand sturen, wil je een uitwisselings sessie beginnen?
+391|Sessie voor inkomende bestanden
+398|Weet je zeker dat je deze download wilt stoppen?
+399|Download gestopt
+407|mappen gevonden
+408|Handshake fout, verbinding gereset door andere partij
+409|Handshake fout, timeout bij wachten op antwoord andere partij
+410|Verbinding verbroken
+411|Verbinding verbroken, buffer overflow
+412|Ingelogd, gebruikerslijst wordt opgehaald...
+413|Onderwerp veranderd
+414|met
+415|bestanden, is binnen
+416|is vertrokken
+417|Verbinding verbroken, timeout verzonden
+418|Je bent monddood gemaakt
+419|Afbeeldingen & Videos
+420|Gedownload
+421|Beheerde chatroom
+422|Chatroom
+423|Gedeelde grootte
+424|Totale grootte
+425|in de wacht
+426|In de wacht
+428|Naam chatroom:
+429|Verkeerde naam
+430|Kies een naam met minstens 4 karakters
+431|Beheerd
+432|Weet je zeker dat je de chatroom wilt sluiten?
+433|Verbinding gebruikers chatroom zal worden verbroken
+434|Maakt verbinding met andere chatroom
+435|Vrije slots
+436|Kb/sec
+437|Je beheert al een chatroom met de naam
+438|BESTAND WORDT NIET GEDEELD
+439|Er is geen herstelmogelijkheid
+440|PAS OP, bestand wordt van harde schijf gewist
+441|Verwijder bestand
+442|Verwijder bestanden
+443|Verzonden
+444|Bestand wordt al verzonden
+445|Kijk even naar het transfervenster
+446|Dubbel verzoek
+447|Dit bestand heb je al
+448|Kijk even in het bestandenoverzicht
+449|Dubbel bestand
+450|Dit type bestand wordt gefilterd
+451|Gefilterde bestanden;
+452|Verberg Ares
+453|Toon Ares
+454|resultaat voor
+455|resultaten voor
+456|mijn gedeelde map
+458|even geduld...
+459|*DIT BESTAND HEB JE AL*
+460|*DIT BESTAND WORDT AL GEDOWNLOAD*
+461|Bezig met verwerking
+462|Gepauzeerd
+464|Leech gepauzeerd
+465|Gestopt
+466|Voltooid
+467|Download loopt
+468|Inactief
+469|Bezig met zoeken
+470|Maakt verbinding
+471|WAARSCHUWING
+472|Zoekt
+473|Gebruikers
+474|Verbindt met andere gebruiker
+475|Chat - verbindt met andere host
+476|Jij
+477|Geblokkeerd (bij herstart Ares wordt dit ongedaan gemaakt)
+478| Zoekt naar
+479|alles
+480|Hashprioriteit
+481|Server wachtrij
+482|Hoogste
+483|Hoger
+484|Normaal
+485|Lager
+486|Laagste
+487|Negeer/herstel
+488|Maak monddood
+489|Sta weer toe
+490|Uitsluiten
+491|Toelaten
+492|Verbreek verbinding
+494|Opties delen bestanden
+495|Open/Speel
+496|Open in externe applicatie
+497|Localiseer bestand
+498|Zoek bestanden met naam:
+499|Vind meer van dezelfde
+500|Pauzeer Alles/Hervat Alles
+501|Bekijk Playlist
+502|Sluit Ares af
+504|Blokkeer gebruiker
+505|Deel bestand niet
+506|Pas aan aan scherm
+508|Stop zoeken
+509|Selecteer alles
+510|Kopieer naar klembord
+511|Open in kladblok
+512|Zoek nu
+513|Datum
+514|Toon wachtrij
+515|Toon wie je in je wachtrij staat
+516|Toon upload
+517|Bekijk uploads
+518|Filter
+519|Normaal
+520|Virtueel
+521|Toon je bestandenoverzicht virtueel
+522|Toon je bestandenoverzicht normaal
+523|Gebruiker
+524|Titel
+525|Artiest
+526|Kwaliteit
+527|Jaar
+528|Versie
+529|Bestandstype
+530|Kleuren
+531|Auteur
+532|Map
+533|Lengte
+534|ontvangen
+535|verzonden
+536|Resolutie
+537|Bestandstype
+538|Taal
+539|Categorie
+540|Download
+541|Scan loopt
+542|Upload
+543|Uploads
+544|Downloads
+545|Album
+546|Bedrijf
+547|Datum
+548|Gevraagde grootte
+549|Bestands grootte
+550|Grootte
+551|Formaat
+552|Bestandsnaam
+553|URL
+554|Naam
+555|Onderwerp
+556|Welkom in de
+557| chatroom
+558|Snelheid
+559|Sorteer op album
+560|Sorteer op auteur
+561|Sorteer op artiest
+562|Sorteer op categorie
+563|Sorteer op bedrijf
+564|Sorteer op genre
+565|Alles
+566|Audio
+567|Video
+568|Afbeelding
+569|Document
+570|Andere
+571|Software
+581|Gedeelde virtuele mappen
+582|Gedeelde mappen
+583|Gedeelde bestanden
+584|Jouw bestandenoverzicht
+585|Zoek naar videobestanden
+586|Zoek naar audiobestanden
+587|Zoek alle soorten bestanden
+588|Zoek naar afbeeldingen
+589|Zoek naar documenten
+590|Zoek naar software
+594|Type
+595|Bestand
+596|Geupload
+597|Status
+598|Type bestand
+599|Locatie
+600|Aangevraagd
+601|vandaag
+602|totaal
+603|Genre
+604|Resterend
+605|Voortgang
+606|Totale transfer snelheid
+607|Opmerkingen
+608|Geschatte tijd download
+609|Hoeveelheid verzonden
+610|Hoeveelheid ontvangen
+611|Aantal bronnen
+612|bronnen
+613|bron
+614|Bandbreedte
+615|Onbekend
+616|onbekend
+617|van
+618|Uploaden
+630|Verbinding verbroken
+631|op
+632|van
+633|Je bent monddood gemaakt
+634|is monddood gemaakt
+635|Je bent niet meer monddood
+636|is niet meer monddood
+637|Motd geladen
+638|lijnen
+639|Negeren mislukt, gebruiker
+640|niet gevonden
+641|Negeer reeks
+642|reeks toelaten
+643|Toestaan/Toelaten
+644|toelaten gebruiker, mislukt
+645|is niet genegeerd
+646|Negeerlijst opgeschoond
+648|Genegeerd
+649|Reeks
+650|reeks gebanned
+651|gebruikers gebanned
+653|statistieken
+654|Serveradres
+655|Server gestart op
+656|tijd dat programma loopt
+657|Geaccepteerde verbindingen
+658|Ontvangen berichten
+659|Hoogste aantal gebruikers
+660|Huidig aantal gebruikers
+661|Is al genegeerd
+662|Bericht verzonden
+663|flooding gebruikers verbinding verbroken
+664|gebruikers waarvan de verbinding is verbroken
+665|Je beheert nu een chatroom
+666|type
+667|om de help commando's te zien
+668|verander het onderwerp van de chatroom
+669|stuurt een emoticon naar de chatroom
+670|toont de statistieken van de chatroom
+671|onderdruk gebruiker
+672|geef gebruiker weer vrij
+673|verbreek verbinding van gebruiker
+674|Negeer gebruiker
+675|gebruiker toelaten
+676|negeer ip reeks
+677|ip reeks toelaten
+678|schoon negeerlijst op
+679|bekijk de welkomtekst
+680|open het welkomtekst bestand
+681|laad welkomsttekst van bestand
+682|toon negeerlijst
+683|wis scherm
+684|toont commando's
+685|dit is een voorbeeld motd bestand
+686|verander tekst, bewaar het en gebruik dan het commando /loadmotd
+687|Welkom in mijn chatroom
+688|veel plezier!
+689|verbinding van
+690|in banned reeks
+691|Niet gelogd
+692|Verbinding afgewezen(genegeerde gebruiker)
+693|niet genegeerd
+694|Kan niet negeren
+695|teveel genegeerde gebruikers
+696|wordt al genegeerd
+697|genegeerd
+698|onderdrukt
+699|Voorkeurstaal
+700|Chatrooms
+701|Gedeeld
+703|Ontvangt lijst, even geduld...
+704|Lege lijst, probeer later nog eens
+705|Scanning
+708|deelt
+709|bestanden
+710|verbonden als
+711|Verberg zoekveld
+712|Beschikbare ruimte
+713|Browse is bezig:
+714|Browse klaar:
+715|Slecht
+716|Matig
+717|Goed
+718|Zeer goed
+719|Scannen in je Ares loopt.\nl\nlWanneer er nieuwe media wordt gevonden op je compter moet Ares voor elk nieuw bestand een unieke hash maken\nlAfhankelijk van het aantal bestanden en de grootte en de snelheid van je pc kan dit soms wel wat tijd in beslag nemen.\nl\nlHier kan je zien welk bestand op het moment een unieke hashcode krijgt.\nlJe kan ook nog de mate van prioriteit voor het hashen veranderen.\nlHou er rekening mee dat een hogere prioriteit het hashen versnelt maar hierdoor wel je computerlangzamer kan worden.\nl\nlWe zijn erg blij dat je Ares hebt gekozen als je peer to peer programma.
+720|Bezig met berekening hashes
+721|Bezig met zoeken media
+724|Stop upload
+725|Andere
+726|Audio
+727|Software
+728|Video
+729|Document
+730|Afbeelding
+731|Begonnen
+732|Beschikbare bronnen
+733|Huidige voortgang
+734|Totaal aantal pogingen
+735|Probeer opnieuw na
+736|Laatst uitgevoerde verzoek
+738|Te laat
+741|Bewaren als
+742|minstens
+743|hoogstens
+744|Gelijk aan
+745|Circa
+746|Langer dan
+747|Korter dan
+748|Kleiner dan
+749|Groter dan
+750|Lokaal gepauseerd
+751|Gelijktijdige download(s) toegestaan (0=geen limiet)
+752|Onbekend commando
+753|Proxy
+755|Geen proxy gebruiken
+756|Gebruik Sock4 proxy
+757|Gebruik Sock5 proxy
+758|Proxy server adres
+759|Gebruikersnaam
+760|Wachtwoord
+761|Gebruiker bekijkt je bestanden
+762|Toestaan mijn bestanden te bekijken
+763|Ares heeft een firewall op je computer ontdekt. Als je de huidige instellingen behoud kunnen er problemen voorkomen tijdens het downloaden, en trage downloads. Je moet je firewall zo instellen dat het inkomende bestanden naar de ares data poort kunnen worden geschreven. Wil je dat Ares dit voor je wijzigt? 
+764|Firewall eigenschappen
+765|Ares heeft een firewall op je computer ontdekt. Als je een chatroom wilt beheren is het noodzakelijk dat je je firewall uitschakelt, om inkomende berichten toe te staan. Wil je dat Ares deze voor je uitschakelt?
+766|Chatten met deze gebruiker
+767|Stuur map
+768|Offline
+769|Chatroom Zoeken
+770|Stel Uploadslot beschikbaar
+771|Zoeken mislukt, gebruiker offline
+772|Gedeelde bestandstypen
+773|Donkere achtergrond
+775|Download hashlink
+776|Voeg hashlink hier in
+777|Exporteer hashlink
+778|Bestand is corrupt
+779|Fout bij benaderen bestand
+785|Sta bekijken bestanden toe
+787|Gedownload op
+788|Recente downloads
+789|Sta bekijken mappen in normale modus toe
+790|Open map
+791|Accepteer bestanden automatisch
+792|Toon IP-adres gebruiker
+793|Zoek offline gebruikers
+794|Toon statistieken gebruiker
+795|Hashlinks
+796|Verwerk Ed2k links
+797|Verwerk Magnet links
+799|Configuratiescherm
+800|Stel Ares in
+801|Controleer verbinding
+802|Test...
+803|Test mislukt
+804|Test gelukt
+805|Proxy tool
+806|Gebruikt momenteel
+807|Laad lijst
+808|Sla lijst op
+809|Gebruik meerdere proxy servers
+810|Nieuw venster
+811|OK
+812|Geef meldingen bij binnenkomen en vertrek
+813|Favorites
+814|Add to Favorites
+815|Last
+816|Search for Other files
+817|Disconnect source
+818|You are about to open a potentially dangerous file type. The file may contain a virus or trojan.\\nlAre you sure you want to continue?
+819|Busy
+820|Chatroom
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+
+
+
+
+

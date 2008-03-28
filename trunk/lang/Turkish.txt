@@ -1,0 +1,606 @@
+﻿# Ares Trke versiyon (yama)
+# Trke eviri : Eren KOVANCI
+# http://www.thb.gen.ms
+# eren  at  gawab  dot  com
+# Ares Trkiye : http://www.ares.gen.ms
+# Version 1.3 Beta
+#
+
+FONT NAME="TAHOMA" SIZE="8"
+
+108|Tehlike arzeden dosyalari filtreden gecir ve engelle
+110|Sunucunun kanal portu:
+113|Sohbet esnasinda tarih ve saati goster
+114|Uzakta oldugunuzda uzakta mesajiniz ve durumunuz gozukecektir. Size ozel mesaj gonderenlerede uzakta mesajiniz gidecektir. Uzakta mesajinizi kontrol panelinden degistirebilirsiniz.
+115|Butun ozel mesajlari engelle
+116|Uzakta olunca ozel mesajlara otomatik cevap ver
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Bu portdan tum baglantilari kabul et:
+127|Ayni anda yapilacak gonderim
+128|Her kullaniciya verilen gonderim izni (0=limit yok)
+129|Gonderim bant genisligi (kb/s 0=limit yok)
+130|Sunucu bos olunca hizlan
+131|Yukleme bant genisligi (kb/s 0=limit yok)
+133|Yuklenen dosyalari bu klasor icine koy:
+134|Yeni klasor
+135|Klasoru ilk haline dondur
+136|Taramaya baslamak icin "basla" butonuna basiniz.
+137|Basla
+138|Durdur
+139|Hepsini sec
+140|Hepsini secme
+141|Paylasilacak klasorleri buradan secebilirsiniz.
+142|Yazi
+143|Cocuklarla ilgili bolumler haric hicbir dosya yada klasoru paylasma.
+144|Butun dosya ve klasorleri paylasima izin ver.
+146|Guvenlik duvari arkasindan saglanan baglantilari kabul et
+149|Bilgisayar baslatildiginda ares'i calistir
+150|Ares baslatilinca otomatik olarak sunucuya baglan
+151|Ares baslatilinca Aresi kucult
+152|Cikis butonuna basildiginda ares kapansin
+153|Bu pencereden kullanicilarla ilgili ayarlari , yetkileri , sistem ayarlarini degistirebilir ve otomatik tarama yapabilirsiniz.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Durum cubugunda her zaman durumumu goster
+161|Transferlerin yuzde gostergesi
+162|Buyuk dosyalari engelle
+163|Film dosyalarinin arasinda olan tablarin hareket zamanini belirle
+164|Yuklemelerin ne zaman iptal edilecegini bana sorma
+193|Takma isim:
+194|Hiz:
+195|Tamam
+196|iptal
+197|Uygulama
+199|Cikis
+200|Metin icinde ara
+201|Ses dosyalari
+202|Film dosyalari
+203|Playlist dosyalari
+204|Bilinmeyen dosyalar
+205|Gecmis arama bilgilerini sil
+206|Gelismis arama
+208|Basit arama
+210|Yuklenilmis
+211|Menu
+212|Baglan
+213|Baglantiyi Kes
+214|Secenekler
+217|Arama alani
+230|Klasorler
+231|Klasorler
+232|Arama
+233|Arama
+234|Transfer
+235|Transfer
+236|Web
+237|Internet browseri
+238|Ekran
+239|Multimedya dosyalari yurutme penceresi
+240|Sohbet
+241|Sohbet
+242|Tam ekran
+243|Tam ekran modu
+244|Kucult
+245|Goruntu boyutunu azalt
+246|Buyult
+247|Goruntu boyutunu cogalt
+248|Orjinal boyut
+249|En uygun ekran
+250|Kanaldan cik
+251|Listeyi yenile
+252|Kanala gir
+253|Kullanici ile sohbet et (normal)
+254|Kullanici dosyalarini goster
+255|Sunucuda bir kanal ac
+256|Secenekler kismindan bazi ayarlari degistirebilirsiniz.
+257|Klasorlerde ara
+258|Klasorler
+259|Gosterilmis dosyalari sakla
+260|Detaylar
+261|Gosterilmis detaylari sakla
+262|Paylas/Paylasma
+263|Dosya sil
+264|Playlist'e dosya ekle
+265|Sunucuya tekrar baglan
+266|Dosya
+267|Dosya gonder
+268|Gelen dosyalari kabul et
+269|Transferleri goster
+270|Transferleri sakla
+271|Duzenle
+272|Hepsini sec
+273|Kopyala
+274|Yazi editorune ac
+275|Gizlilik
+276|Uzakta modune gec
+277|Kullaniciyi engelle
+278|Hepsini iptal et
+279|Sunucuya baglaniyor, lutfen bekleyin...
+280|Baglanti kuruldu
+281|Baglanti saglanamadi
+282|Uzaktaki baglanti kapatildi
+283|Ac
+284|Ozinleme uret
+285|Dosyayi kopyala
+286|Ses
+289|Yuklemeyi iptal et
+290|Mevcut yuklemeyi iptal eder
+291|Dur / Devam
+292|Dur / Devam Mevcut dosya icin
+293|Cal / izle
+294|Cal / izle Mevcut dosya icin
+295|Bulundugu klasoru ac
+296|Yuklediginiz dosyanin bulundugu klasoru acar
+297|Iptal edilmis ve yuklenmisleri kaldir
+298|Iptal edilmis ve yuklenmisleri listeden siler
+299|Playlist'e dosya ekle
+300|Playlist'e klasor ekle
+301|Secili dosyalari sil
+302|Playlisti sil
+303|Playlist ac/kaydet
+305|Playlist ac
+306|Playlist kaydet
+307|Hepsini sil
+308|Secilmisleri sil
+309|Tur
+310|Alfa turlarini yukari cikar
+311|Alfa turlarini asagi indir
+312|Listeyi karistir
+313|Dosyaya atla
+314|Karistir
+315|Yeni arama
+316|Yeni arama
+317|Yeni arama yap
+318|Yukleme
+319|Secilmis dosyalari yukle
+321|Arama alaninda gosterilenleri sakla
+322|Geri
+323|Ileri
+324|Dur
+325|Yenile
+326|Ilerle
+327|Durdur
+328|Onceki
+329|Sonraki
+330|Ses
+331|Playlist gosterisi
+332|Playlisti kapat
+335|Playlist
+336|Detaylari sakla
+337|Gonderilmis
+338|Detayli dosyalar
+339|Dosyalari paylasmayi onayla, dosyalari paylasmayi onaylama
+340|Kuyruk
+341|Deneme
+342|Kisisel Detaylar
+348|Transfer
+350|Sohbet
+351|Ozel mesajlar
+352|Bagli degil
+353|Dosya gonderiliyor
+354|Ozel mesajlar
+355|Dosyalari paylasma
+356|Otomatik-Tarama
+357|Manuel Ayarlar
+358|Yukleme klasoru
+359|Genel
+360|Ag
+361|Baglanan kisi:
+363|Dosya
+364|Dosya
+365|Baglanti dustu lutfen yeniden deneyin
+366|Son gorulen
+367|Var olan
+368|Baglaniyor
+369|Baglaniyor
+372|Sunucuya baglandi
+373|Baglanamadi
+375|Baglantida hata olustu, baglanti engellendi
+376|Dizin bulunamadi
+377|Tarama tamamlandi
+378|Bulunan rehber
+379|Dosya Araniyor, Lutfen Bekleyin...
+380|Arama sonlandirildi.Tekrar arama yapabilirsiniz.
+383|Bundan once yaptiginiz arama bilgileri silinsinmi?
+384|Gecmis arama bilgilerini silme
+390|Oturum acildiginde chat partisine katilinip bir veya daha fazla dosya gonderilsinmi?
+391|Oturumda giden dosya
+398|Tum yuklemeler iptal edilsinmi?
+399|Yukleme iptal
+407|Bulunan dizinler
+408|Baglanti protokolunde sorun var tekrar baglaniniz
+409|Baglanti protolunde sorun var baglanti zaman asimina ugradi
+410|Baglanti kesildi
+411|Baglanti kesildi, sinir asildi
+412|Kullanici listesi hazirlaniyor...
+413|Baslik degistir
+414|Paylasilan
+415|Mevcut dosya var
+416|Kanaldan ayrildi
+417|Baglanti kesildi zaman asimi
+418|Kanalda yazma yasaklisiniz.Yazdiklarinizi sadece yoneticiler goruyor
+419|Resimler & Filimler
+420|Yuklenen
+421|Kanal sahibi
+422|Kanal 
+423|Paylasim boyutu
+424|Toplam boyut
+425|Kuyruk
+426|Bulunamadi 
+428|Kanal ismi
+429|Yanlis isim
+430|Lutfen en az 4 karakter kullanin
+431|Ev sahibi
+432|Sizin kanaliniz kapatilsinmi?
+433|Kullanicilar kanaldan duser
+434|Kanalla baglanti koparildi
+435|Serbest bosluk
+436|Kb/saniye
+437|Kanal sahibi olarak kanali adlandirmak istermisiniz
+438|DOSYA PAYLASIMDA DEGIL
+439|Dosyanin silinmesini istiyormusunuz.
+440|Uyari, dosya silinmeye calisiliyor
+441|Arsivden dosya sil
+442|Arsivden dosyalari sil
+443|Gonder
+444|Dosya transferi ilerlemesi
+445|Transferlere onceden bakis
+446|Kopyalama talebi
+447|Secilmis dosyalari sizin kutuphanenize tasiyin
+448|Kutuphaneye onceden bakis
+449|Dosya kopyalama
+450|Multimedya tiplerini filitrele
+451|Media filtresi';
+452|Ares goster
+453|Ares sakla
+454|aranan dosya
+455|aranan dosya
+456|Benim paylasilan klasorum
+458|Lutfen bekleyin...
+459|*DOSYLARIN HEPSI SIZIN KLASORUNUZUN ICINE ALINDI*
+460|*DOSYALARIN HEPSI YUKLENDI*
+461|Surec
+462|Durduruldu
+464|Yavas duraklama
+465|Iptal
+466|Iptal edildi
+467|Yukleniyor
+468|Bos
+469|Araniyor
+470|Baglaniyor
+471|UYARI
+472|Araniyor
+473|Kullanici
+474|Baglanti kullanicilari uzaklastirdi
+475|Sohbet - Ev sahibi baglantilari uzaklastirdi
+476|Sen
+477|Kullanici engellendi! (Programi yeniden baslatana kadar size yazi yazamayacak)
+478| Arama yaptigi kelime:
+479|sonuc bulunamadi
+480|Karisik oncelik
+481|Sunucu kuyrugu
+482|En yuksek
+483|Yuksek
+484|Normal
+485|Alcak
+486|En alcak
+487|Yazdiklarini gor / gorme
+488|Kanalda yazmasini yasakla
+489|Kanalda yazma yasagini kaldir
+490|Engelle
+491|Engelleme kaldir
+492|Kanaldan at
+494|Bolum ayarlari
+495|Ac / Oynat
+496|Ares Disinda ac...
+497|Bulundugu klasoru ac
+498|Metin dosyalari icinde ara:
+499|Bulunmayan daha cok sonuc ara:
+500|Hepsini durdur / Hepsine devam
+501|Playlisti gor
+502|Kapat
+504|Kullanici engelle
+505|Dosyalari paylasma
+506|En uygun ekran
+508|Iptal
+509|Hepsini sec
+510|Kopyala
+511|Editorde ac
+512|Arama
+513|Tarih
+514|Sizin yukledikleriniz
+515|Sizin yuklediginiz dosyalar
+516|Sizden yuklenenler
+517|Sizden yuklenen dosyalar
+518|Filtre
+519|Duzenli gorunus
+520|Gercek gorunus
+521|Gercek gorunus
+522|Duzenli gorunus
+523|Kullanici
+524|Baslik
+525|Artist
+526|Kalite
+527|Yil
+528|Versiyon
+529|Dosya tipi
+530|Renkler
+531|Yazar
+532|Klasor
+533|Uzunluk
+534|Dosya
+535|Dosya
+536|Piksel
+537|Dosya tipi
+538|Dil
+539|Kategori
+540|Yukle(nen)
+541|Klasorlerde arama
+542|Gonderilen
+543|Gonderilenler
+544|Yuklenenler
+545|Album
+546|Sirket
+547|Tarih
+548|Talep buyuklugu
+549|Dosya buyuklugu
+550|Boyut
+551|Format
+552|Dosya ismi
+553|URL
+554|Kanal ismi
+555|Kanal basligi
+556|Hosgeldiniz 
+557| kanalina
+558|Hiz
+559|Album grubu
+560|Yazar grubu
+561|Artist grubu
+562|Kategori grubu
+563|Sirket grubu
+564|Tarz grubu
+565|Hepsi
+566|Ses
+567|Film
+568|Resim
+569|Dokuman
+570|Diger
+571|Yazilim
+581|Paylasilmis gercek klasorler
+582|Paylasilmis klasorler
+583|Paylasilmis dosyalar
+584|Sizin kutuphaneniz
+585|Film dosyalari icin arama
+586|Ses dosyalari icin arama
+587|Sunucuda Arama
+588|Resim dosyalari icin arama
+589|Dokumanlar icin arama
+590|Yazilim icin arama
+594|Tip
+595|Dosya
+596|Gonderilenler
+597|Durum
+598|Dosya tipleri
+599|Yer
+600|Talep
+601|Bugn
+602|Toplam
+603|Tarz
+604|Kalan sure
+605|Ilerleme
+606|Toplam transfer hizi
+607|Yorumlar
+608|Tahmini kalan zaman
+609|Ses gonder
+610|Ses yukle
+611|Kaynak sayisi
+612|Kaynak
+613|Kaynak
+614|Band genisligi
+615|Bilinmeyen
+616|Bilinmeyen
+617|nin
+618|Gonderiliyor
+630|Baglanti kesildi (Oldunuz)
+631|de
+632|ip
+633|Sizin kanalda yazmaniz engellendi
+634|Kanalda yazmaniz engellendi
+635|Sizin kanalda yazma engeliniz kapatildi
+636|Kanalda yazma engeliniz kapatildi
+637|Mod yuklu
+638|Cizgi
+639|Bir kullaniciyi yasaklama
+640|Bulunamadi
+641|IP Araligini yasaklama
+642|IP Araligini yasaklama
+643|Yasaklama silindi
+644|Belirttiginiz kullanici yasaklanamadi
+645|Yasakli degil
+646|Yasakli listesi silindi
+648|Yasakli
+649|Aralik
+650|Aralik yasakla
+651|Kullanicilari yasakla
+653|Istatistik
+654|Sunucu adresi
+655|Sunucu baslatilma zamani
+656|Hizmet zamani
+657|Kabul edilmis baglantilar
+658|Alinan mesajlar
+659|En fazla kullanici sayisi
+660|Su anki kullanici sayisi
+661|Hepsini yasakla
+662|Mesaj gondermis
+663|Fazla mesaj atan kullaniciyi at
+664|Kullanici atildi
+665|Size ait olan bir kanala girdiniz
+666|Kanal komutlari listesini
+667|yazarak gorebilirsiniz
+668|Kanal basligini belirler
+669|Kanala mesaj gonderir
+670|Kanal istatistigini gosterir
+671|Kanalda yazma yasagi getirir
+672|Kanalda yazma yasagini kaldirir
+673|Kullanicinin baglantisini keser
+674|Bir kullaniciyi yasaklar
+675|Tumden kullaniciyi yasaklar
+676|IP Araligini yasaklar
+677|Yasaklanmis IP araligini siler
+678|Yasakli listesini temizler
+679|Hosgeldiniz metnini gosterir
+680|Hosgeldiniz metnini editorde acar
+681|Kayitli hosgeldiniz metin dosyasini acar
+682|Yasakli listesini gosterir
+683|Ekrani sil
+684|Kanal modlarini gosterir
+685|Bu herhangi bir ornek dosya
+686|Metni duzenle, kayit icin emir kullan
+687|Benim chat odama hosgeldiniz! 
+688|Bu kanalda Eglenceyiz!
+689|Baglantidan
+690|Aralik icinde yasakla
+691|Kayit yok
+692|Baglanti rededildi (Kullanici atildi)
+693|Yazdiklarini gor
+694|Yazdiklarini gorme
+695|Kullanicilarin yazdiklarini gorme
+696|Tum kullanicilarin yazdiklarini gorme
+697|Yazdiklarini gorme
+698|Kanalda yazma yasakli
+699|Dil
+700|Kanallar
+701|Gonderilmis
+703|Sunucudaki kanallar taraniyor, lutfen bekleyiniz...
+704|Bos liste, lutfen sonra birdaha deneyin...
+705|Taraniyor
+708|Paylasilan
+709|Dosya
+710|Baglanan kullanici
+711|Arama alanindakileri sakla
+712|Bos disk alani
+713|Browse icinde ilerleme:
+714|Tarama tamamlandi:
+715|Dusuk
+716|Orta
+717|Iy
+718|Cok iyi
+719|Su anda klasorleriniz Ares tarafindan taraniyor.\nl\nlAres programini her calistirdiginizda bu islem otomatik olarak yapilacaktir,\nlBilgisayarinizda bulunan dosyalar taranacaktir.\nlAres bilgisayariniza herhangi bir casus program yerlestirmemektedir.\nlAres arsivinizi sizin isteginiz disinda baska biriyle paylasmayacaktir.\nl\nlAres bilgisayarinizin guvenligini on planda tutmaktadir.\nlAres bilgisayarinizda sizin isteginiz disinda bir islem yapmayacaktir.\nlAres aramalari kendi sunucusu uzerinde yapmaktadir,\nlAres sitesini ziyaret ederek programinizi guncelleyebilirsiniz.\nlAres yeni nesil paylasim programidir.\nl\nlAres P2P sistemini kullanmaktadir.Soru ve sorunlariniz icin bize ulasabilirsiniz.\nl\nlAres ile paylastiginiz dosyalar sizin sorumlulugunuzdadir.\nl\nlAres web sitesi : http://www.aresgalaxy.org\nl\nlAres Turkiye : http://www.ares.gen.ms\nl\nlTurkce ceviri : Eren KOVANCI\nlWeb sitesi : www.thb.gen.ms\nlMail : eren at gawab dot com
+720|Arsiv kayitlarinda araniyor
+721|Arsiv de araniyor
+724|Gonderim iptal
+725|Diger
+726|Ses
+727|Yazilim
+728|Film
+729|Dokuman
+730|Resim
+731|Baslat
+732|Mevcut kaynaklar
+733|Gercek ilerleme
+734|Toplam ilerleme
+735|Aralikta tekrar dene
+736|Son talep
+738|Son
+741|Farkli kaydet
+742|En az
+743|En cok
+744|Denk
+745|Orta
+746|Uzun
+747|Kisa
+748|Kucuk
+749|Buyuk
+750|Bolgesel duraklama
+751|Ayni anda yapilacak yukleme
+752|Bilinmeyen emir
+753|Proxy
+755|Proxy kullanma
+756|Sock4 proxy kullan
+757|Sock5 proxy kullan
+758|Proxy sunucu adresi
+759|Kullanici adi
+760|Sifre
+761|Uzak kullanicilarin sizin kutuphanelerinizi gozden gecirmesi
+762|Benim kutuphaneme bakmalarina izin ver
+763|Ares bilgisayarinizdaki guvenlik duvarlarini inceledi. Guvenlik duvarlari aresin calismasini ve sunucuya baglanmasi engelleyebilir. Bunlari ayarlardan kapatabilirsiniz. Guvenlik duvarlari asilsinmi? 
+764|Guvenlik duvari ayarlari
+765|Ares bilgisayarinizda guvenlik duvari tespit etti. Bunlar sohbet odalarina baglanmanizi engelleyebilir. Guvenlik duvarlari asilsinmi? 
+766|Kullanici ile sohbet et (pencerede)
+767|Klasor gonder
+768|Bagli degil
+769|Kanal ara
+770|Slot bagisla
+771|Browserda hata, listede olmayan kullanici
+772|Paylasim tipleri
+773|Siyah arkaplan
+775|Linki yukle
+776|Karisik yukleme linkleri
+777|Linki goster
+778|Bozuk dosya
+779|Dosya girisinde hata
+785|Browser bagisi
+787|Yuklendi
+788|Son yuklemeler
+789|Benim duzenli dosyalarima bakmalarina izin ver
+790|Klasor ac
+791|Dosyalari otomatik kabul et
+792|Kullanicin IP adresini gosterir
+793|Cevrimdisi kullanici bulmaya yarar
+794|Kullanici hakkinda cesitli bilgiler gosterir
+795|Link Gosterimi
+796|Ed2k linkleri eleal
+797|Miktanis baglanti kullan
+799|Kontrol Paneli
+800|Kontrol Paneli
+801|Proxy sunucusuna baglan
+802|Test ediliyor...
+803|Test edilemedi...
+804|Gecen test...
+805|Proxy Sicramasi
+806|Suanki kullanim
+807|Liste ac
+808|Liste kaydet
+809|Coklu proxy sunucusu kullan
+810|Yeni Sayfa
+811|Git
+812|Giris/Notlar
+813|Favorites
+814|Add to Favorites
+815|Last
+816|Search for Other files
+817|Disconnect source
+818|You are about to open a potentially dangerous file type. The file may contain a virus or trojan.\\nlAre you sure you want to continue?
+819|Busy
+820|Chatroom
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+
+
+
+
+

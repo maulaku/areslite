@@ -1,0 +1,602 @@
+﻿# Traducción al Castellano (Latinoamérica)
+# Sobre la traducción original de: Luis Carlos COlunga y Realdark69  = ) (v1.3b)
+# Correcciones y adiciones: jugaor at peru dot com
+#
+# Version 1.96
+#
+
+FONT NAME="Tahoma" SIZE="8"
+
+
+108|Filtrar archivos ejecutables y potencialmente peligrosos
+110|Puerto del canal del usuario:
+113|Muestra el horario del evento del chat
+114|Cuando dejas tu PC, puedes activar el estado "Ausente". Ares envía a los usuarios de chat privado un mensaje de ausencia. Puedes configurar los detalles aquí
+115|Bloquea todos los mensajes privados
+116|Personaliza tu estado "Ausente" para mensajes privados
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Aceptar las conexiones entrantes en el puerto:
+127|envío(s) permitido(s) al mismo tiempo
+128|envío(s) por usuario (0=sin límite)
+129|Ancho de banda de envío (kb/s 0=sin límite)
+130|Aumentar cuando el sistema esté sin uso
+131|Ancho de banda de descarga (kb/s 0=sin límite)
+133|Las descargas son guardadas en la carpeta:
+134|Cambiar de carpeta
+135|Restaurar la carpeta por defecto
+136|Presiona 'Iniciar' para explorar tus discos
+137|Iniciar
+138|Detener
+139|Seleccionar todo
+140|Deselecionar todos
+141|Indica la(s) carpeta(s) que quieras compartir.
+142|Leyendas
+143|Esta carpeta no está compartida en su totalidad, pero se comparte las subcarpetas indicadas.
+144|La carpeta está compartida, todos los archivos de esta carpeta están compartidos.
+146|Mi PC está detrás de un cortafuegos y no puede aceptar conexiones entrantes
+149|Iniciar Ares cuando inicie mi PC
+150|Autoconectarse a la red cuando Ares inicie
+151|Iniciar Ares minimizado
+152|Cerrar Ares cuando al darle clic al botón de cerrar
+153|Esta pantalla permite seleccionar qué carpeta quiere compartir, haciéndola disponible para los usuarios de la comunidad. Los usuarios remotos no pueden modificar el contenido de estas carpetas, solo descargarlo.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Mostrar mi estado en la barra de título de la ventana principal
+161|Muestra el porcentaje de la descarga
+162|No mostrar ventanas informativas en descargas
+163|Pausar video al moverse entre secciones
+164|Pedir confirmación al cancelar descargas
+193|Usuario:
+194|Velocidad:
+195|Aceptar
+196|Cancelar
+197|Aplicar
+199|Cerrar
+200|Búsqueda de texto
+201|Archivos de Audio
+202|Archivos de Video
+203|Archivos de Lista de Reproducción
+204|Cualquier archivo
+205|Limpiar historial de búsqueda
+206|Búsqueda avanzada
+208|Búsqueda simple
+210|Encontrados
+211|Principal
+212|Conectar
+213|Desconectar
+214|Preferencias
+217|Campo de búsqueda
+230|Biblioteca
+231|Comparte y organiza tus archivos
+232|Búsqueda
+233|Busca y encuentra archivos en la red Ares
+234|Descargas
+235|Controla tus envíos y descargas
+236|Navegador Web
+237|Navega en Internet
+238|Reproductor
+239|Reproduce y previsualiza tus archivos multimedia
+240|Chat
+241|Conoce amigos en el chat de Ares
+242|Pantalla completa
+243|Visualizar en modo pantalla completa
+244|Reducir tamaño
+245|Reduce el tamaño del video
+246|Aumentar tamaño
+247|Aumenta el tamaño del video
+248|Tamaño original
+249|Ajusta el video a la pantalla o a su tamaño original
+250|Salir del canal
+251|Actualizar lista
+252|Unirse al canal
+253|Enviar mensaje privado al usuario
+254|Navegar en la lista de archivos del usuario
+255|Ser anfitrión de un canal
+256|Opciones para compartir - haz clic aquí para agregar archivos compartidos
+257|Reexplorar tu Biblioteca
+258|Carpetas
+259|Mostrar / Ocultar carpetas
+260|Detalles
+261|Mostrar / Ocultar detalles
+262|Compartir / Restringir
+263|Borrar archivo
+264|Agregar archivo a la Lista de Reproducción
+265|Reconectar al usuario
+266|Archivo
+267|Enviar archivo
+268|Aceptar archivos entrantes
+269|Mostrar descargas
+270|Ocultar descargas
+271|Editar
+272|Seleccionar todos
+273|Copiar
+274|Abrir en Bloc de notas
+275|Privacidad
+276|Poner estado "ausente"
+277|Bloquear usuario
+278|Cancelar todos
+279|Conectando, por favor espera...
+280|Conexión establecida
+281|Conexión cerrada por la red
+282|Usuario remoto inalcanzable
+283|Abrir
+284|Generando vista previa
+285|Copiando archivo
+286|Silenciar
+289|Cancelar
+290|Cancelar el archivo seleccionado
+291|Pausar / Reanudar
+292|Pausar / Reanudar archivo seleccionado
+293|Abrir / Vista previa
+294|Abrir / Vista previa de archivo seleccionado
+295|Abrir carpeta de descargas
+296|Localizar el archivo seleccionado / Abrir carpeta de descargas
+297|Limpiar erróneos y completos
+298|Limpiar completos / cancelados
+299|Agregar archivo a la Lista de Reproducción
+300|Agregar carpeta a la Lista de Reproducción
+301|Remover archivo seleccionado
+302|Limpiar Lista de Reproducción
+303|Abrir / Guardar Lista de Reproducción
+305|Abrir Lista de Reproducción
+306|Guardar Lista de Reproducción
+307|Remover todos
+308|Remover seleccionados
+309|Ordenar
+310|Alfabético
+311|Alfabético inverso
+312|Lista aleatoria
+313|Ir al archivo
+314|Aleatorio
+315|Repetir
+316|Nueva búsqueda
+317|Hacer una nueva búsqueda
+318|Descargar
+319|Descargar el archivo seleccionado
+321|Mostrar / Esconder campo de búsqueda
+322|Atrás
+323|Adelante
+324|Detener
+325|Actualizar
+326|Reproducir
+327|Pausar
+328|Anterior
+329|Siguiente
+330|Volumen
+331|Mostrar Lista de Reproducción
+332|Cerrar Lista de Reproducción
+335|Lista de Reproducción
+336|Ocultar detalles
+337|Compartido
+338|Ocultar carpetas
+339|Selecciona para compartir, deselecciona para no compartir
+340|en cola
+341|Intenta también
+342|Detalles personales
+348|Descarga
+350|Chat
+351|Mensajes privados
+352|No conectado
+353|Envío de archivo
+354|Mensajes privados
+355|Fileshare
+356|Autoexplorar
+357|Configuración manual
+358|Carpeta de descargas
+359|General
+360|Red
+361|Usuario:
+363|Archivos
+364|archivos
+365|Imposible conectarse: intenta después...
+366|Última vez visto
+367|Disponibilidad
+368|Conectando
+369|Conectando
+372|Conectando, iniciando protocolo...
+373|Navegación fallida
+375|Error de protocolo, bloqueando conexión
+376|Ningún directorio encontrado
+377|Exploración completa
+378|Directorio encontrado
+379|Realizando búsqueda, por favor espera...
+380|Búsqueda terminada sin resultados
+381|¿Quieres escoger tu nombre de usuario ahora?
+383|¿Estás seguro que deseas borrar el historial de búsqueda?
+384|Borrar Historial de búsqueda
+390|El usuario con el que estás chateando desea enviarte uno o más archivos, ¿aceptas la transferencia?
+391|Recibiendo archivo
+398|¿Estás seguro que deseas cancelar la descarga?
+399|Cancelar descarga
+407|Directorios encontrados
+408|Error de protocolo, conexión reiniciada por usuario
+409|Error de protocolo, el usuario ha excedido el tiempo de respuesta
+410|Desconectado
+411|Desconectado, desbordamiento del buffer
+412|Ingresando, obteniendo lista de usuarios...
+413|Asunto cambiado
+414|, compartiendo
+415|archivos, ha entrado a la sala
+416|ha salido...
+417|Desconectado, excedido el tiempo de respuesta
+418|Te censuran
+419|Imágenes & Videos
+420|Descargado
+421|Canal anfitrión
+422|Canal
+423|Tamaño de archivos compartidos
+424|Tamaño total
+425|turno en cola
+426|Turno en cola
+428|Nombre de canal
+429|Nombre incorrecto
+430|Por favor elige uno de por lo menos 4 caracteres
+431|Anfitrión
+432|¿Estás seguro de que quieres cerrar el canal?
+433|Los usuarios del canal serán desconectados
+434|Conectando al canal remoto
+435|Canales de envío disponibles
+436|kb/seg
+437|Ya estás en un canal de chat llamado
+438|ARCHIVO NO COMPARTIDO
+439|El archivo será borrado definitivamente
+440|CUIDADO, archivo borrado del disco duro
+441|Borrar archivo
+442|Borrar archivos
+443|Transmitido
+444|Transferencia en proceso
+445|Por favor ve a la sección de transferencias
+446|Petición duplicada
+447|El archivo seleccionado ya está en tu Biblioteca
+448|Por favor ve a la Biblioteca
+449|Archivo duplicado
+450|Este tipo de archivo está filtrado
+451|Medios filtrados;
+452|Ocultar
+453|Abrir
+454|resultados para
+455|resultados para
+456|mi Carpeta Compartida
+458|Por favor espera...
+459|*Este archivo ya se encuentra en tu Biblioteca*
+460|*YA ESTÁS DESCARGANDO ESTE ARCHIVO*
+461|Procesando
+462|Pausado
+464|En cola remota
+465|Cancelado
+466|Completado
+467|Descargando
+468|Inactivo
+469|Buscando
+470|Conectando
+471|CUIDADO
+472|Buscando
+473|Usuarios
+474|Conectando a usuario remoto
+475|Chat - Conectando a usuario remoto
+476|Tu
+477|¡Has sido rechazado! (Ingresarás de nuevo cuando reinicies el programa)
+478|Buscando:
+479|Todo
+480|Prioridad de Hash
+481|Cola local
+482|Altísima
+483|Alta
+484|Normal
+485|Baja
+486|Bajísima
+487|Ignorar / Aceptar
+488|Censurar
+489|Quitar censura
+490|Rechazar
+491|Aceptar
+492|Matar
+494|Guardar compartidos
+495|Abrir / Reproducir
+496|Abrir con...
+497|Abrir carpeta de descargas
+498|Ingresa tu búsqueda:
+499|Buscar más del mismo:
+500|Pausar todos / Reanudar todos
+501|Ver Lista de Reproducción
+502|Salir
+504|Bloquear usuario
+505|Restringir archivo
+506|Ajustar a la pantalla
+508|Detener
+509|Seleccionar todos
+510|Copiar al portapapeles
+511|Abrir en Bloc de notas
+512|Buscar ahora
+513|Fecha
+514|Mostrar cola
+515|Observar usuarios en cola
+516|Mostrar envíos
+517|Ver envíos
+518|Filtro
+519|Ver Normal
+520|Ver Extendido
+521|Muestra en la Biblioteca la Vista extendida
+522|Muestra en la Biblioteca la Vista normal
+523|Usuario
+524|Título
+525|Artista
+526|Calidad / Bitrate
+527|Año
+528|Versión
+529|Tipo
+530|Colores
+531|Autor
+532|Carpeta
+533|Duración
+534|recibidos
+535|enviados
+536|Resolución
+537|Tipo de archivo
+538|Lenguaje
+539|Categoría
+540|Descarga
+541|Exploración en progreso
+542|Envíos
+543|Envíos
+544|Descargas
+545|Álbum
+546|Compañía
+547|Fecha
+548|Tamaño de petición
+549|Tamaño de archivo
+550|Tamaño
+551|Formato
+552|Nombre del archivo
+553|URL
+554|Nombre
+555|Asunto
+556|Bienvenido al
+557| canal
+558|Velocidad
+559|Grupo por Álbum
+560|Grupo por Autor
+561|Grupo por Artista
+562|Grupo por Categoría
+563|Grupo por Compañía
+564|Grupo por Género
+565|Todo
+566|Audio
+567|Video
+568|Imagen
+569|Documentos
+570|Otros
+571|Software
+581|Carpetas virtuales compartidas
+582|Carpetas compartidas
+583|Archivos compartidos
+584|Tu Biblioteca
+585|Buscar archivos de video
+586|Buscar archivos de audio
+587|Buscar archivos similares
+588|Buscar imágenes
+589|Buscar documentos
+590|Buscar software
+594|Tipo
+595|Archivo
+596|Enviado
+597|Estado
+598|Tipo de archivo
+599|Ubicación
+600|Petición
+601|hoy
+602|total
+603|Género
+604|Tiempo restante
+605|Progreso
+606|Velocidad total de transferencia
+607|Comentarios
+608|Tiempo estimado restante
+609|Volúmen enviado
+610|Volúmen descargado
+611|Número de fuentes
+612|fuentes
+613|fuente
+614|Ancho de banda
+615|Desconocido
+616|desconocido
+617|de
+618|Enviando
+630|Desconectado (cancelado por usuario)
+631|Prendido
+632|de
+633|Has sido bloqueado
+634|ha sido bloqueado
+635|Has sido desbloqueado
+636|ha sido desbloqueado
+637|Mensaje de bienvenida iniciado
+638|líneas
+639|Rechazo fallido, usuario
+640|no encontrado
+641|Rechazar Grupo
+642|Aceptar Grupo
+643|aceptado
+644|Error de supresión de usuarios rechazados, usuario
+645|no rechazado
+646|Lista de usuarios rechazados eliminada
+648|rechazado
+649|Grupo
+650|grupos rechazados
+651|usuarios rechazados
+653|: estadísticas
+654|Dirección del servidor
+655|Servidor iniciado en
+656|Tiempo de estar activo
+657|Conexiones Aceptadas
+658|Mensajes Recibidos
+659|Cuenta máxima de usuarios
+660|Cuenta actual de usuarios
+661|Ya esta rechazado
+662|mensajes enviados
+663|usuarios floodeando desconectados
+664|usuarios expulsados
+665|Ya eres anfitrión de un canal
+666|tipo
+667|Lista de comandos
+668|Cambios en el asunto del canal
+669|Enviar un emoticon al canal
+670|Muestra las características del canal
+671|Bloquear usuario
+672|Desbloquear usuario
+673|Usuario desconectado
+674|Usuario rechazado
+675|Aceptar usuario
+676|Rechazar rango IP
+677|Aceptar rango IP
+678|Limpiar lista de rechazados
+679|Ver el texto de bienvenida
+680|Abrir mensaje de bienvenida
+681|Iniciar mensaje de bienvenida
+682|Mostrar lista de rechazados
+683|Limpiar pantalla
+684|Mostrar Comandos
+685|Este es un ejemplo de un archivo de bienvenida
+686|editar texto, grabarlo y usar el comando  / loadmotd
+687|Bienvenido a mi sala de chat!
+688|Diviertete!
+689|Conexión de
+690|en un rango rechazado
+691|No ingresado
+692|Conexión no aceptada (usuario rechazado)
+693|no ignorado
+694|No se puede ignorar
+695|demasiados usuarios ignorados
+696|ya estaba ignorado
+697|ignorado
+698|censurado
+699|Idioma:
+700|Canales
+701|Compartido
+703|Solicitando lista de canales, por favor espera...
+704|Lista vacía, por favor intenta después...
+705|Explorando
+708|Compartido
+709|archivos
+710|Nombre de usuario:
+711|Ocultar campo de búsqueda
+712|Espacio disponible en disco duro
+713|Exploración en progreso:
+714|Exploración completa:
+715|Malo
+716|Regular
+717|Bueno
+718|Muy bueno
+719|Ares está explorando tu(s) carpeta(s) compartida(s).\nl\nlCuando Ares encuentra nuevos archivos en la(s) carpeta(s) compartida(s),\nldebe generar un identificador único Hash para cada archivo nuevo.\nlEsta operación puede tomar cierto tiempo, dependiendo del tamaño de los\nlarchivos que se registran y la velocidad de tu PC.\nl\nlPuedes ver qué archivo está siendo registrado arriba.\nlTambién puedes modificar la prioridad del registro en Ares.\nlTen cuidado al elegir la prioridad más alta,\nlya que consume más recursos de tu PC, pero registra\nltus archivos más rápido.\nl\nlTe agradecemos y nos sentimos felices de que Ares sea tu programa de Intercambio P2P.\nl\nlSugerencias y contacto: info@softgap.com
+720|Registro de archivos en progreso
+721|Búsqueda de archivos en progreso
+724|Cancelar envío
+725|Otros
+726|Audio
+727|Software
+728|Video
+729|Documentos
+730|Imagen
+731|Iniciado
+732|Fuentes disponibles
+733|Progreso actual
+734|Pruebas totales
+735|Intervalo de la recomprobación
+736|Última petición
+738|Expiración
+741|Guardar como
+742|Por lo menos
+743|En el mejor de los casos
+744|Igual a
+745|Aprox.
+746|Mayor que
+747|Menor que
+748|Menor que
+749|Mayor que
+750|Pausado localmente
+751|descargas simultáneas
+752|Comando desconocido
+753|Proxy
+755|No usar proxy
+756|Usar proxy Sock4
+757|Usar proxy Sock5
+758|Dirección del servidor proxy
+759|Nombre de usuario
+760|Contraseña
+761|El usuario remoto está viendo tu Biblioteca
+762|Permitir a otros usuarios ver mi Biblioteca
+763|Ares ha detectado que tienes un cortafuegos en tu PC. Si guardas los ajustes actuales puedes experimentar dificultades con las descarga y retardar las velocidades de transferencia..\nlConfigura tu cortafuegos para permitir tráfico entrante al puerto de datos asignado a Ares.\nl¿Quieres que Ares lo haga por ti?
+764|Configuración de cortafuegos
+765|Ares ha detectado que tienes un cortafuegos en tu PC. Si deseas ingresar a una sala de chat debes permitir conexiones entrantes en el puerto de chat.\nl¿Quieres que Ares lo haga por ti?
+766|Enviar mensaje al usuario
+767|Enviar carpeta
+768|Desconectado
+769|Búsqueda de canal
+770|Abrir canal de envío
+771|Exploración fallida, lista no disponible
+772|Tipos de archivos que se pueden compartir
+773|Fondo negro
+775|Descargar HashLink
+776|Inserta el Hashlink aquí
+777|Exportar HashLink
+778|Archivo corrupto
+779|Error en el acceso al archivo
+785|Permitir exploración
+787|Descargado en la carpeta
+788|Descargas recientes
+789|Permitir explorar carpetas regulares
+790|Abrir carpeta
+791|Auto aceptar archivos
+792|Mostrar IP del usuario
+793|Encontrar usuarios desconectados
+794|Estadísticas del usuario
+795|Hashlinks
+796|Manejar enlaces Ed2k
+797|Manejar enlaces Magnet
+799|Panel de Control
+800|Configura y controla Ares
+801|Probar conexión
+802|Probando...
+803|Prueba fallida...
+804|Prueba exitosa...
+805|Multi Proxy
+806|Usando actualmente
+807|Lista de inicio
+808|Guardar lista
+809|Usar varios servidores proxy
+810|Nueva ventana
+811|Ir
+812|Mostrar anuncios de Entrada / Salida
+813|Favoritos
+814|Añadir a Favoritos
+815|Último
+816|Buscar otros archivos
+817|Desconectar fuente
+818|Vas a abrir un archivo potencialmente peligroso. Podría contener un virus o un troyano.\\nl¿Estás seguro que deseas continuar?
+819|Ocupado
+820|Sala de chat
+821|Petición remota
+822|Esperando conexión
+823|Pidiendo
+824|Entrar automáticamente
+825|Conectado
+826|Añadir automáticamente a Favoritos
+827|Convertir Ares en mi cliente torrent predeterminado
+828|Activo
+829|Guardar a disco
+830|Nueva radio
+831|Manejar archivos m3u y pls
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+

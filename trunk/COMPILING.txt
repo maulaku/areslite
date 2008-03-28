@@ -1,0 +1,28 @@
+Requirements:
+
+Compiler/IDE: 
+ Borland Delphi 7  
+ http://www.borland.com
+
+
+Required Libraries:
+ JEDI JVCL 
+ http://prdownloads.sourceforge.net/jvcl/JVCL300CompleteJCL195-Build1848.zip?download
+
+ DSPack   
+ http://www.progdigy.com/modules.php?name=DSPack
+
+ Tnt Delphi UNICODE Controls Project   
+ http://www.tntware.com/delphicontrols/unicode/
+
+
+Additional VCL:
+ ARES_VCLs
+ http://prdownloads.sourceforge.net/aresgalaxy/Ares_VCLs_09272005.zip?download
+
+
+
+
+
+Project's HomePage:  
+ http://aresgalaxy.sourceforge.net
