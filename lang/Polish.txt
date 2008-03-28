@@ -1,0 +1,606 @@
+﻿# Polish translation file for Ares v1.8.9.3004 by JFK
+# Version 1.5 (26 January 2006)
+# Help and suggestions: sopel47 at wp dot pl or gg: 4891530
+# 
+# 
+#
+#
+
+FONT NAME="Tahoma" SIZE="8"
+
+108|Filtruj aplikacje i potencjalnie niebezpieczne typy plikow
+110|Hostuj port kanalu:
+113|Wyswietl date i czas nadejscia wiadomosci na czacie
+114|Gdy cie nie ma, mozesz uaktywnic status nieobecnosci. Ares odpowie na prosbe prytatnego czata automatyczna wiadomoscia. Tutaj mozesz skonfigurowac twoja automatyczna wiadomosc.
+115|Blokuj wszystkie prywatne wiadomosci
+116|Odpowiedz automatyczna wiadomoscia na czacie
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Akceptuj przychodzace polaczenia w porcie:
+127|wysylan na raz
+128|wysylan na uzytkownika     (0=brak limitu)
+129|Limit wysylania (kb/s 0=brak limitu)
+130|Zwieksz podczas bezczynnosci
+131|Limit pobierania (kb/s 0=brak limitu)
+133|Pliki beda zapisywane w folderze:
+134|Zmien folder
+135|Przywroc domyslny folder
+136| Nacisnij 'Start', zeby rozpoczac skanowanie dysku
+137|Start
+138|Stop
+139|Wszystko
+140|Nic
+141|Zaznacz foldery, ktore chcesz udostepniac.
+142|Legenda
+143|Ten folder nie jest udostepniony ale podfoldery sa udostepnione.
+144|Ten folder jest udostepniony, wszystkie pliki w tym folderze sa udostepnione.
+146|Moj komputer jest za firewallem albo nie moge akceptowac przychodzacych polaczen
+149|Uruchom Aresa przy starcie systemu
+150|Podlacz automatycznie do sieci podczas startu Aresa
+151|Uruchom Aresa zminimalizowanego
+152|Zakoncz Aresa gdy klikne na przycisk zamknij (X)
+153|Ten ekran pozwoli ci na wybranie folderow, ktore chcesz udostepniac, co sprawi, ze beda dostepne dla innych uzytkownikow. Inni uzytkownicy nie moga modyfikowac zawartosci tych folderow.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Pokaz status na pasku nazwy
+161|Pokaz licznik procentowy transferu
+162|Blokuj podpowiedzi
+163|Zatrzymaj film gdy poruszasz sie miedzy zakladkami
+164|Pytaj o potwierdzenie anulowania pobierania
+193|Nick:
+194|Szybkosc:
+195|Ok
+196|Anuluj
+197|Zastosuj
+199|Zamknij
+200|Szukaj tekstu
+201|Muzyka
+202|Filmy
+203|Playlisty
+204|Wszystko
+205|Wyczysc liste historii
+206|Zaawansowane szukanie
+208|Proste szukanie
+210|znalezionych
+211|Glowna
+212|Polacz
+213|Rozlacz
+214|Preferencje
+217|Pole wyszukiwania
+230|Biblioteka
+231|Udostepnij i organizuj swoje multimedia
+232|Wyszukiwanie
+233|Szukaj plikow w sieci Aresa
+234|Transfery
+235|Postep pobieran i wysylan
+236|Siec
+237|Przegladaj Internet
+238|Odtwarzacz
+239|Odtwarzaj swoje multimedia
+240|Czat
+241|Poznaj nowych przyjaciol na czacie Aresa
+242|Pelen ekran
+243|Ustaw tryb pelnoekranowy
+244|Mniejszy
+245|Zmniejsz rozmiar filmu
+246|Wiekszy
+247|Zwieksz rozmiar filmu
+248|Oryginalny rozmiar
+249|Dopasuj do ekranu/Ustaw oryginalny rozmiar filmu
+250|Opusc kanal
+251|Odswiez liste
+252|Dolacz do kanalu
+253|Wyslij prywatna wiadomosc do tego uzytkownika
+254|Przegladaj pliki uzytkownika
+255|Hostuj kanal
+256|Ustawienia udostepniania - Kliknij tutaj, zeby udostepnic pliki
+257|Ponow skanowanie biblioteki
+258|Foldery
+259|Pokaz/Ukryj foldery
+260|Szczegoly
+261|Pokaz/Ukryj szczegoly
+262|Udostepnij/Usun udostepnianie
+263|Usun plik
+264|Dodaj plik do playlisty
+265|Polacz ponownie do hosta
+266|Plik
+267|Wyslij plik
+268|Akceptuj przychodzace pliki
+269|Pokaz transfery
+270|Ukryj transfery
+271|Edytuj
+272|Zaznacz wszystko
+273|Kopiuj
+274|Otworz w notatniku
+275|Prywatnosc
+276|Ustaw status na niedostepny
+277|Blokuj tego hosta
+278|Anuluj wszystko
+279|Laczenie z hostem, prosze czekac...
+280|Polacznie ustanowione
+281|Polaczenie zamkniete przez zdalny serwer
+282|Usun nieosiagalne hosty
+283|Ok, otworz to!
+284|Generowanie podgladu
+285|Kopiowanie pliku
+286|Wycisz
+289|Anuluj
+290|Anuluj zaznaczony transfer
+291|Pauza/Wznowienie
+292|Pauza/Wznowienie zaznaczonego pobierania
+293|Odtwarzanie/Podglad
+294|Odtwarzanie/Podglad zaznaczonego pliku
+295|Zlokalizuj plik
+296|Zlokalizuj zaznaczony plik/Otworz folder pobieran
+297|Wyczysc bezczynne
+298|Wyczysc zakonczone/anulowane transfery
+299|Dodaj plik do playlisty
+300|Dodaj folder do playlisty
+301|Usun zaznaczony plik
+302|Wyczysc playliste
+303|Zaladuj/Zapisz playliste
+305|Zaladuj playliste
+306|Zapisz playliste
+307|Usun wszystko
+308|Usun zaznaczone
+309|Sortuj
+310|Od A do Z
+311|Od Z do A
+312|Pomieszaj liste
+313|Skocz do pliku
+314|Pomieszaj
+315|Powtorz
+316|Nowe wyszukiwanie
+317|Przeprowadz nowe wyszukiwanie
+318|Pobierz
+319|Pobierz zaznaczony plik
+321|Pokaz/Ukryj pole wyszukiwania
+322|Wstecz
+323|Do przodu
+324|Stop
+325|Odswiez
+326|Odtwarzaj
+327|Pauza
+328|Poprzedni
+329|Nastepny
+330|Glosnosc
+331|Pokaz playliste
+332|Zamknij playliste
+335|Playlista
+336|Ukryj szczegoly
+337|Udostepnione
+338|Ukryj foldery
+339|Zaznacz, zeby udostepnic plik, odznacz, zeby nie udostepniac tego pliku
+340|w kolejce
+341|Wyprobuj tez
+342|Prywatne szczegoly
+348|Transfer
+350|Czat
+351|Prywatne wiadomosci
+352|Niepodlaczony
+353|Ksiegowanie plikow
+354|Prywatne wiadomosci
+355|Udostepnij plik
+356|Automatyczne skanowanie
+357|Reczna konfiguracja
+358|Folder pobieran
+359|Ogolny
+360|Siec
+361|Polaczony jako
+363|Pliki
+364|Pliki
+365|Nie mozna polaczyc
+366|Ostatnio widziany
+367|Dostepnosc
+368|Laczenie
+369|Laczenie do sieci
+372|Polaczony, potwierdzanie przesylania danych...
+373| Przegladanie nie udalo sie
+375|Blad polacznia, blokowanie polaczenia
+376|Nie znaleziono katalogow.
+377|Skanowanie zakonczone.
+378|Katalog znaleziony.
+379|Wyszukiwanie, prosze czekac...
+380|Wyszukiwanie zakonczone bez rezultatow
+383|Czy jestes pewien, ze chcesz wyczyscic liste historii wyszukiwania?
+384|Wyczysc historie wyszukiwan
+390|Twoj partnej czatowy chce ci wyslac plik lub pliki. Czy chcesz rozpoczac sesje plikow?
+391|Przychodzaca sesja plikow
+398|Czy jestes pewnien, ze chcesz anulowac pobieranie?
+399|Anuluj pobieranie
+407|znaleziono katalogi
+408|Blad polacznia, polaczenie zresetowane przez serwer
+409|Blad polacznia, oczekiwanie na odpowiedz serwera
+410|Rozlaczony
+411|Rozlaczony, przepelnienie buforu
+412|Zalogowany, odbieranie listy uzytkownika...
+413|Temat zmieniony
+414|udostepniania
+415|plikow, polaczyl(a) sie
+416|rozdzielilo sie
+417|Rozlaczony, zbyt dlugi czas polaczenia
+418|Maz zalozony kaganiec
+419|Obrazy i filmy
+420|Pobrano
+421|Hostowany kanal
+422|Kanal
+423|Rozmiar udostepnianych
+424|Calkowity rozmiar
+425|kolejka
+426|Kolejka
+428|Nazwa kanalu:
+429|Zla nazwa
+430|Prosze wybrac nazwe skladajaca sie z przynajmniej 4 znakow
+431|Hostowany
+432|Czy jestes pewien, ze chcesz zamknac kanal?
+433|Uzytkownicy na kanale zostana rozlaczeni.
+434|Laczenie ze zdalnym kanalem
+435|Wolne sloty
+436|Kb/sek
+437|Hostujesz juz kanal
+438|PLIK NIEUDOSTEPNIONY
+439|Nie ma mozliwosci cofniecia
+440|OSTRZEZENIE, usuniecie pliku z dysku
+441|Usun plik
+442|Usun pliki
+443|Przekazany
+444|Transfer pliku juz trwa
+445|Prosze zobaczyc zakladke transferow
+446|Zduplikowana prosba
+447|Zaznazony plik jest juz w twojej bibliotece
+448|Prosze zobaczyc zakladke biblioteki
+449|Zduplikowany plik
+450|Ten typ multimediow jest filtrowany
+451|Filtrowane multimedia';
+452|Ukryj Aresa
+453|Pokaz Aresa
+454|rezultat(ow) do
+455|rezultat(ow) dla
+456|moj udostepniony folder
+458|prosze czekac...
+459|*TEN PLIK JEST JUZ W TWOJEJ BIBLIOTECE*
+460|*POBIERASZ JUZ TEN PLIK*
+461|Przetwarzania
+462|Pauza
+464|Pijawka zapauzowana
+465|Anulowany
+466|Zakonczono
+467|Pobieranie
+468|Bezczynny
+469|Wyszukiwanie
+470|Laczenie
+471|OSTRZEZENIE
+472|Wyszukiwanie
+473|Uzytkownik(ow)
+474|Laczenie ze zdalnym uzytkownikiem
+475|Czat - laczenie ze zdalnym hostem
+476|Ty
+477|zbanowany (ban bedzie zdjety gdy zrestartujesz program)
+478| Wyszukianie
+479|cokolwiek
+480|Priorytet hashu
+481|Kolejka serwera
+482|Najwyzszy
+483|Wysoki
+484|Normalmy
+485|Niski
+486|Najnizszy
+487|Ignoruj/Nie ignoruj
+488|Kaganiec
+489|Zdejmij kaganiec
+490|Ban
+491|Zdejmij bana
+492|Zabij
+494|Ustawienia udostepniania
+495|Otworz/Odtworz
+496|Otworz zewnetrznie
+497|Zlokalizuj plik
+498|Wyszukaj pliki zawierajace tekst:
+499|Znajdz wiecej plikow tego samego
+500|Pauzuj wszystko/Wznow wszystko
+501|Widok playlisty
+502|Zakoncz Aresa
+504|Blokuj uzytkownika
+505|Nie udostepniaj pliku
+506|Dopasuj do ekranu
+508|Stop
+509|Zaznacz wszystko
+510|Kopiuj do schowka
+511|Otworz w notatniku
+512|Start
+513|Data
+514|Pokaz kolejke
+515|Pokaz kto jest w twojej kolejce
+516|Pokaz wysylanie
+517|Zobacz wysylanie
+518|Filtr
+519|Regularny widok
+520|Wirtualny widok
+521|Pokaz biblioteke w wirtualnym widoku
+522|Pokaz biblioteke w regularnym widoku
+523|Uzytkownik
+524|Tytul
+525|Artysta
+526|Jakosc
+527|Rok
+528|Wersja
+529|Typ pliku
+530|Kolory
+531|Autor
+532|Folder
+533|Dlugosc
+534|pobrano
+535|wyslano
+536|Rozdzielczosc
+537|Typ multimedialny
+538|Jezyk
+539|Kategoria
+540|Pobierania
+541|Trwa skanowanie
+542|Wysylanie
+543|Wysylania
+544|Pobierania
+545|Album
+546|Firma
+547|Data
+548|Zadany rozmiar
+549|Rozmiar pliku
+550|Rozmiar
+551|Format
+552|Nazwa pliku
+553|URL
+554|Nazwa
+555|Tytul
+556|Witam na kanale
+557| 
+558|Szybkosc
+559|Uszereguj wedlug albumu
+560|Uszereguj wedlug autora
+561|Uszereguj wedlug artysty
+562|Uszereguj wedlug kategorii
+563|Uszereguj wedlug firmy
+564|Uszereguj wedlug gatunku
+565|Wszystko
+566|Muzyka
+567|Filmy
+568|Obrazy
+569|Dokumenty
+570|Inne
+571|Programy
+581|Udostepnione wirtualne foldery
+582|Udostepnione foldery
+583|Udostepnione pliki
+584|Twoja biblioteka
+585|Szukaj filmow
+586|Szukaj muzyki
+587|Szukaj multimediow
+588|Szukaj obrazow
+589|Szukaj dokumentow
+590|Szukaj programow
+594|Typ
+595|Plik
+596|Wyslane
+597|Status
+598|Typ multimedii
+599|Lokacja
+600|Zadane
+601|dzis
+602|ogolnie
+603|Gatunek
+604|Pozostaly czas
+605|Postep
+606|Calkowita predkosc transferu
+607|Komentarze
+608|Szacowany pozostaly czas
+609|Transmitowana glosnosc
+610|Pobrano
+611|Ilosc zrodel
+612|zrodla
+613|zrodlo
+614|Pasmo
+615|Nieznane
+616|Nieznane
+617|z
+618|Wysylanie
+630|rozlaczony (zabity)
+631|na
+632|z
+633|Zostales zakagancowany
+634|zostal zakagancowany
+635|Zostales odkagancowany
+636|zostal odkagancowany
+637|Motd zaladowany
+638|linie
+639|Ban nie udal sie, uzytkownik
+640|nie znaleziono
+641|Zakres bana
+642|Zakres zdjecia bana
+643|zdjeto bana
+644|Zdjecie bana nie udalo sie, uzytkownik
+645|nie zbanowany
+646|Lista banow wyczyszczona
+648|zbanowany
+649|Zakres
+650|zakres zbanowany
+651|uzytkownicy zbanowani
+653|statystyki
+654|Adres serwera
+655|Serwer wystartowal
+656|Czas
+657|Zaakceptowane polaczenia
+658|Otrzymane wiadomosci
+659|Maksymalna liczba uzytkownikow
+660|Obecna liczba uzytkownikow
+661|Zbanowanych
+662|wyslana wiadomosc
+663|Rozlaczono duza ilosc uzytkownikow
+664|zabici uzytkownicy
+665|Hostujesz teraz pokoj czatu
+666|Wpisz
+667|zeby zabaczyc liste wbudowanych komend
+668|zmienia tytul kanalu
+669|wysyla emotikone do kanalu
+670|pokazuje statystyki kanalu
+671|zakagancuj uzytkownika
+672|odkagancuj uzytkownika
+673|rozlacz uzytkownika
+674|banuj uzytkownika
+675|zdejmin bana z uzytkownika
+676|banuj zakres IP
+677|zdejmij bana z zakresu IP
+678|wyczysc liste banow
+679|zobacz tekst powitalny
+680|otworz plik tekstu powitalnego
+681|zaladuj tekst powitalny z pliku
+682|pokaz liste banow
+683|Czysc ekran
+684|pokazuje komendy
+685|to jest przyklad pliku motd
+686|edytuj tekst, zapisz go i uzyj komendy /loadmotd
+687|Witam na moim czacie
+688|Milej zabawy!
+689|Polaczenie z 
+690|w zbanowanym zakresie
+691|Niezalogowany
+692|Polaczenie odrzucone (zbanowany uzytkownik)
+693|nieignorowany
+694|Nie mozna ignorowac
+695|za duzo ignorowanych uzytkownikow
+696|jest juz ignorowany
+697|ignorowany
+698|zakagancowany
+699|Preferowany jezyk
+700|Kanaly
+701|Udostepniono
+703|Odbieranie listy, prosze czekac...
+704|Pusta lista, prosze sprobowac pozniej
+705|Skanowanie
+708|udostepnia
+709|plikow
+710|Polaczony jako
+711|Ukryj pole wyszukiwania
+712|Dostepna przestrzen
+713|Przegladanie trwa:
+714|Przegladanie zakonczony:
+715|Slaba
+716|Srednia
+717|Dobra
+718|Bardzo dobra
+719|Trwa skanowanie w programie Ares.\nl\nlGdy Ares znajdzie nowe multimedia w twoich udostepnionych folderach, obliczy unikalny dla kazdego nowego pliku  identyfikator Hash.\nlTa operacja moze zajac troche czasu, w zaleznosci od rozmiaru plikow i szybkosci twojego komputera.\nl\nlPowyzej mozesz zobaczyc jakie pliki sa hashowane.\nlMozesz tez zmodyfikowac priorytet hashowania w Aresie.\nlBadz swiadomy tego, ze wybranie wysokiego priorytetu skroci czas obliczania wartosci hashu ale moze tez spowolnic twoj komputer.\nl\nlJestesmy zadowoleni, ze wybrales Aresa jako twoj program P2P.
+720|Trwa kalkulowanie hashu
+721|Trwa wyszukiwanie multimediow 
+724|Anuluj wysylanie
+725|Inne
+726|Muzyka
+727|Programy
+728|Filmy
+729|Dokumenty
+730|Obrazy
+731|Wystartowany
+732|Dostepne zrodla
+733|Aktualny postep
+734|Calkowita ilos prob
+735|Ponow przerwe
+736|Ostatnia prosba
+738|Termin koncowy
+741|Zapisz jako
+742|Przynajmniej
+743|Maksymalnie
+744|Rowny
+745|Okolo
+746|Dluzszy od
+747|Krotszy od
+748|Mniejszy od
+749|Wiekszy od
+750|Lokalnie zapauzowany
+751|pobieran na raz                   (0=brak limitu)
+752|Nieznana komenda
+753|Proxy
+755|Nie uzywaj proxy
+756|Uzywaj proxy Sock4
+757|Uzywaj proxy Sock5
+758|Adres serwera proxy
+759|Nazwa uzytkownika
+760|Haslo
+761|Zdalny uzytkownik przeglada twoja biblioteke
+762|Pozwol na przegladanie mojej biblioteki
+763|Ares wykryl, ze masz wlaczonego firewalla na twoim komputerze. Jesli utrzymasz obecne ustawienia mozesz doswiadczyc trudnosci podczas pobierania i malych predkosci transferow.\nlPowinienes skonfigurowac twojego firewalla tak, aby pozwolil na przychodzace polaczenia w porcie Aresa.\nlCzy chialbys, zeby Ares zrobil to za ciebie?
+764|Ustawienia firewalla
+765|Ares wykryl, ze masz wlaczonego firewalla na twoim komputerze. Jesli chcesz hostowac czata muszisz pozwolic na przychodzace polaczenia w porcie czata.\nlCzy chialbys, zeby Ares zrobil to za ciebie?
+766|Czatuj z tym uzytkownikiem
+767|Wyslij folder
+768|Tryb offline
+769|Wyszukiwanie kanalu
+770|Przyznaj slot wysylania
+771|Przegladanie nie udalo sie, lista niedostepna
+772|Udostepnione typy plikow
+773|Ciemne tlo
+775|Pobierz link Hash
+776|Wstaw link Hash tutaj
+777|Eksportuj link Hash
+778|Zepsuty plik
+779|Blad dostepu do pliku
+785|Przyznaj przegladanie
+787|Data pobrania
+788|Niedawne pobierania
+789|Pozwol na regularne przegladanie folderu
+790|Otworz folder
+791|Automatycznie akceptuj pliki
+792|Pokaz adres IP uzytkownika
+793|Znajdz uzytkownikow w trybie offline
+794|Pokaz statystyki uzytkownikow
+795|Linki Hash
+796|Obsluguj linki Edonkey2000
+797|Obsluguj linki Magnet
+799|Panel sterowania
+800|Skonfiguruj i kontroluj twojego Aresa
+801|Sprawdz polaczenie
+802|Testowanie...
+803|Test zakonczyny niepowodzeniem
+804|Test zakonczony powodzeniem
+805|Lista proxy
+806|Obecnie uzywasz
+807|Zaladuj liste
+808|Zapisz liste
+809|Uzyj kilku serwerow proxy
+810|Nowa zakladaka
+811|Przejdz
+812|Pokaz powiadomienie Polacz/Podziel
+813|Ulubione
+814|Dodaj do ulubionych
+815|Ostatni
+816|Szukaj innych plikow
+817|Odlacz zrodlo
+818|Zamierzasz otworzyc potencjalnie niebezpieczny typ pliku. Plik moze zawierac wirusa lub trojana.\\nlJestes pewien, ze chcesz kontynuowac?
+819|Zajety
+820|Pokoj czatu
+821|Popychanie
+822|Czekanie na peera
+823|Rzadanie
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+
+
+
+
+

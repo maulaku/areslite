@@ -1,0 +1,3 @@
+﻿# chatlist filter example, enter keywords to be filtered here
+# keywords must be lowercase and separated by commas eg:  sex,crack,drug
+crack,drug,kkk,cams,webcam,nigger,white,pride,whاte,prاde,wاde,fighting,incest,pedo,rape

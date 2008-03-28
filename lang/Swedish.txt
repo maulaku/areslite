@@ -1,0 +1,610 @@
+﻿# Av Maskros
+# 
+#
+# Tack till pristine_angel för att du hjälpte mig testa
+#
+# Skicka förslag på förbättringar - även småsaker - till swedishares at hotmail dot com
+#
+# Version 1.0.1 (4 augusti 2004)
+
+FONT NAME="Tahoma" SIZE="8"
+
+108|Filtrera bort programfiler och andra filer som kan vara skadliga
+110|Port till värdkanalen:
+113|Visa datum och tid för chat-händelser
+114|När du är borta från datorn kan du visa det genom att ange det i chatfönstret. Ares besvarar då automatiskt chat-förfrågningar med det meddelande du skriver in här.
+115|Blockera alla privata meddlanden
+116|Svara privata chatförfrågningar med meddelandet nedan
+117|Start server
+118|Stop server
+119|Filesharing 
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Acceptera inkommande anslutningar på port:
+127|uppladdning(ar) samtidigt
+128|uppladdning(ar) per användare (0=obegränsat)
+129|Total uppladdningshastighet (kB/s 0=obegränsat)
+130|Ladda upp snabbare när datorn inte används
+131|Total nerladdningshastighet (kB/s 0=obegränsat)
+133|Nerladdade filer sparas i:
+134|Bläddra
+135|Återställ till standardmapp
+136| Tryck på 'sök' för att söka igenom din dator
+137|Sök
+138|Avbryt
+139|Markera allt
+140|Avmarkera allt
+141|Markera de mappar du vill dela ut med Ares. 
+142|Symbolförklaring
+143|En eller flera undermappar till den här mappen delas ut. 
+144|Allt i den här mappen delas ut. 
+146|Min dator är bakom en brandvägg eller kan inte ta emot inkommande anslutningar
+149|Starta Ares med Windows
+150|Anslut automatiskt till nätverket när Ares startas
+151|Ares minimerat när det startas
+152|Avsluta Ares när jag stänger huvudfönstret
+153|Här kan du välja vilka mappar du vill göra tillgängliga för andra användare. Det är dock bara du som kan ändra innehållet i de här mapparna.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Visa anslutningsstatus i namnlisten (starta om för att ta bort)
+161|Visa procent klart
+162|Visa inte stora informationsrutor
+163|Pausa video när jag byter flik
+164|Bekräfta när jag avbryter nerladdningar
+193|Smeknamn:
+194|Hastighet:
+195|Ok
+196|Avbryt
+197|Verkställ
+199|Stäng
+200|Sök efter text
+201|Ljudfiler
+202|Videofiler
+203|Spelningslistor
+204|Alla filer
+205|Töm sökloggen
+206|Avancerad sökning
+208|Enkel sökning
+210|Funna
+211|Anslut
+212|Anslut
+213|Koppla från
+214|Inställningar
+217|Sökfält
+230|Mediebibliotek
+231|Dela ut och organisera dina mediefiler
+232|Sök
+233|Sök efter filer på Ares' nätverk
+234|Trafik
+235|Se pågående överföringar
+236|Webbläsare
+237|Läs webbsidor
+238|Mediespelare
+239|Spela upp dina mediefiler
+240|Chat
+241|Träffa nya vänner på chatten
+242|Helskärm
+243|Visar över hela skärmen
+244|Mindre
+245|Minskar videostorleken
+246|Större
+247|Ökar videostorleken
+248|Ursprungsstorlek
+249|Anpassa till fönsterstorlek/Återgå till ursprungsstorlek
+250|Lämna kanal
+251|Uppdatera listan
+252|Gå med i kanal
+253|Skicka privat meddelande 
+254|Se den här användarens filer
+255|Starta en kanal
+256|Inställningar för delade filer - klicka här för att dela ut filer
+257|Sök igenom dina utdelade mappar efter nya filer
+258|Mappar
+259|Visa/dölj mappar
+260|Detaljer
+261|Visa/dölj detaljer
+262|Markera/avmarkera som utdelad
+263|Ta bort
+264|Lägg till i spelningslista
+265|Återanslut till värd
+266|Överföringar
+267|Skicka fil
+268|Ta emot inkommande filer
+269|Visa överföringar
+270|Dölj överföringar
+271|Redigera
+272|Markera allt
+273|Kopiera
+274|Öppna i Anteckningar
+275|Privat
+276|Ange att jag inte är vid datorn
+277|Blockera den här värden
+278|Avbryt alla
+279|Ansluter till värd, vänta...
+280|Anslutning upprättad
+281|Anslutningen avslutades av den andra parten
+282|Värden kunde inte nås
+283|Öppna nu!
+284|Skapar förhandsgranskning
+285|Kopierar fil
+286|Ljud av
+289|Avbryt
+290|Avbryt markerad överföring
+291|Pausa/fortsätt
+292|Pausa/fortsätt markerad nerladdning
+293|Spela upp/förhandsgranska
+294|Spela upp/förhandsgranska markerad fil
+295|Öppna filens mapp
+296|Öppna filens mapp/Öppna mappen för nerladdade filer
+297|Rensa klara
+298|Ta bort klara och avbrutna överföringar från listan
+299|Lägg till fil i spelningslista
+300|Lägg till mapp i spelningslista
+301|Ta bort markerad fil
+302|Töm spelningslista
+303|Ladda/spara spelningslista
+305|Ladda spelningslista
+306|Spara spelningslista
+307|Ta bort alla
+308|Ta bort markerade
+309|Sortera
+310|Bokstavsordning, stigande
+311|Bokstavsordning, fallande
+312|Blanda listan
+313|Hoppa till fil
+314|Blanda
+315|Repetera
+316|Ny sökning
+317|Söker på nytt
+318|Ladda ner
+319|Ladda ner vald fil
+321|Visa/dölj sökfält
+322|Bakåt
+323|Framåt
+324|Stoppa
+325|Uppdatera
+326|Spela upp
+327|Pausa
+328|Föregående
+329|Nästa
+330|Volym
+331|Visa spelningslista
+332|Stäng spelningslista
+335|Spelningslista
+336|Dölj detaljer
+337|Delas ut
+338|Dölj mappar
+339|Bocka i för att dela ut, bocka av för att sluta dela ut
+340|Köade
+341|Du kanske också gillar
+342|Användarinformation
+348|Överföringar
+350|Chat
+351|Privata meddelanden
+352|Frånkopplad
+353|Fillistning
+354|Privata meddelanden
+355|Dela ut filer
+356|Automatisk sökning
+357|Ställ in manuellt
+358|Mapp för nerladdade filer
+359|Allmänt
+360|Nätverk
+361|Ansluten som
+363|Filer
+364|filer
+365|Kunde inte ansluta
+366|Sågs sist
+367|Tillgänglighet
+368|Ansluter
+369|Ansluter till nätverket
+372|Ansluten, skakar hand...
+373| Kunde inte visa
+375|Handskakningsfel, avslutar anslutning
+376|inga mappar funna
+377|Sökning klar
+378|hittade mapp
+379|Söker, vänta...
+380|Sökningen gav inga träffar
+383|Vill du verkligen tömma sökloggen?
+384|Töm sökloggen
+390|Din chatpartner vill skicka en eller flera filer, vill du starta överföringen?
+391|Inkommande filöverföring
+398|Vill du verkligen avbryta nerladdningen
+399|Avbryt nerladdningen
+407|mappar funna
+408|Fel vid handskakning, anslutningen avslutades av motparten
+409|Fel vid handskakning, slutade vänta på svar från motparten
+410|Frånkopplad
+411|Frånkopplad, buffer overflow
+412|Inloggad, hämtar användarlista...
+413|Ämnet har ändrats
+414|, som delar ut
+415|filer, har stigit in
+416|har lämnat
+417|Frånkopplad, för lång tid utan händelse
+418|Du är nertystad
+419|Bilder och video
+420|Nerladdat
+421|Kanal du är värd för
+422|Kanal
+423|Storlek för utdelade filer
+424|Total storlek
+425|Köar
+426|Köar
+428|Kanalens namn:
+429|Felaktigt namn
+430|Välj ett namn med minst fyra tecken
+431|Värd
+432|Vill du verkligen stänga kanalen?
+433|Alla användare i kanalen kommer att kopplas från
+434|Ansluter till kanal
+435|Lediga platser
+436|KB/s
+437|Du är redan värd för en kanal med namnet
+438|FILEN DELAS INTE UT
+439|Du kan inte ångra dig. 
+440|VARNING - Tar bort från hårddisken
+441|Vill du ta bort filen
+442|Vill du ta bort filerna
+443|Överförd
+444|Filöverföringen har redan startats
+445|Se överföringsfliken
+446|Dubbel förfrågan
+447|Den markerade filen finns redan i mediebiblioteket
+448|Se mediebiblioteksfliken
+449|Dublett
+450|Den här medietypen filtreras bort
+451|Bortfiltrerade media';
+452|Dölj Ares
+453|Visa Ares
+454|resultat för
+455|resultat för
+456|min utdelade mapp
+458|vänta...
+459|*DEN HÄR FILEN FINNS REDAN I DITT MEDIEBIBLIOTEK*
+460|*DU LADDAR REDAN HEM DEN HÄR FILEN*
+461|Arbetar
+462|Pausad
+464|Överföring pausad
+465|Stoppad
+466|Klar
+467|Laddar ner
+468|Tomgång
+469|Söker
+470|Ansluter
+471|VARNING
+472|Söker
+473|Användare
+474|Ansluter till användare
+475|Chat - ansluter till värd
+476|Du
+477|bannlyst (upphävs när du startar om Ares)
+478| Söker efter
+479|vad som helst
+480|Prioritet 
+481|Din kölista
+482|Högsta
+483|Högre
+484|Normal
+485|Lägre
+486|Lägsta
+487|Ignorera/ignorera inte
+488|Tysta ner
+489|Tillåt att tala
+490|Bannlys
+491|Upphäv bannlysning
+492|Döda
+494|Inställningar för utdelade filer
+495|Öppna/spela
+496|Öppna i extern spelare
+497|Öppna filens mapp
+498|Sök efter filer som innehåller:
+499|Finn fler från samma
+500|Pausa alla/fortsätt alla
+501|Visa spelningslista
+502|Avsluta
+504|Blockera användare
+505|Sluta dela ut fil
+506|Anpassa till fönsterstorlek
+508|Avbryt sökning
+509|Markera allt
+510|Kopiera till urklipp
+511|Öppna i Anteckningar
+512|Sök nu
+513|Datum
+514|Visa kö
+515|Visar vem som står i kö till dig
+516|Visa uppladdningar
+517|Se uppladdningar
+518|Filter
+519|Efter mapp
+520|Efter kategori
+521|Gruppera efter sökväg
+522|Gruppera efter filtyp och metadata
+523|Användare
+524|Titel
+525|Artist
+526|Bithastighet
+527|År
+528|Version
+529|Filtyp
+530|Färger
+531|Författare
+532|Mapp
+533|Längd
+534| 
+535| 
+536|Upplösning
+537|Mediatyp
+538|Språk
+539|Kategori
+540|Nerladdat
+541|Söker
+542|Uppladdat
+543|Uppladdningar
+544|Nerladdningar
+545|Album
+546|Företag
+547|Datum
+548|Mängd efterfrågade data
+549|Filstorlek
+550|Storlek
+551|Format
+552|Filnamn
+553|URL
+554|Namn
+555|Ämne
+556|Välkommen till 
+557|-kanalen
+558|Hastighet
+559|Album
+560|Författare
+561|Artist
+562|Kategori
+563|Företag
+564|Genre
+565|Alla
+566|Musik/Ljud
+567|Video
+568|Bilder
+569|Dokument
+570|Annat
+571|Program
+581|Efter kategori
+582|Efter mapp
+583|Utdelade filer
+584|Ditt mediebibliotek
+585|Sök efter videofiler
+586|Sök efter ljudfiler
+587|Sök efter mediefiler
+588|Sök efter bildfiler
+589|Sök efter dokument
+590|Sök efter program
+594|Typ
+595|Fil
+596|Uppladdat
+597|Status
+598|Mediatyp
+599|Sökväg
+600|Begärd
+601|idag
+602|totalt
+603|Genre
+604|Tid kvar
+605|Klart
+606|Total hastighet ner
+607|Kommentarer
+608|Beräknad tidsåtgång
+609|Data skickade
+610|Data mottagna
+611|Antal källor
+612|källor
+613|källa
+614|Bandbredd
+615|Okänd
+616|okänd
+617|av
+618|Laddar upp
+630|frånkopplad (dödad)
+631|på
+632|på
+633|Du har tystats ner
+634|har tystats ner
+635|Du tillåts tala
+636|tillåts tala
+637|Motd har laddats
+638|rader 
+639|Kunde inte bannlysa användaren
+640| - hittades inte
+641|Ip-intervallet
+642|Ip-intervallet
+643|är inte bannlyst längre
+644|Kunde inte upphäva bannlysning för användaren
+645|har inte bannlysts
+646|Listan över bannlysta har tömts
+648|har bannlysts
+649|Intervall
+650|intervall har bannlysts
+651|användarna har bannlysts
+653|statistik
+654|Serveradress
+655|Servern öppnades 
+656|Tid uppe
+657|Accepterade anslutningar
+658|Mottagna meddelanden
+659|Högsta antal användare
+660|Antal användare nu
+661|Redan bannlyst
+662|meddelanden har skickats
+663|floodare har bannlysts
+664|dödade användare
+665|Du är nu värd för chat-rummet. 
+666|Skriv
+667|för att för att få en lista över inbyggda kommandon. 
+668|Ändra ämnet för kanalen
+669|Skicka en känsla
+670|Visa statistik för kanalen
+671|Tysta ner
+672|Tillåt att tala
+673|Koppla från
+674|Bannlys
+675|Upphäv bannlysning
+676|Bannlys ip-intervall
+677|Upphäv bannlysning för ip-intervall
+678|Töm listan över bannlysta
+679|Visa välkomstmeddelande
+680|Öppna textfilen med välkomstmeddelandet
+681|Ladda välkomstmeddelande från textfil
+682|Visa lista över bannlysta
+683|Töm skärmen
+684|Visa kommandon
+685|Detta är ett exempel på en motd-fil
+686|Redigera texten, spara den och använd kommandot /loadmotd
+687|Välkommen till mitt chat-rum!
+688|Ha det kul!
+689|Anslutning från
+690|i bannlyst ip-intervall
+691|Inte loggat
+692|Anslutning har nekats (bannlyst användare)
+693|inte ignorerad
+694|Kunde inte ignorera
+695|för många ignorerade användare
+696|ignoreras redan
+697|ignorerad
+698|nertystad
+699|Språk 
+700|Kanaler
+701|delas ut
+703|Tar emot lista, vänta...
+704|Listan är tom, försök igen senare
+705|Söker
+708|och delar ut
+709|filer
+710|Du är ansluten som
+711|Dölj sökfältet
+712|Tillgängligt diskutrymme
+713|Tar emot fillista:
+714|Klar:
+715|Dålig
+716|Medel
+717|Bra
+718|Mycket bra
+719|Nu söker Ares efter mediefiler.\nl\nlVarje gång Ares hittar nya filer i de mappar du delar ut beräknas ett hashvärde - ett slags id-nummer - för varje ny fil.\nlTiden detta tar beror på hur många och hur stora filer du delar ut och din dators hastighet.\nl\nlOvan ser du vilken fils hashvärde som beräknas just nu. Du kan ändra vilken prioritet Ares ska ge åt beräkningen.\nlOm du väljer en hög prioritet kommer beräkningen att gå snabbare, men att använda datorn till annat kan gå \nllångsamt medan beräkningen pågår.\nl\nlTack för att du använder Ares till att dela ut dina filer.
+720|Beräknar hashvärden
+721|Söker efter media
+724|Avbryt uppladdning
+725|Annat
+726|Ljud
+727|Program
+728|Video
+729|Dokument
+730|Bilder
+731|Startade
+732|Källor
+733|Färdigt:
+734|Antal försök
+735|Intervall mellan försök
+736|Tid sedan förra försöket
+738|Ge upp om
+741|Spara som
+742|Som minst
+743|Som mest
+744|Lika med
+745|Omkring
+746|Längre än
+747|Kortare än
+748|Mindre än
+749|Större än
+750|Pausad lokalt
+751|nerladdning(ar) samtidigt
+752|Okänt kommando
+753|Proxy
+755|Använd inte proxy
+756|Använd Sock4-proxy
+757|Använd Sock5-proxy
+758|Proxyns adress
+759|Användarnamn
+760|Lösenord
+761|En användare tittar på ditt mediebibliotek
+762|Tillåt andra att se mitt mediebibliotek
+763|Ares har upptäckt att du använder en brandvägg. Som den nu är inställd kan du ha problem med att ladda hem vissa filer eller få låga hastigheter.\nlDu bör ställa in din brandvägg så att den tillåter trafik på den port Ares använder.\nlVill du att Ares gör det åt dig? 
+764|Inställningar för brandvägg
+765|Ares har upptäckt att du använder en brandvägg. Om du vill vara värd för ett chatrum måste den tillåta inkommande anslutningar på chatrummets port.\nlVill du att Ares ska ställa in det åt dig?
+766|Chatta med markerad användare
+767|Skicka mapp
+768|Frånkopplad
+769|Sök efter kanal
+770|Låt användaren gå före i din kö
+771|Kunde inte ta emot användarens fillista
+772|Filtyper du vill dela ut
+773|Mörk bakgrund
+775|Ladda hem HashLink
+776|Fyll i HashLink här
+777|Exportera HashLink
+778|Filen skadad
+779|Kunde inte få tillgång till filen
+785|Tillåt användare att se dina filer
+787|Laddades hem
+788|Senast nerladdat
+789|Tillåt andra att se min mappstruktur
+790|Öppna mapp
+791|Acceptera filöverföringar automatiskt
+792|Visa användarens ip-adress
+793|Visa frånkopplade användare 
+794|Visa statistik för användaren
+795|HashLinks
+796|Använd Ed2k-länkar
+797|Använd Magnet-länkar
+799|Konrollpanel
+800|Konfigurera Ares
+801|Testa anslutningen
+802|Testar...
+803|Testet misslyckades
+804|Testet lyckades
+805|Proxy-servrar
+806|Använder just nu
+807|Ladda lista
+808|Spara lista
+809|Använd flera proxy-servrar
+810|Ny flik
+811|Gå till
+812|Visa ett meddelande när någon stiger in/lämnar
+813|Favorites
+814|Add to Favorites
+815|Last
+816|Search for Other files
+817|Disconnect source
+818|You are about to open a potentially dangerous file type. The file may contain a virus or trojan.\\nlAre you sure you want to continue?
+819|Busy
+820|Chatroom
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+
+
+
+
+
+
+
+

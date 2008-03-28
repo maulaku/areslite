@@ -1,0 +1,606 @@
+﻿# Přeložil: collier at volny dot cz
+# Moje stránka: http://www.volny.cz/jedova-chyse/
+# Nelíbí se vám můj překlad? Přeložte si to sami :-)
+# Program Ares najdete na stránce:  http://aresgalaxy.sourceforge.net
+#
+
+FONT NAME="Tahoma" SIZE="8"
+
+
+108|Filtrovat spustitelné a potencionálně nebezpečné soubory
+110|Port na serveru:
+113|Zobrazit datum/čas pro chat
+114|Pokud jste nepřítomni, můžete si aktivovat nastavení "Nepřítomen". Ares odpoví na žádosti o soukromý chat zprávou "Nepřítomen". Zde si můžete napsat vaši vlastní zprávu že nejste k zastižení.
+115|Blokovat všechny soukromé zprávy
+116|Odpovědět zprávou nepřítomen při soukromém chatu
+117|Start server
+118|Stop server
+119|Filesharing
+120|Block Emotes
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Přijmout příchozí spojení na port:
+127|celkový limit současných uploadů
+128|limit uploadu pro uživatele    (0=bez omezení)
+129|Šířka pásma pro odesílání (0=neomezeno)
+130|Zvětšit při nečinnosti
+131|Šířka pásma pro stahování (0=neomezeno)
+133|Stažené soubory jsou uložené ve složce:
+134|Zvolit adresář
+135|Obnovit standardní adresář
+136| Stiskem 'Skenovat' se začne prohlížet váš počítač - vyhledají se soubory vhodné pro sdílení
+137|Skenovat
+138|Ukončit
+139|Označit vše
+140|Zrušit vše
+141|Zvolte si složky které chcete online sdílet s ostatními.
+142|Legenda
+143|Tato složka není sdílená, ale další podsložky jsou již sdílené.
+144|Složka je sdílená, všechny soubory v této složce jsou sdílené
+146|Můj počítač je za firewallem nebo nemůže být uzel(supernode)
+149|Spustit Ares při startu Windows
+150|Automaticky se připojit do sítě Ares
+151|Spouštět Ares minimalizovaný
+152|Ukončit Ares když stisknu tlačítko Zavřít
+153|V tomto okně si můžete vybrat které složky chcete sdílet, umožníte tak jejich zpřístupnění pro další uživatele sítě Ares. Ostatní uživatelé nemohou upravovat obsah těchto složek.
+158|Show taskbar button
+159|Show 'What I'm listening to' on MSN
+160|Zobrazovat stav v hlavních lištách okna
+161|Zobrazit přenos v procentech
+162|Blokovat problémové
+163|Pozastavit video při přesouvání mezi tabelátory
+164|Žádat potvrzení když rušíte stahování
+193|Přezdívka:
+194|Rychlost:
+195|Ok
+196|Zrušit
+197|Použít
+199|Odejít
+200|Vyhledat text
+201|Audio soubory
+202|Video soubory
+203|Soubory Playlistu
+204|Všechny soubory
+205|Vymazat historii hledání
+206|Pokročilé hledání
+207|Další volby hledání
+208|Jednoduché hledání
+209|Jednoduché volby hledání
+210|nalezených souborů
+211|Hlavní
+212|Připojit
+213|Odpojit
+214|Sdílené
+217|Panel vyhledávání
+230|Knihovna
+231|Sdílet a organizovat vaše soubory
+232|Hledání
+233|Hledat soubory v síti Ares
+234|Přenos
+235|Průběh stahování a odesílání souborů
+236|Web
+237|Hledat na Internetu
+238|Přehrávač
+239|Přehrajte si vaše multimediální soubory
+240|Chat
+241|Setkejte se s novými přáteli v síti Ares
+242|Plná velikost
+243|Celá obrazovka
+244|Zmenšit
+245|Zmenšit velikost videa
+246|Zvětšit
+247|Zvětšit velikost videa
+248|Originální velikost
+249|Optimální velikost/Nastavit původní velikost videa
+250|Odejít z místnosti
+251|Obnovit seznam
+252|Vstoupit do místnosti
+253|Poslat tomuto uživateli soukromou zprávu
+254|Prohlížet soubory uživatele
+255|Založit místnost
+256|Nastavení sdílení - Kliknutím zde si nastavíte složky které chcete sdílet
+257|Znovunačtení vaší knihovny
+258|Složky
+259|Zobrazit/Skrýt složky
+260|Podrobnosti
+261|Zobrazit/Skrýt podrobnosti
+262|Sdílet/Nesdílet
+263|Zrušit zvolený přenos
+264|Přidat soubor do playlistu
+265|Opět připojit k hostiteli
+266|Soubor
+267|Odeslat soubor
+268|Přijmout příchozí soubory
+269|Ukázat přenosy
+270|Skrýt přenosy
+271|Upravit
+272|Označit vše
+273|Kopírovat
+274|Otevřít v Notepadu
+275|Soukromí
+276|Nastavit NEPŘÍTOMEN
+277|Blokovat tohoto hosta
+278|Zrušit vše
+279|Připojuji, prosím čekejte...
+280|Bylo navázáno spojení
+281|Vzdálené spojení bylo ukončeno
+282|Se vzdáleným počítačem není možné se spojit
+283|Ok otevřít!
+284|Načítám náhled
+285|Kopíruji soubor
+286|Ztišit
+287|Nastavit/Zrušit ztišení
+288| Rychlý Playlist  -  přetáhnutím souboru do tohoto okno jej spustíte  -  
+289|Zrušit
+290|Zrušit určený přenos
+291|Pozastavit/Pokračovat
+292|Pozastavit/Obnovit zvolené stahování
+293|Přehrát/Náhled
+294|Přehrát/Náhled zvoleného souboru
+295|Vyhledání souboru
+296|Vyhledání zvoleného souboru/Otevřít složku příchozích souborů
+297|Vymazat dokončené
+298|Vymazat neaktivní a dokončené přenosy
+299|Přidat soubor do Playlistu
+300|Přidat adresář do Playlistu
+301|Odstranit označený soubor
+302|Vymazat Playlist
+303|Načíst/Uložit playlist
+305|Načíst playlist
+306|Uložit playlist
+307|Odstranit všechny
+308|Odstranit vybrané
+309|Seřadit
+310|Seřadit vzestupně
+311|Seřadit sestupně
+312|Zamíchat seznam
+313|Přeskočit na soubor
+314|Náhodně
+315|Opakovat
+316|Nové hledání
+317|Spustit nové vyhledávání
+318|Stáhnout
+319|Stáhnout zvolený soubor
+320|Panel Hledání
+321|Zobrazí/Skryje panel vyhledávání
+322|Zpět
+323|Vpřed
+324|Stop
+325|Obnovit
+326|Přehrát
+327|Pauza
+328|Předchozí
+329|Další
+330|Hlasitost
+331|Zobrazit playlist
+332|Zavřít playlist
+335|Playlist
+336|Skrýt detaily
+337|Sdílet
+338|Skrýt složky
+339|Zaškrtni když chceš sdílet, odškrtni pokud nechceš sdílet tento soubor
+340|ve frontě
+341|Zkuste také
+342|Osobní údaje
+348|Přenos
+350|Chat
+352|Nejste připojeni
+354|Soukromé zprávy
+355|Sdíleno
+356|Auto-sken
+357|Ruční nastavení
+358|Adresář pro stažené
+359|Hlavní
+360|Síť
+361|připojen jako
+363|Soubory
+364|soubory
+365|Nelze se připojit
+366|Poslední kontrola
+367|Dostupnost
+368|Připojuji
+369|Připojujete se k síti
+372|Připojeno, žádám o autorizaci...
+373| Prohlížení nebylo dokončeno
+375|Chyba ze spojení (spojení znemožněno)
+376|adresář nenalezen
+377|Skenování je kompletní
+378|nalezen adresář
+379|Vyhledávám, prosím čekejte...
+380|Vyhledávání skončilo neúspěšně, nebyl nalezen žádný výsledek
+381|Chcete si zvolit svoji přezdívku?
+383|Opravdu chcete vymazat historii hledání?
+384|Vymazat historii hledání
+390|Váš účastník chce poslat jeden nebo více souborů, souhlasíte se zasláním ?
+391|Požadavek na zaslání souboru
+398|Opravdu chcete zrušit stahování?
+399|Zrušit stahování
+407|nalezen adresář
+408|Chyba ve spojení, server přerušil připojení
+409|Chyba ve spojení, při čekání na odpověď serveru vypršel časový limit
+410|Odpojeno
+411|Odpojeno (vyrovnávací paměť zaplněna)
+412|Připojeno, načítám seznam přítomných...
+413|změna tématu
+414|sdílím
+415|souborů, budou přidány
+416|se připojil
+417|Spojení bylo ukončeno (čas vypršel)
+418|Byl jste ignorován
+419|Obrázky & Video
+420|Je staženo
+421|Hostovaný kanál
+422|Kanál
+423|Sdílená velikost
+424|Celková velikost
+425|ve frontě
+426|Ve frontě
+428|Název místnosti:
+429|Nesprávný název
+430|Prosím vyberte slovo které má nejméně 4 znaky
+431|Hostuje
+432|Opravdu chcete zavřít místnost?
+433|Všichni přítomní v místnosti budou odpojeni
+434|Připojuji se k místnosti
+436|Kb/sec
+437|Máte již aktivní kanál chatu, který se jmenuje
+439|Nebude žádná možnost obnovit smazané soubory
+440|UPOZORNĚNÍ, chcete vymazat soubor z pevného disku
+441|Smazat 
+442|Smazat soubory
+443|Přeneseno
+444|Soubor se již stahuje
+445|Prosím podívejte se do evidence přenosu
+446|Opakování žádosti
+447|Zvolený soubor již máte ve své knihovně
+448|V knihovně se prosím podívejte do evidence
+449|Stejný soubor
+450|Tento typ média je filtrovaný
+451|Filtrované soubory
+452|Skrýt Ares
+453|Obnovit Ares
+454|výsledek pro
+455|výsledků pro výraz:
+457|Spouštím Ares
+458|prosím čekejte...
+459|*TENTO SOUBOR JE JIŽ VE VAŠÍ KNIHOVNĚ*
+460|*TENTO SOUBOR JSTE JIŽ STAHOVALI*
+461|Načítám
+462|Pozastaveno
+464|Stanovená pauza
+465|Zrušeno
+466|Dokončeno
+467|Stahuji
+468|Neaktivní
+469|Vyhledávám
+470|Připojuji
+471|UPOZORNĚNÍ
+472|Vyhledávám
+473|uživatelé
+474|Připojit ke vzálenénu uživateli
+475|Chat - připojit ke vzálenénu uživateli
+476|Ty
+477|blokované (bude povoleno až po restartování programu)
+478| Hledání
+479|cokoliv
+480|Priorita součtu
+481|Čekající na na server
+482|Nejvyšší
+483|Vysoká
+484|Normální
+485|Nižší
+486|Nejnižší
+487|Ignorovat/Neignorovat
+488|Umlčet
+489|Ukončit cenzuru
+490|Zakázat
+491|Povolit
+492|Odpojit
+494|Nastavit sdílení
+495|Otevřít/Přehrát
+496|Externě otevřít
+497|Najít soubor
+498|Hledat soubory obsahující text:
+499|Najít více od stejného
+500|Pozastavit vše/Pokračovat vše
+501|Zobrazit playlist
+502|Ukončit Ares
+504|Zablokovat uživatele
+505|Nesdílet soubor
+506|Celé okno
+508|Stop hledání
+509|Označit vše
+510|Kopírovat do Schránky
+511|Otevřít v Notepadu
+512|Nové hledání
+513|Datum
+514|Ukázat frontu
+515|Podívejte se se na uživatele ve vaší frontě
+516|Ukázat odesílání
+517|Podívejte se na odesílané soubory
+518|Filtr
+519|Normální režim
+520|Virtuální režim
+521|Zobrazí knihovnu ve virtuálním režimu
+522|Zobrazí knihovnu v reálném režimu
+523|Uživatel
+524|Název
+525|Umělec
+526|Kvalita
+527|Rok
+528|Verze
+529|Typ souboru
+530|Barvy
+531|Autor
+532|Složka
+533|Délka
+534|přijatých
+535|odesláno
+536|Rozlišení
+537|Typ
+538|Jazyk
+539|Kategorie
+540|Stahování
+541|Vyčkejte prosím...probíhá skenování souborů
+542|Odesílané
+543|Odesílám
+544|Stahuji
+545|Album
+546|Výrobce
+547|Datum
+548|Požadovaná velikost
+549|Velikost souboru
+550|Velikost
+551|Formát
+552|Název souboru
+553|URL
+554|Název místnosti
+555|Téma
+556|;-) Buďte vítáni na českém pokecu :-) 
+557|
+558|Rychlost
+559|podle alba
+560|podle autora
+561|podle umělce
+562|podle kategorie
+563|podle výrobce
+564|podle žánru
+565|Vše
+566|Audio
+567|Video
+568|Obrázky
+569|Dokumenty
+570|Ostatní
+571|Software
+581|Sdílené virtuální složky
+582|Sdílené složky
+583|Sdílené soubory
+584|Vaše knihovna
+585|Hledat video soubory
+586|Hledat audio soubory
+587|Hledání obecného výrazu
+588|Vyhledávání obrázku
+589|Vyhledávání dokumentu
+590|Vyhledávání software
+594|Typ
+595|Přenos souboru
+596|Odesláno
+597|Dostupnost
+598|Typ
+599|Umístění
+600|Požadovaný
+601|dnes
+602|celkem
+603|Žánr
+604|Zbývá
+605|Přenos
+606|Rychlost přenosu
+607|Poznámky
+608|Odhadovaný čas do konce
+609|Odeslaná velikost
+610|Stažená velikost
+611|Počet zdrojů
+612|zdrojů
+613|zdroj
+614|Rychlost
+615|neznámý
+616|neznámý
+617|ze
+618|Odesílám
+630|odpojený (zrušený)
+631|v
+632|od
+633|byl jsi okřiknut
+634|byl okřiknut
+635|můžeš opět mluvit
+636|byl jsi okřiknut
+637|Došlá zpráva načtena
+638|řádků
+639|Blokování selhalo, uživatel
+640|nebyl nalezen
+641|Doba zákazů
+642|Doba povolení
+643|povolený
+644|Povolení selhalo, uživatel
+645|není blokován
+646|Seznam blokovaných byl zrušen
+648|blokován
+649|Rozsah
+650|rozsah zakázaných
+651|zakázaných uživatelů
+653|statistiky
+654|Adresa serveru
+655|Server spuštěn
+656|Doba Online
+657|Přijaté pripojení
+658|Přijatých zpráv
+659|Největší počet uživatelů (ve špičce)
+660|Současný počet uživatelů
+661|Již zakázaný
+662|zpráva odeslaná
+663|zahlcujících uživatelů odpojeno
+664|násilně odpojení uživatelé
+665|stal jste se hostitelem v místnosti pro chat
+666|zadejte
+667|- dostanete seznam integrovaných příkazů
+668|změna tématu na kanálu
+669|zaslat smajlíky do kanálu
+670|zobrazit statistiky kanálu
+671|blokovat uživatele
+672|neblokovat uživatele
+673|odpojit uživatele
+674|zakázat uživatele
+675|povolit uživatele
+676|zakázat ip rozsah
+677|zrušit zákaz pro ip rozsah
+678|vymazat seznam zakázaných
+679|zobrazit uvítací text
+680|otevřít soubor uvítacího textu
+681|načíst uvítací text ze souboru
+682|zobrazit seznam uživatelů
+683|vymazat obrazovku
+684|zobrazit přikazy
+685|toto je příklad souboru
+686|upravit text, uložit jej a použít příkaz /načtení
+687|Vítejte na mém pokecu
+688|dobře se bavte
+689|Připojení z
+690|v zakázaném rozsahu
+691|Neověřeno
+692|Spojení bylo odmítnuto(zakázaný uživatel)
+693|není ignorován
+694|Nelze ignorovat
+695|příliš mnoho ignorovaných uživatelů
+696|již ignorován
+697|ignorován
+698|umlčet
+699|Zvolte si jazyk
+700|Místnosti
+701|Sdíleno
+703|Vyhledávám aktivní kanály, čekejte prosím...
+704|Seznam je prázdný, zkuste to prosím později
+705|Prohledává
+707|souborů
+708|sdílíš
+709|souborů
+710|připojen jako
+711|Skrýt pole vyhledávání
+712|Dostupné místo
+713|Postupně prohlížím:
+714|Prohlížení dokončeno:
+715|Špatná
+716|Průměr
+717|Dobrá
+718|Výborná
+719|Ares teď provede skenování ve vaší knihovně\nl\nlPokud najde nové soubory ve vašich sdílených složkách, musí vypočítat jedinečný identifikátor kontrolního součtu pro každý nový soubor .\nl\nlTato operace může chvíli trvat, závisí to na velikosti souborů, jejich rozdělení a rychlosti vašeho počítače.\nlNa stupnici nahoře můžete vidět se kterým souborem se právě pracuje.\nlMusíte si uvědomit, pokud si zvolíte vysokou prioritu aby jste zkrátili čas potřebný k vypočítání rozdělených hodnot, určitě zpomalíte váš počítač.\nl\nlJsme rádi že jste si vybrali náš program.
+720|Probíhá kontrolní součet sdílených souborů podle obsahu - hashování
+721|Probíhá vyhledávání souborů 
+724|Zrušit odesílání
+725|Ostatní
+726|Audio
+727|Software
+728|Video
+729|Dokument
+730|Obrázek
+731|Čekající ve frontě
+732|Dostupné zdroje
+733|Atuálny stav
+734|Počet pokusů
+735|Interval hledání
+736|Ukončit hledání
+738|Lhůta
+741|Uložit jako
+742|Nejméně
+743|Nejvýše
+744|Stejné s
+745|Stejná
+746|Delší než
+747|Kratší než
+748|Menší než
+749|Větší než
+750|Místně pozastaveno
+751|celkový limit současných stahování
+752|Neznámý příkaz
+753|Proxy
+755|Nepoužívat proxy
+756|Použít proxy Sock4
+757|Použít proxy Sock5
+758|Adresa proxy serveru
+759|Uživatelské jméno
+760|Heslo
+761|Vzdálený uživatel si prohlíží vaši knihovnu
+762|Dovolit prohlížet obsah mé knihovny
+763|Ares zistil, že na vašem počítači máte zapnutý firewall. Pokud ponecháte současná nastavení, můžete mít těžkosti při stahování nebo se sníží přenosová rychlost.\nlMěli by jste umožnit vašemu firewallu, aby povolil port příchozího spojení pro Ares.\nChcete aby to Ares udělal za vás? 
+764|Nastavení firewallu 
+765|Ares zjistil přítomnost aktivního firewallu ve vašem počítači. Jestliže se chcete připojit do místnosti pro chat, musíte povolit příchozí spojení na určený port.\nlChcete pro Ares tento port automaticky nastavit? 
+766|Otevře chat s daným uživatelem
+767|Odeslat adresář
+768|Odpojený
+769|Vyhledat místnost
+770|Vyhradit volný slot
+771|Není možné si prohlédnout seznam souborů, seznam není k dispozici
+772|Sdílené typy souborů
+773|Tmavé pozadí
+775|Stahování částí
+776|Odkaz na HashLink
+777|Export částí
+778|Soubor je poškozen
+779|Soubor je nedostupný
+785|Povolit prohlížení souborů
+787|Stažené
+788|Poslední stahování
+789|Dovolit prohlížení složky
+790|Otevřít složku
+791|Automaticky přijímat soubory
+792|Zobrazit IP adresy uživatelů
+793|Vyhledat nepřipojené uživatele
+794|Zobrazit statistiku uživatelů
+795|Hashlinks
+796|Používat připojení Ed2k
+797|Používat připojení Magnet
+799|Ovládací panel
+800|Nastavení a ovládání vašeho programu Ares
+801|Zkontrolovat spojení
+802|Testuji...
+803|Test byl neúspěšný
+804|Test byl úspěšný
+805|Anonymní Proxy
+806|Aktuálně používán
+807|Načíst seznam
+808|Uložit seznam
+809|Používat víc proxy serverů
+810|Okno novinek
+811|Jdi
+812|Oznámit přihlášení a odhlášení
+813|Oblíbené
+814|Přidat k oblíbeným
+815|Poslední
+816|Hledat další soubory
+817|Odpojit zdroj
+818|POZOR, chcete otevřít potenciálně nebezpečný typ souboru. Soubor může obsahovat viry nebo trojské koně.\\nlOpravdu chcete pokračovat?
+819|Busy
+820|Chatovací místnost
+821|Pushing
+822|Waiting for peer
+823|Requesting
+824|Auto Join
+825|Connected
+826|Auto add to favorites
+827|Make Ares my default torrent client
+828|Active
+829|Save to Disk
+830|New Radio
+831|Handle m3u and pls files
+832|Directory
+833|Update channel's URL
+834|Auto shutdown
+
+
+
+
+
+
+
+
+

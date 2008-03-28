@@ -1,0 +1,2 @@
+﻿# P2P search result filter example, enter keywords to be filtered here
+# keywords must be lowercase and separated by commas eg:  sex,drug,crack

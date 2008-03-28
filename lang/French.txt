@@ -1,0 +1,609 @@
+﻿# Merci de reporter les potentiels bugs d'affichage et/ou les fautes de frappe à cet e-mail: todd_terry@users.sourceforge.net
+# Vous utilisez actuellement la version 2.0.5.
+
+
+FONT NAME="Tahoma" SIZE="8"
+
+
+108|Filtrer les fichiers potentiellement dangereux
+110|Port hôte pour le salon:
+113|Afficher l'heure des messages
+114|Quand vous êtes absent, vous pouvez activer le statut "absent". Ares répond automatiquement aux demandes de discussion avec un message d'absence. Vous pouvez configurer les paramètres ici.
+115|Bloquer tous les messages privés
+116|Réponse automatique aux messages privés
+117|Démarrer le serveur
+118|Arrêter le serveur
+119|Partage
+120|Filtrer les smiles
+121|Choked
+122|Optimistic Unchoke
+123|Interested
+126|Port des connexions entrantes:
+127|envoi(s) simultané(s) autorisé(s)
+128|envoi(s) par utilisateur (0=illimité)
+129|Débit pour l'envoi (ko/s 0=illimité)
+130|Augmenter en periode d'inactivité
+131|Débit de réception (ko/s 0=illimité)
+133|Fichiers sauvés dans ce répertoire:
+134|Changer le répertoire
+135|Restaurer le répertoire par défaut
+136| Appuyez sur 'Scanner' pour scanner vos disques
+137|Scanner
+138|Stopper
+139|Tout sélectionner
+140|Désélectionner
+141|Sélectionnez le(s) répertoire(s) que vous voulez partager sur le réseau.
+142|Légende
+143|Ce répertoire n'est pas partagé, mais ses sous-répertoires le sont.
+144|Tous ce qui est contenu dans ce répertoire est partagé.
+146|Mon PC est derrière un firewall ou ne peut pas être un supernode.
+149|Démarrer Ares en même temps que Windows
+150|Connexion automatique au réseau
+151|Démarrer Ares dans la bare des tâches
+152|Quitter Ares avec le bouton "fermer"
+153|Vous pouvez sélectionner ici le(s) répertoire(s) partagé(s) avec les autres utilisateurs d'Ares. Les utilisateurs ne peuvent pas modifier le contenu de ces répertoires.
+158|Afficher un bouton dans la barre des tâches
+159|Afficher ce que j'écoute sur MSN
+160|Montrer les status dans l'en-tête de la fenêtre principale
+161|Montrer le pourcentage des transferts
+162|Cacher les infobulles des fichiers
+163|Mettre la vidéo en pause quand je change de fenêtre
+164|Demander la confirmation pour annuler un transfert
+193|Pseudonyme:
+194|Débit:
+195|Ok
+196|Annuler
+197|Appliquer
+199|Fermer
+200|Chercher un texte
+201|Audio
+202|Video
+203|Playlists
+204|Tous fichiers
+205|Effacer l'historique
+206|Recherche avancée
+208|Recherche simple
+210|Trouvé
+211|Menu
+212|Connecter
+213|Déconnecter
+214|Préférences
+217|Recherche
+230|Fichiers partagés
+231|Partager et organiser vos fichiers
+232|Recherche
+233|Chercher un fichier sur le réseau Ares
+234|Transfert
+235|Progression des Téléchargements et des Envois
+236|Web
+237|Naviguer sur Internet
+238|Lecteur
+239|Jouer un fichier
+240|Discussion
+241|Rencontrez de nouveaux amis
+242|Plein écran
+243|Mettre en plein écran
+244|Réduire
+245|Réduire la taille de la vidéo
+246|Agrandir
+247|Agrandir la taille de la vidéo
+248|Taille originale
+249|Adapter à la taille de l'écran/Mettre à le taille originale de l'image
+250|Quitter le salon
+251|Rafraîchir la liste
+252|Entrer
+253|Envoyer un message privé
+254|Voir les fichiers partagés
+255|Héberger un salon
+256|Paramètres de partage - Cilquez ici pour partager des fichiers
+257|Re-scanner les fichiers
+258|Répertoires
+259|Montrer/Cacher les répertoires
+260|Détails
+261|Montrer/Cacher les détails
+262|Partager/Ne plus partager
+263|Supprimer
+264|Ajouter à la playlist
+265|Reconnecter à l'hôte
+266|Fichier
+267|Envoyer un fichier
+268|Accepter les fichiers entrants
+269|Montrer le transfert
+270|Cacher le transfert
+271|Editer
+272|Selectionner tout
+273|Copier
+274|Ouvrir dans le bloc notes
+275|Protections
+276|Mettre absent
+277|Bannir cette personne
+278|Tout annuler
+279|Connexion à l'hôte, patientez...
+280|Connexion établie
+281|Connexion terminée par l'utilisateur
+282|Utilisateur injoignable
+283|Ok, ouvrir!
+284|Création de l'aperçu
+285|Copie du fichier
+286|Muet
+288| Playlist prête  -  faites glisser des fichiers ou des répertoires dans cette fenêtre  -  
+289|Annuler
+290|Annuler le transfert sélectionné
+291|Pause/Reprendre
+292|Pause/Reprendre le téléchargement délectionné
+293|Lecture/Aperçu
+294|Lecture/Aperçu du fichier sélectionné
+295|Localiser le fichier
+296|Localiser le fichier/Ouvrir le répertoire des téléchargements
+297|Effacer les transferts inactifs et terminés
+298|Effacer les transferts terminés/annulés
+299|Ajouter un fichier à la playlist
+300|Ajouter un répertoire à la playlist
+301|Enlever le fichier sélectionné
+302|Effacer la playlist
+303|Ouvrir/Sauver la playlist
+305|Ouvrir la playlist
+306|Sauver la playlist
+307|Tout enlever
+308|Enlever la sélection
+309|Trier
+310|Tri alphabetique
+311|Tri alphabetique inversé
+312|Liste aléatoire
+313|Aller à ce fichier
+314|Aléatoire
+315|Répeter
+316|Nouvelle recherche
+317|Faire une nouvelle recherche
+318|Télécharger
+319|Télécharger le fichier sélectionné
+321|Montrer/Cacher le panneau de recherche
+322|Précédent
+323|Suivant
+324|Stop
+325|Rafraîchir
+326|Lire
+327|Pause
+328|Précédent
+329|Suivant
+330|Volume
+331|Voir la playlist
+332|Fermer la playlist
+335|Playlist
+336|Cacher les détails
+337|Partagé
+338|Cacher les répertoires
+339|Cacher pour partager le fichier, décocher pour ne plus partager le fichier
+340|en attente
+341|Essayez aussi
+342|Détails personnels
+348|Transfert
+350|Discussion
+351|Messages privés
+352|Non connecté
+353|File posting
+354|Messages privés
+355|Partages
+356|Recherche automatique
+357|Configuration manuelle
+358|Répertoire de téléchargement
+359|Général
+360|Réseau
+361|utilisateur
+363|Fichiers
+364|fichiers
+365|Connexion impossible
+366|Vu pour la dernière fois
+367|Disponibilité
+368|Connexion
+369|Connexion au réseau
+372|Connecté, négociation...
+373| Connexion impossible sur: 
+375|Négociation échouée, connexion bloquée
+376|pas de répertoire trouvé
+378|répertoire trouvé
+379|Recherche en cours, patientez...
+380|Recherche terminée sans résultat
+381|Voulez-vous choisir un pseudonyme maintenant?
+383|Etes-vous sûr de vouloir écraser l'historique des recherches?
+384|Ecraser l'historique des recherches
+390|Cet utilisateur veut vous envoyer un/des fichier(s), acceptez-vous le transfert?
+391|Transfert entrant
+398|Etes-vous sûr de vouloir annuler le téléchargement?
+399|Annuler le téléchargement
+407|répertoires trouvés
+408|Erreur durant la négociation, connexion interrompue par l'utilisateur
+409|Erreur durant la négociation, temps d'attente de réponse écoulé (timeout)
+410|Déconnecté
+411|Déconnecté, dépassement de mémoire
+412|Connecté, récuperation de la liste...
+413|Changement du sujet
+414|entre dans le salon (
+415|fichiers partagés )
+416|a quitté le salon
+417|Déconnecté, temps d'attente dépassé (timeout)
+418|Vous êtes muselé
+419|Images & Vidéos
+420|Téléchargé
+421|Salon hébergé
+422|Salon
+423|Taille partagée
+424|Taille totale
+425|mis en file d'attente
+426|Mis en file d'attente
+428|Nom du salon:
+429|Nom incorrect
+430|Choisissez-en un avec au moins 4 caractères
+431|Hébergé
+432|Etes-vous sûr de vouloir fermer le salon?
+433|Les utilisateurs seront déconnectés du salon
+434|Connexion au salon
+435|Slots libres
+436|ko/sec
+437|Vous hébergez déja un salon appelé
+438|FICHIER NON PARTAGE
+439|Le fichier sera perdu définitivement!
+440|ATTENTION, suppression du fichier sur le disque dur
+441|Supprimer le fichier
+442|Supprimer les fichiers
+443|Transmis
+444|Transfert de fichier déja en cours
+445|Regardez dans la fenêtre des transferts
+446|Demande dupliquée
+447|Le fichier sélectionné est déja dans votre liste de fichiers partagés
+448|Regardez dans la fenêtre des fichiers partagés
+449|Fichier dupliqué
+450|Ce type de media est filtré
+451|Médias filtrés;
+452|Cacher Ares
+453|Montrer Ares
+454|résultat pour
+455|résultats pour
+456|mon répertoire partagé
+458|patientez...
+459|*Vous partagez déja ce fichier*
+460|*VOUS TELECHARGEZ DEJA CE FICHIER*
+461|Traitement	
+462|Mis en pause
+464|Leech mis en pause
+465|Annulé
+466|Terminé
+467|Téléchargement
+468|Inactif
+469|Recherche
+470|Connexion
+471|ATTENTION
+472|Recherche
+473|Utilisateurs
+474|Connexion à l'utilisateur
+475|Discussion - connexion à l'hôte
+476|Vous
+477|banni (sera débanni quand vous redémarrerez le programme)
+478| Chercher
+479|tout
+480|Priorité du Hash
+481|File d'attente
+482|Maximale
+483|Haute
+484|Normale
+485|Basse
+486|Minimale
+487|Ignorer/Ne plus Ignorer
+488|Museler
+489|Démuseler
+490|Bannir
+491|Débannir
+492|Expulser
+494|Paramètre de partage
+495|Ouvrir/Lire
+496|Utiliser le lecteur externe
+497|Localiser le fichier
+498|Rechercher:
+499|Trouver plus de sources
+500|Tout mettre en pause/Enlever la pause sur tout
+501|Voir la playlist
+502|Quitter Ares
+504|Bloquer l'utilisateur
+505|Ne plus partager le fichier
+506|Adapter à l'écran
+508|Arrêter
+509|Tout sélectionner
+510|Copier dans le presse papier
+511|Ouvrir dans le bloc notes
+512|Chercher
+513|Date
+514|Voir la file d'attente
+515|Voir les personnes dans la file d'attente
+516|Montrer les envois
+517|Voir les envois
+518|Filtré
+519|Affichage normal
+520|Affichage par groupes
+521|Montre les fichiers partagés par groupes
+522|Montre les répertoires partagés
+523|Utilisateur
+524|Titre
+525|Artiste
+526|Qualité
+527|Année
+528|Version
+529|Type
+530|Couleurs
+531|Auteur
+532|Répertoire
+533|Durée
+534|reçus
+535|envoyés
+536|Résolution
+537|Type de média
+538|Langage
+539|Catégorie
+540|Téléchargement
+541|Scan en cours
+542|Envoi
+543|Envoi
+544|Réception
+545|Album
+546|Companie
+547|Date
+548|Taille demandée
+549|Taille du fichier
+550|Taille
+551|Format
+552|Nom
+553|URL
+554|Nom
+555|Sujet
+556|Bienvenue dans le salon 
+557| !
+558|Débit
+559|Grouper par Album
+560|Grouper par Auteur
+561|Grouper par Artiste
+562|Grouper par Catégorie
+563|Grouper par Companie
+564|Grouper par Genre
+565|Tout
+566|Audio
+567|Vidéo
+568|Image
+569|Document
+570|Autre
+571|Logiciel
+581|Répertoires virtuels partagés
+582|Répertoires partagés
+583|Fichiers partagés
+584|Votre liste de fichiers partagés
+585|Vidéo 
+586|Audio 
+587|Tout type de fichier 
+588|Image 
+589|Document
+590|Logiciel
+594|Type
+595|Fichier
+596|Envoyé
+597|Statut
+598|Type de média
+599|Emplacement
+600|Demandé
+601|aujourd'hui
+602|total
+603|Genre
+604|Restant
+605|Progression
+606|Vitesse de transfert totale
+607|Commentaires
+608|Temps restant estimé
+609|Volume transmis
+610|Volume reçu
+611|Nombre de sources
+612|sources
+613|source
+614|Bande passante
+615|Inconnu
+616|inconnu
+617|sur
+618|Envoi
+630|déconnecté (expulsé)
+631|le
+632|- IP:
+633|Vous avez été muselé
+634|a été muselé
+635|Vous avez été démuselé
+636|a été démuselé
+637|Message d'accueil chargé
+638|lignes
+639|Echec du bannissement, l'utilisateur
+640|n'a pas été trouvé
+641|Bannir le groupe
+642|Ne plus bannir le groupe
+643|débanni
+644|Echec de suppression de la liste des personnes interdites, l'utilisateur
+645|n'est pas banni
+646|Liste des utilisateurs interdits éffacée
+648|banni
+649|Groupe
+650|groupes bannis
+651|utilisateurs interdits
+653|: statistiques
+654|Adresse du serveur
+655|Serveur démarré le:
+656|Actif depuis
+657|Connexions acceptées
+658|Messages reçus
+659|Record d'utilisateurs simultanés
+660|Nombre actuel d'utilisateurs
+661|Déja banni
+662|msgs envoyés
+663|floodeurs déconnectés
+664|utilisateurs expulsés
+665|Vous êtes l'hôte de ce salon
+666|Tapez
+667|pour voir la liste des commandes
+668|Changer le sujet du salon
+669|Envoyer une action sur le salon
+670|Montrer les statistiques du salon
+671|Museler l'utilisateur
+672|Démuseler l'utilisateur
+673|Déconnecter l'utilisateur
+674|Interdire l'utilisateur
+675|Effacer l'interdiction d'un utilisateur
+676|Interdire un groupe d'IPs
+677|Effacer l'interdiction d'un groupe d'IPs
+678|Effacer la liste des personnes interdites
+679|Montrer le message d'accueil
+680|Ouvrir le message d'accueil
+681|Lire le message d'accueil à partir d'un fichier
+682|Montrer la liste des personnes interdites
+683|Effacer l'écran
+684|Montrer les comandes
+685|ceci est un exemple de message d'accueil
+686|editer le texte, l'enregistrer et utilsier la commande /loadmotd
+687|Bienvenue dans mon salon! [Build 3022]
+688|
+689|Connexion de
+690|dans le groupe d'IPs interdites
+691|Non connecté
+692|Connexion rejetée(utilisateur banni)
+693|non ignoré
+694|Ne peut pas ignorer
+695|trop d'utilisateurs ignorés
+696|déja ignoré
+697|ignoré
+698|muselé
+699|Langue:
+700|Salons
+701|Partagé
+703|Demande de la liste, patientez...
+704|Liste vide, essayez plus tard
+705|Scan en cours...
+708|
+709|fichiers
+710|Pseudo:
+711|Cacher l'outil de recherche
+712|Espace disponible
+713|Chargement en cours: 
+714|Chargement terminé:
+715|Mauvais
+716|Moyen
+717|Bon
+718|Très bon
+719|Ares est en train de scanner vos répertoires partagés.\nl\nlQuand Ares trouve un nouveau fichier dans votre répertoire, il doit créer un code qui l'identifie (le Hash).\nlCette operation peut prendre du temps, suivant la taille du fichier et la vitesse de votre ordinateur.\nl\nlVous pouvez voir quel fichier est en train d'être identifié ci-dessus.\nlVous pouvez aussi modifier la priorité que donne Ares à l'identification et au calcul du Hash.\nlN'oubliez pas que choisir une priorité importante réduira considérablement le temps de cette action, mais ralentira aussi énormément votre ordinateur.\nl\nlMerci d'avoir choisi Ares pour échanger vos fichiers.
+720|Calcul du Hash en cours
+721|Recherche de fichiers en cours 
+724|Annuler l'envoi
+725|Autre
+726|Audio
+727|Logiciel
+728|Vidéo
+729|Document
+730|Image
+731|Commencé
+732|Sources disponibles
+733|Progression actuelle
+734|Total d'éssais
+735|Intervale de reconnexion
+736|Dernière demande
+738|Expiration
+741|Enregistrer sous
+742|Au moins
+743|Au max.
+744|Egal à
+745|Environ
+746|Plus long que
+747|Plus court que
+748|Plus petit que
+749|Plus grand que
+750|Mise en pause locale
+751|chargement(s) simultané(s) autorisé(s)
+752|Commande inconnue
+753|Proxy
+755|Pas de proxy
+756|Proxy Sock4
+757|Proxy Sock5
+758|Adresse du serveur
+759|Nom d'utilisateur
+760|Mot de passe
+761|L'utilisateur regarde vos fichiers partagés
+762|Autoriser l'accès à ma liste de fichiers partagés
+763|Ares a détecté la présence d'un firewall activé sur votre ordinateur. Si vous gardez la configuration actuelle vous risquez d'avoir des problèmes de téléchargement et des débits faibles.\nlVous devriez configurer votre firewall pour autoriser le traffic entrant sur le port de données d'Ares.\nlVoulez-vous qu'Ares le fasse à votre place? 
+764|Paramètres du firewall
+765|Ares a détecté la présence d'un firewall activé sur votre ordinateur. Si vous voulez héberger un salon vous devez autoriser les connexions entrantes sur le port dédié.\nlVoulez-vous qu'Ares le fasse à votre place? 
+766|Connexion directe
+767|Envoyer un répertoire
+768|Déconnecté
+769|Rechercher dans le salon
+770|Donner accès à mes fichiers
+771|Chargement échoué, utilisateur déconnecté
+772|Types de fichiers partageables
+773|Fond noir
+775|Téléchargement direct
+776|Insérez le HashLink ici
+777|Exporter le HashLink
+778|Fichier corrompu
+779|Erreur d'accès au fichier
+785|Autoriser la visualisation des fichiers
+787|Enregistré le:
+788|Téléchargements récents
+789|Autoriser la visualisation du/des répertoire(s)
+790|Ouvrir le répertoire
+791|Accepter les fichiers automatiquement
+792|Montrer l'adresse IP de l'utilisateur
+793|Infos sur un utilisateur qui était connecté
+794|Montrer les statistiques de l'utilisateur
+795|Hashlinks
+796|Gérer les Hashlinks eDonkey
+797|Gérer les Hashlinks Magnet
+798|Les Hashlinks Ares sont des liens vers des fichiers trouvés sur le réseau Ares. Ces liens vous permettent de télécharger des fichiers sans avoir à éffectuer de recherche. Vous pouvez cliquer dirrectement sur des liens présents sur des sites qui hébergent des Hashlinks Ares afin de démarrer automatiquement le téléchargement du/des fichier(s). Ares ne supporte plus uniquement ses propres Hashlinks, vous pouvez aussi utiliser les liens magnet et ed2k. Sélectionnez par un simple click quel type de lien vous voulez gérer avec Ares.
+799|Panneau de contrôle
+800|Configuration d'Ares
+801|Verifier la connexion
+802|Test...
+803|Test échoué
+804|Test réussi
+805|Changeur de proxy
+806|Vous utilisez actuellement
+807|Charger la liste
+808|Sauver la liste
+809|Utiliser plusieurs Proxy
+810|Nouvelle fenêtre
+811|Ouvrir
+812|Montrer les annonces d'entrée/sortie
+813|Favoris
+814|Ajouter aux favoris
+815|Ajouté le:
+816|Autres types de fichiers
+817|Déconnecter la source
+818|Vous êtes sur le point d'ouvrir un fichier potentiellement dangereux. Ce fichier peut contenir un virus ou cheval de troie.\\nlEtes-vous sûr de vouloir continuer?
+819|Occupé
+820|Salon
+821|Demande distante
+822|Attente de réponse
+823|Demande en cours
+824|Connexion automatique
+825|Connecté
+826|Ajouter automatiquement au favoris
+827|Faire d'Ares mon client torrent par défaut
+828|Activé
+829|Enregistrement
+830|Nouvelle radio
+831|Prendre en charge les fichiers pls et m3u
+832|Liste des radios
+833|Mettre à jour l'URL du salon
+834|Fermer en même temps qu'Ares
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
