@@ -1,0 +1,46 @@
+Installing component trial versions :
+-------------------------------------
+
+Delphi 6, 7
+
+- Unzip into a seperate directory and add following directories to the environment library path:
+  {$INSTALLDIR}\Source
+  {$INSTALLDIR}\Design
+  {$INSTALLDIR}\Packages
+- From the IDE file menu, choose File, Open
+- Browse for and open TMSUnicodeDx.bpg
+- From the project group, open TMSUnicodeDx.dpk and from the package editor, press Compile
+- From the project group, open TMSUnicodeDEDx.dpk and from the package editor, press Compile
+
+with 
+  x = 6 for Delphi 6
+  x = 7 for Delphi 7
+
+C++Builder 6
+
+- Unzip into a seperate directory and add following directories to the environment library path:
+  {$INSTALLDIR}\Source
+  {$INSTALLDIR}\Design
+  {$INSTALLDIR}\Packages
+- From the IDE file menu, choose File, Open
+- Browse for and open TMSUnicodeC6.bpg
+- From the project group, open TMSUnicodeC6.bpk and from the package editor, press Compile
+- From the project group, open TMSUnicodeDEC6.bpk and from the package editor, press Compile
+
+
+Delphi 2005
+
+- Unzip into a seperate directory and add following directories to the environment library path:
+  {$INSTALLDIR}\Source
+  {$INSTALLDIR}\Design
+  {$INSTALLDIR}\Packages
+- From the IDE file menu, choose File, Open
+- Browse for and open TMSUnicodeD2005.bdsgroup
+- From the project group, open TMSUnicodeD2005.bdsproj and from the package editor, press Compile
+- From the project group, open TMSUnicodeDED2005.bdsproj and from the package editor, press Compile
+
+
+Delphi 2006, 2007 &  C++Builder 2006, 2007 trial version
+
+- Close the IDE, run Setup.exe and restart the IDE
+
