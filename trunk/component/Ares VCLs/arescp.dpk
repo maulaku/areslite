@@ -1,0 +1,58 @@
+package arescp;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  vclactnband,
+  vclx,
+  vclie,
+  dsnap,
+  dbrtl,
+  vcldb,
+  visualclx,
+  TMSUnicodeD7;
+
+contains
+  bgimPanel in 'BGImPanel.pas',
+  CmtHint in 'CmtHint.pas',
+  CmtVerNfo in 'CmtVerNfo.pas',
+  comettopicpnl in 'CometTopicPnl.pas',
+  comettrack in 'CometTrack.pas',
+  CometTrees in 'CometTrees.pas',
+  CometTreesReg in 'CometTreesReg.pas',
+  folderBrowse in 'FolderBrowse.pas',
+  uTrayIcon in 'uTrayIcon.pas',
+  VCHeaderPopup in 'VCHeaderPopup.pas',
+  WinSplit in 'WinSplit.pas',
+  XPbutton in 'XPbutton.pas',
+  XPMan in 'XPMan.pas',
+  mPlayerPanel in 'mPlayerPanel.pas',
+  cometPageView in 'cometPageView.pas',
+  cometbtnedit in 'cometbtnedit.pas';
+
+end.
