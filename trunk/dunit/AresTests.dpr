@@ -4,6 +4,8 @@
 
 program AresTests;
 
+{%ToDo 'AresTests.todo'}
+
 uses
   TestFramework {$IFDEF LINUX},
   QForms,

@@ -19,7 +19,7 @@
 
 {
 Description:
-meta and media informations extraction routines
+  meta and media informations extraction routines
 }
 
 unit umediar;
@@ -83,6 +83,24 @@ const
   { Names of supported tag-chunks }
   TWIN_CHUNK: array [1..TWIN_CHUNK_COUNT] of string =
     ('NAME', 'COMT', 'AUTH', '(c) ', 'FILE', 'ALBM');
+
+type
+{ Extract Meta info }
+  PMetaTag = ^TMetaTag;
+  TMetaTag = record
+    artist   :string;
+    title    :string;
+    format   :string;
+    language :string;
+    category :string;
+    param1   :integer;
+    param2   :integer;
+    param3   :integer;
+    album    :string;
+    comment  :string;
+    year     :string;
+    url      :string;
+  end;
 
 type
   { TwinVQ chunk header }
@@ -765,25 +783,26 @@ type
       function FGetValid: Boolean;
     public
       { Public declarations }
-      constructor Create;                                     { Create object }
-      destructor Destroy; override;                          { Destroy object }
+      constructor Create;                                             { Create object }
+      destructor Destroy; override;                                   { Destroy object }
       function ReadFromFile(const FileName: widestring): Boolean;     { Load data }
-      property FileLength: Int64 read FFileLength;    { File length (bytes) }
-      property VBR: VBRData read FVBR;                      { VBR header data }
-      property Frame: FrameData read FFrame;              { Frame header data }
-      property ID3v1: TID3v1 read FID3v1;                    { ID3v1 tag data }
-      property ID3v2: TID3v2 read FID3v2;                    { ID3v2 tag data }
-      property Version: string read FGetVersion;          { MPEG version name }
-      property Layer: string read FGetLayer;                { MPEG layer name }
-      property BitRate: Word read FGetBitRate;            { Bit rate (kbit/s) }
-      property SampleRate: Word read FGetSampleRate;       { Sample rate (hz) }
-      property ChannelMode: string read FGetChannelMode;  { Channel mode name }
-      property Emphasis: string read FGetEmphasis;            { Emphasis name }
-      property Frames: Integer read FGetFrames;      { Total number of frames }
-      property Duration: Double read FGetDuration;      { Song duration (sec) }
-      property EncoderID: Byte read FGetEncoderID;       { Guessed encoder ID }
-      property Encoder: string read FGetEncoder;       { Guessed encoder name }
-      property Valid: Boolean read FGetValid;       { True if MPEG file valid }
+      function ExtractMeta: TMetaTag;
+      property FileLength: Int64 read FFileLength;                    { File length (bytes) }
+      property VBR: VBRData read FVBR;                                { VBR header data }
+      property Frame: FrameData read FFrame;                          { Frame header data }
+      property ID3v1: TID3v1 read FID3v1;                             { ID3v1 tag data }
+      property ID3v2: TID3v2 read FID3v2;                             { ID3v2 tag data }
+      property Version: string read FGetVersion;                      { MPEG version name }
+      property Layer: string read FGetLayer;                          { MPEG layer name }
+      property BitRate: Word read FGetBitRate;                        { Bit rate (kbit/s) }
+      property SampleRate: Word read FGetSampleRate;                  { Sample rate (hz) }
+      property ChannelMode: string read FGetChannelMode;              { Channel mode name }
+      property Emphasis: string read FGetEmphasis;                    { Emphasis name }
+      property Frames: Integer read FGetFrames;                       { Total number of frames }
+      property Duration: Double read FGetDuration;                    { Song duration (sec) }
+      property EncoderID: Byte read FGetEncoderID;                    { Guessed encoder ID }
+      property Encoder: string read FGetEncoder;                      { Guessed encoder name }
+      property Valid: Boolean read FGetValid;                         { True if MPEG file valid }
   end;
 
 
@@ -3916,6 +3935,35 @@ begin
   if not FFrame.Found then FResetData;
 end;
 
+function TMPEGaudio.ExtractMeta: TMetaTag;
+var
+  metaTag : TMetaTag;
+begin
+  metaTag.param1 := BitRate;
+  metaTag.param3 := trunc(Duration);
+  metaTag.param2 := SampleRate;
+
+  if id3v2.exists then begin
+     metaTag.title   := id3v2.Title;
+     metaTag.artist  := id3v2.artist;
+     metaTag.album   := id3v2.Album;
+     metaTag.category:= id3v2.Genre;
+     metaTag.comment := '';
+     metaTag.year    := id3v2.Year;
+     if id3v2.comment <> id3v2.Link then metaTag.url := id3v2.Link;
+
+  end else
+    if ID3v1.Exists then begin
+        metaTag.title     := id3v1.Title;
+        metaTag.artist    := id3v1.artist;
+        metaTag.album     := id3v1.Album;
+        metaTag.category  := id3v1.Genre;
+        metaTag.comment   := '';
+        metaTag.year      := id3v1.Year;
+    end;
+    result := metaTag;
+end;
+
 
 ////////////////////////OGG
 
@@ -5285,7 +5333,7 @@ count:=count shl 8;
 count:=count + buffer[49];
 count:=count shl 8;
 count:=count + buffer[48];
-count:=count * 1000; // perchè non ho mollato il framerate
+count:=count * 1000; // perch?non ho mollato il framerate
 result.duration:=(count div (framerate)) div 1000;
 
 wres:=buffer[67];

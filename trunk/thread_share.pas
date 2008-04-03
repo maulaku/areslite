@@ -95,13 +95,33 @@ type
   end;
 
 type
+  TMetaReader = class
+  protected
+    fileScan : precord_file_scan;
+    raudio   : precord_audioinfo;
+    mp3      : TMPEGaudio;
+    ogg      : TOggVorbis;
+    wma      : TWMAfile;
+    wav      : twavfile;
+    exe      : tCmtVerNfo;
+    flac     : TFLACfile;
+    ape      : Tmonkey;
+    aac      : Taacfile;
+    immagine : tdcimageinfo;
+    vqf      : TTwinVQ;
+    mpc      : TMPCFile;
 
-  tthread_share = class(TThread)
+    constructor Create;
+
+    destructor Destroy; override;
+
+  end;
+
+  TThread_share = class(TThread)
   protected
     artists_audio, albums_audio, categs_audio, authors_document,
     categs_document, companies_software, categs_software,
-    categs_video,
-    albums_image, categs_image, keywords_genre: tmylist;
+    categs_video,albums_image, categs_image, keywords_genre: TMylist;
 
     num_files_shared, num_files, num_audio, num_video, num_image,
     num_document, num_software, num_other, num_recent, num_to_scan, num_scanned: word;
@@ -114,36 +134,36 @@ type
     first_shared_folder: precord_cartella_share;
     title, category, comment, album, artist, url, year: string;
 
-    loc_sharedList_count: word;
-    m_DHT_KeywordFiles: Tmylist;
+    loc_sharedList_count    : word;
+    m_DHT_KeywordFiles      : TMylist;
 
     filenW_mpeg, filenW_hash: widestring;
-    fileScan: precord_file_scan;
-    raudio: precord_audioinfo;
+    fileScan                : precord_file_scan;
+    raudio                  : precord_audioinfo;
 
-    loc_hash_throttle: byte;
-    naplist_helper: TNapCmdList;
-    //add_default_paths:boolean;
+    loc_hash_throttle       : byte;
+    naplist_helper          : TNapCmdList;
 
-    mp3: TMPEGaudio;
-    ogg: TOggVorbis;
-    wma: TWMAfile;
-    wav: twavfile;
-    exe: tCmtVerNfo;
-    flac: TFLACfile;
-    ape: Tmonkey;
-    aac: Taacfile;
+    mp3     : TMPEGaudio;
+    ogg     : TOggVorbis;
+    wma     : TWMAfile;
+    wav     : twavfile;
+    exe     : tCmtVerNfo;
+    flac    : TFLACfile;
+    ape     : Tmonkey;
+    aac     : Taacfile;
     immagine: tdcimageinfo;
-    vqf: TTwinVQ;
-    mpc: TMPCFile;
+    vqf     : TTwinVQ;
+    mpc     : TMPCFile;
 
+    m_metaReader : TMetaReader;
 
     procedure library_reset_stats_numbers;
     procedure init_categs;
     procedure init_thread_vars;
     procedure nihil_vars;
     procedure Execute; override;
-    procedure hide_scan_folders; //synch
+
     procedure prepara_form1_library;
     procedure scan_in_progress_start; //synch
     procedure shutdown;
@@ -156,20 +176,19 @@ type
     procedure show_final_library;
     procedure show_temp_library;
     procedure sharedfolder_scan(preview: boolean; folder: precord_cartella_share; var index_folder: integer);
-    function is_parent_path_already_in(list: tmystringlist; dir: string): boolean;
+    function  is_parent_path_already_in(list: tmystringlist; dir: string): boolean;
     procedure sharedfolder_getsubdirs(var folder: precord_cartella_share);
-    procedure regular_libraryview_assign(folder: precord_cartella_share; node_parent: PCmtVNode; data_parent: precord_cartella_share);
-    procedure reset_mime_stats;
-    function deal_with_newfile(shouldhash: boolean; folder: precord_cartella_share; nomefile: widestring; utf8path: string; fsize: int64; amime: integer): boolean;
-    procedure DHT_generate_hashFilelist;
 
+    procedure reset_mime_stats;
+    function  deal_with_newfile(shouldhash: boolean; folder: precord_cartella_share; nomefile: widestring; utf8path: string; fsize: int64; amime: integer): boolean;
+    procedure DHT_generate_hashFilelist; 
 
     procedure sharedfolders_init;
     function  add_to_sharedlist(shouldhash: boolean; folder: precord_cartella_share): boolean;
 
     procedure get_hash_throttle; //synch
     procedure put_hash_file_name; //synch
-    procedure put_clear_hash_file_name; //synch
+
     procedure put_hash_progress; //synch
     procedure put_end_hash; //synch
     procedure put_end_of_global_hashing; //sync
@@ -177,9 +196,8 @@ type
     procedure hash_compute(const FileName: widestring; fsize: int64; var sha1: string; var hash_of_phash: string; var point_of_insertion: cardinal);
 
     procedure VirFoldersView_update;
-    procedure mainGUI_addlibrarynodes;
-
     procedure RegFoldersView_update;
+    
     procedure categs_compute;
     procedure add_keyword_genre(genrestr, artiststr: string);
     procedure keyword_genre_compute;
@@ -187,7 +205,6 @@ type
     procedure extract_msword_infos;  // PPT 및 DOC 문서정보 추출.
     procedure AddmswordProperty(propid: DWORD; Value: Pointer);
 
-    procedure clear_listviewLib; // synch
     procedure sharedlist_setGlobal; //synch
     procedure getmpeginfo;
     procedure mime_stats_reset;
@@ -202,6 +219,7 @@ type
     juststarted: boolean;
 
     procedure Test;
+
   end;
 
 
@@ -217,13 +235,13 @@ uses
 
 procedure tthread_share.mime_stats_reset;
 begin
-  num_audio := 0;
-  num_video := 0;
-  num_image := 0;
-  num_document := 0;
-  num_software := 0;
-  num_other := 0;
-  num_recent := 0;
+  num_audio     := 0;
+  num_video     := 0;
+  num_image     := 0;
+  num_document  := 0;
+  num_software  := 0;
+  num_other     := 0;
+  num_recent    := 0;
 end;
 
 procedure tthread_share.lists_create;
@@ -241,8 +259,8 @@ var
 begin
 
   try
-    DB_TOWRITE_free;
-    DBFiles_free;
+    helper_library_db.DB_TOWRITE_free;
+    helper_library_db.DBFiles_free;
     helper_library_db.DBTrustedFiles_free;
   except
   end;
@@ -300,82 +318,13 @@ begin
   end;
 end;
 
-
-procedure tthread_share.clear_listviewLib; // synch
-var
-  i: integer;
-  reg: tregistry;
-begin
-  try
-    put_clear_hash_file_name;
-
-    details_library_toggle(false);
-
-    with ares_frmmain do begin
-      with listview_lib do begin
-        defaultnodeheight := 18;
-        images := ares_FrmMain.img_mime_small;
-        header.height := 21;
-        clear;
-      end;
-
-      reg := tregistry.create;
-      with reg do begin
-        openkey(areskey, true);
-        writestring('GUI.LastLibrary', '');
-        closekey;
-        destroy;
-      end;
-
-      with listview_lib.header do begin
-        for i := 0 to 9 do begin
-          columns[i].text := '';
-          columns[i].width := 0;
-        end;
-        autosizeindex := 10;
-      end;
-
-    end;
-
-
-  except
-  end;
-end;
-
-
 procedure tthread_share.scan_in_progress_start; //synch
 var
   nodo: pCmtVnode;
-//reg:tregistry;
 begin
-  try
-
-
-
-    vars_global.scan_start_time := gettickcount;
-    vars_global.hashing := true;
-
-    hash_update_GUIpry;
-    ares_FrmMain.panel_hash.capt := ' ' + GetLangStringW(STR_MEDIASEARCHINPROGRESS);
-
     num_to_scan := 0;
     num_scanned := 0;
-
-
-    if ares_frmmain.tabs_pageview.activepage = IDTAB_LIBRARY then begin
-      if ares_FrmMain.btn_lib_virtual_view.down then begin
-        nodo := ares_FrmMain.treeview_lib_virfolders.getfirst;
-        ares_FrmMain.treeview_lib_virfolders.selected[nodo] := true;
-        ufrmmain.ares_FrmMain.treeview_lib_virfoldersClick(nil);
-      end else begin
-        nodo := ares_FrmMain.treeview_lib_regfolders.getfirst;
-        ares_FrmMain.treeview_lib_regfolders.selected[nodo] := true;
-        ufrmmain.ares_FrmMain.treeview_lib_regfoldersClick(nil);
-      end;
-    end;
-
-  except
-  end;
+    ares_FrmMain.scan_in_progress_start;
 end;
 
 
@@ -386,39 +335,39 @@ begin
   init_cached_dbs;
   ICH_init_phash_indexs;
 
-  artists_audio := nil;
-  categs_audio := nil;
-  albums_audio := nil;
-  albums_image := nil;
-  categs_image := nil;
-  categs_video := nil;
-  authors_document := nil;
-  categs_document := nil;
-  companies_software := nil;
-  categs_software := nil;
-  m_DHT_KeywordFiles := nil;
+  artists_audio     := nil;
+  categs_audio      := nil;
+  albums_audio      := nil;
+  albums_image      := nil;
+  categs_image      := nil;
+  categs_video      := nil;
+  authors_document  := nil;
+  categs_document   := nil;
+  companies_software:= nil;
+  categs_software   := nil;
+  m_DHT_KeywordFiles:= nil;
 
-  raudio := nil;
-  fileScan := nil;
+  raudio            := nil;
+  fileScan          := nil;
 
-  mp3 := nil;
-  ogg := nil;
-  wma := nil;
-  exe := nil;
-  flac := nil;
-  ape := nil;
-  vqf := nil;
-  aac := nil;
-  mpc := nil;
-  immagine := nil;
+  mp3               := nil;
+  ogg               := nil;
+  wma               := nil;
+  exe               := nil;
+  flac              := nil;
+  ape               := nil;
+  vqf               := nil;
+  aac               := nil;
+  mpc               := nil;
+  immagine          := nil;
 end;
 
 procedure tthread_share.prepara_form1_library;
 begin
   try
-    synchronize(clear_listviewLib);
+    synchronize(ares_frmmain.clear_listviewLib);
     sleep(15);
-    synchronize(mainGUI_addlibrarynodes);
+    synchronize(ares_frmmain.mainGUI_addlibrarynodes);
     sleep(15);
     synchronize(scan_in_progress_start);
   except
@@ -426,13 +375,9 @@ begin
   end;
 end;
 
-
-
-
-
 procedure tthread_share.Execute;
 begin
-  Priority := tpnormal;
+  Priority        := tpnormal;
   freeonterminate := false;
 
   nihil_vars;
@@ -452,11 +397,11 @@ begin
     if not terminated then sleep(10);
     if not terminated then synchronize(sharedlist_GetGlobal); //<---clear library from frmmain
     if not terminated then sleep(10);
-    if not terminated then ICH_load_phash_indexs; //must be before of get_cached_metas
+    if not terminated then ICH_load_phash_indexs; //must be before of load_cached_metas
     if not terminated then sleep(10);
-    if not terminated then helper_library_db.get_cached_metas; // fill cached from disk to avoid double scan
+    if not terminated then helper_library_db.load_cached_metas(vars_global.data_path); // fill cached from disk to avoid double scan
     if not terminated then sleep(10);
-    if not terminated then helper_library_db.get_trusted_metas; // fill trusted from disk to assign older meta and shared preferences
+    if not terminated then helper_library_db.load_trusted_metas(vars_global.data_path); // fill trusted from disk to assign older meta and shared preferences
     if not terminated then sleep(10);
 
     if not terminated then init_metareaders;
@@ -466,7 +411,7 @@ begin
     if not terminated then sleep(10);
     if not terminated then show_final_library; // perform actual scan
 
-    synchronize(hide_scan_folders);
+    synchronize(ares_frmmain.hide_scan_folders);
   except
   end;
 
@@ -481,15 +426,15 @@ begin
     raudio := AllocMem(sizeof(record_audioinfo));
     fileScan := AllocMem(sizeof(record_file_scan));
 
-    mp3 := TMPEGaudio.create;
-    wav := twavfile.create;
-    ogg := TOggVorbis.create;
-    wma := TWMAfile.create;
+    mp3  := TMPEGaudio.create;
+    wav  := twavfile.create;
+    ogg  := TOggVorbis.create;
+    wma  := TWMAfile.create;
     flac := TFLACfile.create;
-    ape := Tmonkey.create;
-    vqf := TTwinVQ.create;
-    aac := Taacfile.create;
-    mpc := TMPCFile.create;
+    ape  := Tmonkey.create;
+    vqf  := TTwinVQ.create;
+    aac  := Taacfile.create;
+    mpc  := TMPCFile.create;
     try
       exe := tCmtVerNfo.create(nil);
     except
@@ -498,6 +443,8 @@ begin
     immagine := tdcimageinfo.create;
   except
   end;
+
+  m_metaReader := TMetaReader.Create;
 end;
 
 procedure tthreaD_share.shutdown;
@@ -521,7 +468,8 @@ begin
   free_metareaders;
   ICH_free_phash_indexs;
 
- //for test postmessage(ares_FrmMain.handle, WM_THREADSHARE_END, 1, 1);
+ //{TODO commented for test}
+ postmessage(ares_FrmMain.handle, WM_THREADSHARE_END, 1, 1);
 end;
 
 procedure tthread_share.free_metareaders;
@@ -540,15 +488,9 @@ begin
     if immagine <> nil then immagine.free;
   except
   end;
+
+  m_metaReader.Free;
 end;
-
-
-
-
-
-
-
-
 
 procedure tthread_share.DHT_generate_hashFilelist;
 var
@@ -561,9 +503,9 @@ begin
   try
 
     for i := 0 to 255 do begin
-      if DB_TOWRITE[i] = nil then continue;
+      if helper_library_db.getDBtoWrite(i) = nil then continue;
 
-      pfile := DB_TOWRITE[i];
+      pfile := helper_library_db.getDBtoWrite(i);
       while (pfile <> nil) do begin
         if pfile^.shared then begin
           phash := AllocMem(sizeof(record_DHT_hashfile));
@@ -593,9 +535,9 @@ begin
 
 
     for i := 0 to 255 do begin
-      if DB_TOWRITE[i] = nil then continue;
+      if helper_library_db.getDBtoWrite(i) = nil then continue;
 
-      pfile := DB_TOWRITE[i];
+      pfile := helper_library_db.getDBtoWrite(i);
 
       while (pfile <> nil) do begin
         pfile^.write_to_disk := false;
@@ -607,7 +549,7 @@ begin
         pfile := pfile^.next;
       end;
 
-      DB_TOWRITE[i] := nil;
+      helper_library_db.setDBToWrite(i,nil);
     end;
 
 
@@ -679,19 +621,19 @@ begin
       exit;
     end;
 
-    pkeyw := AllocMem(sizeof(record_keyword_genre));
-    pkeyw^.crc := crc1;
-    pkeyw^.len := len1;
-    pkeyw^.genre := genre;
+    pkeyw           := AllocMem(sizeof(record_keyword_genre));
+    pkeyw^.crc      := crc1;
+    pkeyw^.len      := len1;
+    pkeyw^.genre    := genre;
 
-    pitem := AllocMem(sizeof(record_keyword_genre_item));
-    pitem^.len := len2;
-    pitem^.crc := crc2;
-    pitem^.artist := artist;
-    pitem^.times := 1;
-    pitem^.prev := nil;
-    pitem^.next := nil;
-    pkeyw^.firstitem := pitem;
+    pitem           := AllocMem(sizeof(record_keyword_genre_item));
+    pitem^.len      := len2;
+    pitem^.crc      := crc2;
+    pitem^.artist   := artist;
+    pitem^.times    := 1;
+    pitem^.prev     := nil;
+    pitem^.next     := nil;
+    pkeyw^.firstitem:= pitem;
     keywords_genre.add(pkeyw);
 
   except
@@ -771,10 +713,9 @@ begin
     list := tmylist.create;
 
     for i := 0 to 255 do begin
-      if DB_TOWRITE[i] = nil then continue;
+      if helper_library_db.getDBtoWrite(i) = nil then continue;
 
-
-      pfile := DB_TOWRITE[i];
+      pFile := helper_library_db.getDBtoWrite(i);
       while (pfile <> nil) do begin
 
         if not pfile^.shared then begin
@@ -789,7 +730,6 @@ begin
       end;
 
     end;
-
 
     list.free;
 
@@ -814,17 +754,17 @@ begin
   except
   end;
 
-  artists_audio := tmylist.create;
-  albums_audio := tmylist.create;
-  categs_audio := tmylist.create;
-  albums_image := tmylist.create;
-  categs_image := tmylist.create;
+  artists_audio     := tmylist.create;
+  albums_audio      := tmylist.create;
+  categs_audio      := tmylist.create;
+  albums_image      := tmylist.create;
+  categs_image      := tmylist.create;
   sleep(5);
-  categs_video := tmylist.create;
-  authors_document := tmylist.create;
-  categs_document := tmylist.create;
-  companies_software := tmylist.create;
-  categs_software := tmylist.create;
+  categs_video      := tmylist.create;
+  authors_document  := tmylist.create;
+  categs_document   := tmylist.create;
+  companies_software:= tmylist.create;
+  categs_software   := tmylist.create;
 end;
 
 procedure tthread_share.categs_compute;
@@ -842,9 +782,9 @@ begin
     strUnknown := GetLangStringA(STR_UNKNOWN);
 
     for i := 0 to 255 do begin
-      if DB_TOWRITE[i] = nil then continue;
+      if helper_library_db.getDBtoWrite(i) = nil then continue;
 
-      pfile := DB_TOWRITE[i];
+      pfile := helper_library_db.getDBtoWrite(i);
       while (pfile <> nil) do begin
 
         if length(pfile^.artist) < 2 then artist := copy(strunknown, 1, length(strunknown))
@@ -1089,14 +1029,13 @@ end;
 
 procedure tthread_share.library_reset_stats_numbers;
 begin
-  num_other := 0;
-  num_audio := 0;
-  num_video := 0;
-  num_document := 0;
-  num_software := 0;
-  num_image := 0;
-  num_files := loc_sharedList_count;
-     // if loc_sharedList.count>1 then loc_sharedList.sort(ordina_per_size);
+  num_other   := 0;
+  num_audio   := 0;
+  num_video   := 0;
+  num_document:= 0;
+  num_software:= 0;
+  num_image   := 0;
+  num_files   := loc_sharedList_count;
 end;
 
 procedure tthread_share.show_temp_library;
@@ -1124,16 +1063,16 @@ begin
 
     if terminated then exit;
 
-    synchronize(sharedlist_SetGlobal); // put previewable DB_TOWRITE to formmain
+    synchronize(sharedlist_SetGlobal);
     if terminated then exit else sleep(5);
 
     categs_sort;
-  //for test  synchronize(VirFoldersView_update);
-  //for test  synchronize(RegFoldersView_update);
 
+    synchronize(VirFoldersView_update);
+    synchronize(RegFoldersView_update);
 
-    DB_TOWRITE_free;
-    loc_sharedList_count := 0; //reset
+    helper_library_db.DB_TOWRITE_free;
+    loc_sharedList_count := 0;
 
   except
   end;
@@ -1142,27 +1081,25 @@ end;
 
 procedure tthread_share.init_thread_vars;
 begin
-  num_other := 0;
-  num_audio := 0;
-  num_video := 0;
-  num_document := 0;
-  num_software := 0;
-  num_image := 0;
-  num_files := 0;
-  num_files_shared := 0;
-  bytes_hashed_total := 0;
-  num_scanned := 0;
-  time_last_check_speed := gettickcount;
-  bytes_hashed_before := bytes_hashed_total;
-  speed_hash_global := 0;
+  num_other            := 0;
+  num_audio            := 0;
+  num_video            := 0;
+  num_document         := 0;
+  num_software         := 0;
+  num_image            := 0;
+  num_files            := 0;
+  num_files_shared     := 0;
+  bytes_hashed_total   := 0;
+  num_scanned          := 0;
+  time_last_check_speed:= gettickcount;
+  bytes_hashed_before  := bytes_hashed_total;
+  speed_hash_global    := 0;
 end;
 
 procedure tthread_share.show_final_library;
 var
   index_folder: integer;
- //last_up_grafico:cardinal;
 begin
-//last_up_grafico:=gettickcount;
   init_thread_vars;
   try
     seterrormode(SEM_FAILCRITICALERRORS);
@@ -1171,19 +1108,18 @@ begin
     sharedfolder_scan(false, first_shared_folder, index_folder);
     try
 
-//for test      synchronize(put_end_of_global_hashing);
+//for test
+      synchronize(put_end_of_global_hashing);
       sleep(5);
 
-      set_cached_metas; // rewrite our final library to disk
+      save_cached_metas(vars_global.data_path); // rewrite our final library to disk
 
       if terminated then exit;
 
-      set_trusted_metas; //rewrite trusted metas...we don't need them anymore , and might have duplicates...so rewrite it
+      save_trusted_metas(data_path); //rewrite trusted metas...we don't need them anymore , and might have duplicates...so rewrite it
 
 
       reset_mime_stats;
-
-     // if loc_sharedList.count>1 then loc_sharedList.sort(ordina_per_size);
 
       categs_compute;
       keyword_genre_compute;
@@ -1198,8 +1134,10 @@ begin
       if terminated then exit else sleep(5);
 
       categs_sort;
- //for test    synchronize(VirFoldersView_update);
- //for test    synchronize(RegFoldersView_update);
+ //for test
+      synchronize(VirFoldersView_update);
+ //for test
+      synchronize(RegFoldersView_update);
 
     except
     end;
@@ -1253,152 +1191,10 @@ begin
 
 end;
 
-
-
-procedure tthread_share.regular_libraryview_assign(folder: precord_cartella_share; node_parent: pCmtVnode; data_parent: precord_cartella_share);
-var
-  node_child: pCmtVnode;
-  datao: precord_cartella_share;
-begin
-
-  with ares_frmmain do begin
-    with treeview_lib_regfolders do begin
-
-      while (folder <> nil) do begin
-
-        node_child := addchild(node_parent);
-        if data_parent = nil then begin
-          datao := getdata(node_child);
-
-          if length(folder^.path) <= 3 then datao^.display_path := widestrtoutf8str(copy(folder^.path, 1, length(folder^.path)))
-          else datao^.display_path := widestrtoutf8str(extract_fnameW(copy(folder^.path, 1, length(folder^.path))));
-        end else begin
-          datao := getdata(node_child);
-          datao^.display_path := copy(data_parent^.display_path, 1, length(datA_parent^.display_path)) + '\' +
-            widestrtoutf8str(extract_fnameW(copy(folder^.path, 1, length(folder^.path))));
-        end;
-        with datao^ do begin
-          crcpath := folder^.crcpath;
-          path_utf8 := copy(folder^.path_utf8, 1, length(folder^.path_utf8));
-          path := folder^.path;
-          items := folder^.items;
-          items_shared := folder^.items_shared;
-          id := folder^.id;
-        end;
-
-        if folder^.first_child <> nil then
-          regular_libraryview_assign(folder^.first_child, node_child, datao);
-
-        folder := folder^.next;
-      end;
-
-
-    end;
-  end;
-
-end;
-
 procedure tthread_share.RegFoldersView_update;
-var
-  nodo_root, nodo_child, prev_node: pCmtVnode;
-  i: integer;
-  data: precord_cartella_share;
 begin
-
-
-  with ares_frmmain do begin
-
-    with treeview_lib_regfolders do begin
-      beginupdate;
-      clear;
-
-      nodo_root := addchild(nil);
-      data := getdata(nodo_root);
-      with data^ do begin
-        path := GetLangStringW(STR_SHARED_FOLDERS);
-        items := 0;
-        items_shared := 0;
-      end;
-    end;
-
-
-    if first_shared_folder <> nil then
-      regular_libraryview_assign(first_shared_folder, nodo_root, nil);
-
-
-    with treeview_lib_regfolders do begin
- ////////////
-      i := 0;
-      repeat
-        if i = 0 then nodo_child := getnext(nodo_root)
-        else nodo_child := getnext(nodo_child);
-        if nodo_child = nil then break;
-        inc(i);
-        data := getdata(nodo_child);
-        if data^.items > 0 then continue;
-
-        if nodo_child.childcount = 0 then begin
-
-          if nodo_child.parent = nodo_root then prev_node := nodo_root
-          else prev_node := getPrevious(nodo_child.parent);
-          if prev_node = nodo_root then i := 0;
-
-          deletenode(nodo_child, true);
-          nodo_child := prev_node;
-        end;
-
-      until (not true);
- ///////////////////////////////////////////////////////////////
-
-
-      Expanded[nodo_root] := true;
-      endupdate;
-      sort(nodo_root, 0, sdAscending);
-    end;
-
-    if btn_lib_regular_view.down then begin
-      treeview_lib_regfolders.selected[nodo_root] := true;
-      ufrmmain.ares_FrmMain.treeview_lib_regfoldersClick(nil);
-    end;
-  end;
-
+  ares_frmmain.RegFoldersView_update(first_shared_folder);
 end;
-
-
-procedure tthread_share.mainGUI_addlibrarynodes;
-var
-  data_real: ares_types.precord_cartella_share;
-  nodo: pCmtVnode;
-begin
-  try
-
-    with ares_frmmain do begin
-
-      helper_visual_library.add_base_virtualnodes(treeview_lib_virfolders, true);
-
-      treeview_lib_regfolders.beginupdate;
-      clear_treeview(treeview_lib_regfolders, false);
-
-      nodo := treeview_lib_regfolders.Addchild(nil);
-      data_real := treeview_lib_regfolders.getdata(nodo);
-      data_real^.path := GetLangStringW(STR_SHARED_FOLDERS);
-      data_real^.items := 0;
-
-      treeview_lib_regfolders.endupdate;
-
-
-      if btn_lib_regular_view.down then treeview_lib_regfolders.selected[nodo] := true
-      else begin
-        nodo := treeview_lib_virfolders.getFirst;
-        treeview_lib_virfolders.selected[nodo] := true;
-      end;
-
-    end;
-
-  except
-  end;
-end;
-
 
 procedure tthread_share.VirFoldersView_update; // in synchronize
 var
@@ -1689,6 +1485,8 @@ var
   hash_sha1, hash_of_phash: string;
   pfile_found, pfile, last_pfile: precord_file_library;
   point_of_insertion: cardinal;
+
+  metaData : TMetaTag;
 begin
   result := False;
   ext := fileScan^.ext;
@@ -1698,18 +1496,18 @@ begin
     inc(num_to_scan);
   end;
 
-  artist := '';
-  title := '';
-  format := '';
-  language := '';
-  category := '';
-  param1 := 0;
-  param2 := 0;
-  param3 := 0;
-  album := '';
+  artist  := '';
+  title   := '';
+  format  := '';
+  language:= '';
+  category:= '';
+  param1  := 0;
+  param2  := 0;
+  param3  := 0;
+  album   := '';
   comment := '';
-  year := '';
-  url := '';
+  year    := '';
+  url     := '';
 
   if ext = '.mp3' then begin // mp3
     try
@@ -1718,6 +1516,8 @@ begin
       exit;
     end;
     if not mp3.Valid then exit;
+
+//    metaData := mp3.ExtractMeta;
 
     param1 := mp3.BitRate;
     param3 := trunc(mp3.Duration);
@@ -1730,8 +1530,7 @@ begin
       comment := '';
       year := mp3.id3v2.Year;
       if mp3.id3v2.comment <> mp3.id3v2.Link then url := mp3.id3v2.Link;
-        //if pos('http://',url)<>0 then url:='' else
-        //if pos('www.',url)<>0 then url:='';
+
     end else
       if mp3.ID3v1.Exists then begin
         title     := mp3.id3v1.Title;
@@ -1755,23 +1554,23 @@ begin
       param3 := trunc(aac.Duration);
       param2 := aac.SampleRate;
       if aac.id3v2.exists then begin
-        title := aac.id3v2.Title;
-        artist := aac.id3v2.artist;
-        album := aac.id3v2.Album;
-        category := aac.id3v2.Genre;
+        title   := aac.id3v2.Title;
+        artist  := aac.id3v2.artist;
+        album   := aac.id3v2.Album;
+        category:= aac.id3v2.Genre;
         comment := aac.id3v2.Comment;
-        year := aac.id3v2.Year;
-        url := aac.id3v2.Link;
+        year    := aac.id3v2.Year;
+        url     := aac.id3v2.Link;
         //if pos('http://',url)<>0 then url:='' else
         //if pos('www.',url)<>0 then url:='';
       end else
         if aac.ID3v1.Exists then begin
-          title := aac.id3v1.Title;
-          artist := aac.id3v1.artist;
-          album := aac.id3v1.Album;
-          category := aac.id3v1.Genre;
+          title   := aac.id3v1.Title;
+          artist  := aac.id3v1.artist;
+          album   := aac.id3v1.Album;
+          category:= aac.id3v1.Genre;
           comment := aac.id3v1.Comment;
-          year := aac.id3v1.Year;
+          year    := aac.id3v1.Year;
         end;
 
     end else
@@ -1827,10 +1626,10 @@ begin
           param2 := vqf.SampleRate;
           param3 := trunc(vqf.duration);
 
-          title := vqf.Title;
+          title  := vqf.Title;
           artist := vqf.Author;
-          album := vqf.Album;
-          comment := vqf.Comment;
+          album  := vqf.Album;
+          comment:= vqf.Comment;
         end else
           if ext = '.mpc' then begin
             try
@@ -1845,20 +1644,20 @@ begin
             param2 := mpc.samplerate;
             param3 := trunc(mpc.duration);
             if mpc.APEtag.exists then begin
-              title := mpc.APEtag.Title;
-              artist := mpc.APEtag.artist;
-              album := mpc.APEtag.Album;
-              category := mpc.APEtag.Genre;
+              title   := mpc.APEtag.Title;
+              artist  := mpc.APEtag.artist;
+              album   := mpc.APEtag.Album;
+              category:= mpc.APEtag.Genre;
               comment := mpc.APEtag.Comment;
-              year := mpc.APEtag.Year;
+              year    := mpc.APEtag.Year;
             end else
               if mpc.ID3v1.Exists then begin
-                title := mpc.id3v1.Title;
-                artist := mpc.id3v1.artist;
-                album := mpc.id3v1.Album;
-                category := mpc.id3v1.Genre;
+                title   := mpc.id3v1.Title;
+                artist  := mpc.id3v1.artist;
+                album   := mpc.id3v1.Album;
+                category:= mpc.id3v1.Genre;
                 comment := mpc.id3v1.Comment;
-                year := mpc.id3v1.Year;
+                year    := mpc.id3v1.Year;
               end;
           end else
             if ext = '.ape' then begin
@@ -1874,31 +1673,31 @@ begin
               param2 := ape.samplerate;
               param3 := trunc(ape.duration);
               if ape.APEtag.exists then begin
-                title := ape.APEtag.Title;
-                artist := ape.APEtag.artist;
-                album := ape.APEtag.Album;
-                category := ape.APEtag.Genre;
+                title   := ape.APEtag.Title;
+                artist  := ape.APEtag.artist;
+                album   := ape.APEtag.Album;
+                category:= ape.APEtag.Genre;
                 comment := ape.APEtag.Comment;
-                year := ape.APEtag.Year;
+                year    := ape.APEtag.Year;
               end else
                 if ape.id3v2.exists then begin
-                  title := ape.id3v2.Title;
-                  artist := ape.id3v2.artist;
-                  album := ape.id3v2.Album;
-                  category := ape.id3v2.Genre;
+                  title   := ape.id3v2.Title;
+                  artist  := ape.id3v2.artist;
+                  album   := ape.id3v2.Album;
+                  category:= ape.id3v2.Genre;
                   comment := ape.id3v2.Comment;
-                  year := ape.id3v2.Year;
-                  url := ape.id3v2.Link;
+                  year    := ape.id3v2.Year;
+                  url     := ape.id3v2.Link;
        //if pos(chr(104)+chr(116)+chr(116)+chr(112)+chr(58)+chr(47)+chr(47){'http://'},url)<>0 then url:='' else
        // if pos(chr(119)+chr(119)+chr(119)+chr(46){'www.'},url)<>0 then url:='';
                 end else
                   if ape.ID3v1.Exists then begin
-                    title := ape.id3v1.Title;
-                    artist := ape.id3v1.artist;
-                    album := ape.id3v1.Album;
-                    category := ape.id3v1.Genre;
+                    title   := ape.id3v1.Title;
+                    artist  := ape.id3v1.artist;
+                    album   := ape.id3v1.Album;
+                    category:= ape.id3v1.Genre;
                     comment := ape.id3v1.Comment;
-                    year := ape.id3v1.Year;
+                    year    := ape.id3v1.Year;
                   end;
             end else
               if ext = '.ogg' then begin
@@ -1908,16 +1707,16 @@ begin
                   exit;
                 end;
                 if not ogg.Valid then exit;
-                param1 := ogg.BitRateNominal;
-                param2 := ogg.SampleRate;
-                param3 := trunc(ogg.duration);
+                param1  := ogg.BitRateNominal;
+                param2  := ogg.SampleRate;
+                param3  := trunc(ogg.duration);
 
-                title := ogg.Title;
-                artist := ogg.Artist;
-                album := ogg.Album;
-                year := ogg.Date;
+                title   := ogg.Title;
+                artist  := ogg.Artist;
+                album   := ogg.Album;
+                year    := ogg.Date;
                 comment := ogg.Comment;
-                category := ogg.Genre;
+                category:= ogg.Genre;
 
               end else
                 if ext = '.wma' then begin
@@ -1927,15 +1726,15 @@ begin
                     exit;
                   end;
                   if not wma.Valid then exit;
-                  param1 := wma.BitRate;
-                  param2 := wma.SampleRate;
-                  param3 := trunc(wma.duration);
-                  title := widestrtoutf8str(wma.Title);
-                  artist := widestrtoutf8str(wma.Artist);
-                  album := widestrtoutf8str(wma.album);
-                  category := widestrtoutf8str(wma.genre);
+                  param1  := wma.BitRate;
+                  param2  := wma.SampleRate;
+                  param3  := trunc(wma.duration);
+                  title   := widestrtoutf8str(wma.Title);
+                  artist  := widestrtoutf8str(wma.Artist);
+                  album   := widestrtoutf8str(wma.album);
+                  category:= widestrtoutf8str(wma.genre);
                   comment := widestrtoutf8str(wma.comment);
-                  year := widestrtoutf8str(wma.year);
+                  year    := widestrtoutf8str(wma.year);
                 end else
 
                   if ext = '.wav' then begin
@@ -1945,10 +1744,10 @@ begin
                       exit;
                     end;
                     if not wav.Valid then exit;
-                    param1 := wav.BitsPerSample;
-                    param2 := wav.SampleRate;
-                    duratawav := wav.duration;
-                    param3 := duratawav;
+                    param1   := wav.BitsPerSample;
+                    param2   := wav.SampleRate;
+                    duratawav:= wav.duration;
+                    param3   := duratawav;
                   end else
                     if ext = '.exe' then begin
                       try
@@ -1958,22 +1757,22 @@ begin
                         if exe.HaveVersionInfo then begin
                           param1 := exe.FileOS;
                           param2 := exe.Language;
-                          title := trim(widestrtoutf8str(exe.GetValue('ProductName'))); // trim here even if it looks so ugly
+                          title  := trim(widestrtoutf8str(exe.GetValue('ProductName'))); // trim here even if it looks so ugly
                           artist := trim(widestrtoutf8str(exe.getvalue('CompanyName')));
                           album := trim(widestrtoutf8str(exe.GetValue('FileVersion')));
                           if ((title = 'No such VersionInfo') or
                             (artist = 'No such VersionInfo') or
                             (album = 'No such VersionInfo')) then begin
-                            title := '';
+                            title  := '';
                             artist := '';
-                            album := '';
+                            album  := '';
                             param1 := 0;
                             param2 := 0;
                           end;
                         end else begin
-                          title := '';
+                          title  := '';
                           artist := '';
-                          album := '';
+                          album  := '';
                           param1 := 0;
                           param2 := 0;
                         end;
@@ -2019,9 +1818,9 @@ begin
                           if ext = '.psp' then begin
                             try
                               raudio^ := ricava_dati_psp(nomefile);
-                              param1 := raudio^.bitrate;
-                              param2 := raudio^.frequency;
-                              param3 := raudio^.duration;
+                              param1  := raudio^.bitrate;
+                              param2  := raudio^.frequency;
+                              param3  := raudio^.duration;
                             except
                               exit;
                             end;
@@ -2049,10 +1848,10 @@ begin
                               if ext = '.avi' then begin
                                 try
                                   raudio^ := ricava_dati_avi(nomefile);
-                                  param1 := raudio^.bitrate;
-                                  param2 := raudio^.frequency;
-                                  param3 := raudio^.duration;
-                                  format := 'AVI ' + uppercase(raudio^.codec);
+                                  param1  := raudio^.bitrate;
+                                  param2  := raudio^.frequency;
+                                  param3  := raudio^.duration;
+                                  format  := 'AVI ' + uppercase(raudio^.codec);
                                   if param1 = 0 then begin
                                     format := 'AVI';
                                     filenW_mpeg := nomefile;
@@ -2074,7 +1873,7 @@ begin
                                     end;
                                   end;
                                 except
-                                  format := 'AVI';
+                                  format      := 'AVI';
                                   filenW_mpeg := nomefile;
                                   try
                                     synchronize(getmpeginfo);
@@ -2194,32 +1993,32 @@ begin
     point_of_insertion := 0;
   end;
 
-  pfile := AllocMem(sizeof(record_file_library));
-  pfile^.hash_of_phash := hash_of_phash;
-  pfile^.hash_sha1 := hash_sha1;
-  pfile^.crcsha1 := crcsha1;
-  pfile^.phash_index := point_of_insertion;
-  pfile^.path := utf8path;
-  pfile^.fsize := fsize;
-  pfile^.filedate := 0;
-  pfile^.corrupt := false;
-  pfile^.title := strip_apos_amp(title);
-  pfile^.artist := strip_apos_amp(artist);
-  pfile^.album := strip_apos_amp(album);
-  pfile^.category := strip_apos_amp(category);
-  pfile^.param1 := param1;
-  pfile^.param2 := param2;
-  pfile^.param3 := param3;
-  pfile^.shared := (length(pfile^.title) > 1);
-  pfile^.vidinfo := format;
-  pfile^.folder_id := folder^.id;
-  pfile^.comment := strip_apos_amp(comment);
-  pfile^.year := strip_apos_amp(year);
-  pfile^.language := strip_apos_amp(language);
-  pfile^.amime := amime;
-  pfile^.mediatype := mediatype_to_str(amime);
-  pfile^.ext := ext;
-  pfile^.url := url;
+  pfile               := AllocMem(sizeof(record_file_library));
+  pfile^.hash_of_phash:= hash_of_phash;
+  pfile^.hash_sha1    := hash_sha1;
+  pfile^.crcsha1      := crcsha1;
+  pfile^.phash_index  := point_of_insertion;
+  pfile^.path         := utf8path;
+  pfile^.fsize        := fsize;
+  pfile^.filedate     := 0;
+  pfile^.corrupt      := false;
+  pfile^.title        := strip_apos_amp(title);
+  pfile^.artist       := strip_apos_amp(artist);
+  pfile^.album        := strip_apos_amp(album);
+  pfile^.category     := strip_apos_amp(category);
+  pfile^.param1       := param1;
+  pfile^.param2       := param2;
+  pfile^.param3       := param3;
+  pfile^.shared       := (length(pfile^.title) > 1);
+  pfile^.vidinfo      := format;
+  pfile^.folder_id    := folder^.id;
+  pfile^.comment      := strip_apos_amp(comment);
+  pfile^.year         := strip_apos_amp(year);
+  pfile^.language     := strip_apos_amp(language);
+  pfile^.amime        := amime;
+  pfile^.mediatype    := mediatype_to_str(amime);
+  pfile^.ext          := ext;
+  pfile^.url          := url;
 
   if shouldhash then begin
     assign_trusted_metas(pfile);
@@ -2243,12 +2042,13 @@ begin
   pfile^.previewing := (not shouldhash);
   if pfile^.previewing then pfile^.shared := false;
 
-  if DB_TOWRITE[ord(pfile^.hash_sha1[1])] = nil then pfile^.next := nil
+  if helper_library_db.getDBtoWrite(ord( pfile^.hash_sha1[1]) ) = nil then  pfile^.next := nil
   else begin
-    last_pfile := DB_TOWRITE[ord(pfile^.hash_sha1[1])];
+    last_pfile := helper_library_db.getDBtoWrite(ord( pfile^.hash_sha1[1]) );
     pfile^.next := last_pfile;
   end;
-  DB_TOWRITE[ord(pfile^.hash_sha1[1])] := pfile;
+
+  helper_library_db.setDBToWrite(ord(pfile^.hash_sha1[1]),pfile);
   inc(loc_sharedList_count);
 
   if ((shouldHash) and (pfile^.shared)) then begin
@@ -2305,46 +2105,44 @@ begin
 
     pfile := AllocMem(sizeof(record_file_library));
     with pfile^ do begin
-      album := pfile_found^.album;
-      artist := pfile_found^.artist;
+      album    := pfile_found^.album;
+      artist   := pfile_found^.artist;
       category := pfile_found^.category;
-      mediatype := pfile_found^.mediatype;
+      mediatype:= pfile_found^.mediatype;
       if pfile_found^.fsize > ICH_MIN_FILESIZE then phash_index := phash_indx^.db_point_on_disk
       else phash_index := 0;
-      filedate := 0;
-      vidinfo := pfile_found^.vidinfo;
-      comment := pfile_found^.comment;
-      language := pfile_found^.language;
-      param1 := pfile_found^.param1;
-      param2 := pfile_found^.param2;
-      param3 := pfile_found^.param3;
-      path := pfile_found^.path;
-      folder_id := folder^.id;
-      title := pfile_found^.title;
-      url := pfile_found^.url;
-      fsize := pfile_found^.fsize;
-      amime := pfile_found^.amime;
-      year := pfile_found^.year;
-      imageindex := pfile_found^.imageindex;
+      filedate      := 0;
+      vidinfo       := pfile_found^.vidinfo;
+      comment       := pfile_found^.comment;
+      language      := pfile_found^.language;
+      param1        := pfile_found^.param1;
+      param2        := pfile_found^.param2;
+      param3        := pfile_found^.param3;
+      path          := pfile_found^.path;
+      folder_id     := folder^.id;
+      title         := pfile_found^.title;
+      url           := pfile_found^.url;
+      fsize         := pfile_found^.fsize;
+      amime         := pfile_found^.amime;
+      year          := pfile_found^.year;
+      imageindex    := pfile_found^.imageindex;
       hash_of_phash := pfile_found^.hash_of_phash;
-      hash_sha1 := pfile_found^.hash_sha1;
-      crcsha1 := pfile_found^.crcsha1;
-      keywords_genre := pfile_found^.keywords_genre;
-      ext := pfile_found^.ext;
-      corrupt := true;
+      hash_sha1     := pfile_found^.hash_sha1;
+      crcsha1       := pfile_found^.crcsha1;
+      keywords_genre:= pfile_found^.keywords_genre;
+      ext           := pfile_found^.ext;
+      corrupt       := true;
       write_to_disk := false;
-      shared := false;
+      shared        := false;
     end;
 
-    if DB_TOWRITE[ord(pfile^.hash_sha1[1])] = nil then pfile^.next := nil
+    if helper_library_db.getDBToWrite(ord(pfile^.hash_sha1[1])) = nil then pfile^.next := nil
     else begin
-      last_pfile := DB_TOWRITE[ord(pfile^.hash_sha1[1])];
+      last_pfile:= helper_library_db.getDBToWrite(ord(pfile^.hash_sha1[1]));
       pfile^.next := last_pfile;
     end;
-    DB_TOWRITE[ord(pfile^.hash_sha1[1])] := pfile;
+    helper_library_db.setDBToWrite(ord(pfile^.hash_sha1[1]),pfile);
     inc(loc_sharedList_count);
-
-
 
     if not shouldhash then pfile^.previewing := true
     else begin //se invece non siamo in preview assegniamo alcuni metas da trusted....
@@ -2481,7 +2279,8 @@ begin
   sizefile_hash := fsize;
   progressfile_hash := 0;
 
-// for test synchronize(put_hash_file_name);
+// for test
+synchronize(put_hash_file_name);
 
 
   cSHA1 := TSHA1.Create;
@@ -2610,46 +2409,28 @@ begin
 
   inc(num_scanned);
 
-//for test  synchronize(put_end_hash);
+//for test
+  synchronize(put_end_hash);
 
   priority := tpnormal;
-end;
-
-
-
-
-procedure tthread_share.hide_scan_folders; //synch
-begin
-  with ares_frmmain do begin
-    panel_hash.capt := chr(32);
-    lbl_hash_progress.caption := chr(32);
-    lbl_hash_folder.Visible := false;
-    lbl_hash_file.visible := false;
-    lbl_hash_progress.visible := false;
-    lbl_hash_pri.visible := false;
-    progbar_hash_file.visible := false;
-    progbar_hash_total.visible := false;
-    hash_pri_trx.visible := false;
-    lbl_hash_filedet.visible := false;
-  end;
 end;
 
 procedure tthread_share.put_hash_file_name; //synch
 begin
   with ares_frmmain do begin
-    panel_hash.capt := ' ' + GetLangStringW(STR_HASH_CALCULATIONINPROGRESS);
-    lbl_hash_hint.caption := GetLangStringW(STR_HASH_HINT);
-    lbl_hash_hint.visible := true;
-    lbl_hash_pri.visible := true;
-    hash_pri_trx.visible := true;
+    panel_hash.capt           := ' ' + GetLangStringW(STR_HASH_CALCULATIONINPROGRESS);
+    lbl_hash_hint.caption     := GetLangStringW(STR_HASH_HINT);
+    lbl_hash_hint.visible     := true;
+    lbl_hash_pri.visible      := true;
+    hash_pri_trx.visible      := true;
     progbar_hash_file.visible := true;
-    progbar_hash_total.visible := true;
+    progbar_hash_total.visible:= true;
     lbl_hash_progress.visible := true;
-    lbl_hash_folder.visible := true;
-    lbl_hash_file.visible := true;
-    lbl_hash_filedet.visible := true;
-    lbl_hash_file.caption := GetLangStringW(STR_FILE) + ': ' + extract_fnameW(filenW_hash);
-    lbl_hash_folder.caption := GetLangStringW(STR_FOLDER) + ': ' + extract_fpathW(filenW_hash);
+    lbl_hash_folder.visible   := true;
+    lbl_hash_file.visible     := true;
+    lbl_hash_filedet.visible  := true;
+    lbl_hash_file.caption     := GetLangStringW(STR_FILE) + ': ' + extract_fnameW(filenW_hash);
+    lbl_hash_folder.caption   := GetLangStringW(STR_FOLDER) + ': ' + extract_fpathW(filenW_hash);
   end;
 
   put_hash_progress;
@@ -2660,16 +2441,16 @@ end;
 procedure tthread_share.put_end_of_global_hashing; //sync
 begin
   with ares_frmmain do begin
-    progbar_hash_file.position := progbar_hash_file.max;
+    progbar_hash_file.position  := progbar_hash_file.max;
     progbar_hash_total.position := progbar_hash_total.max;
   end;
 
   bytes_tohash_total := bytes_tohash_total;
-  bytes_hashed_before := bytes_tohash_total;
+  bytes_hashed_before:= bytes_tohash_total;
   bytes_hashed_total := bytes_tohash_total;
 
-  progressfile_hash := sizefile_hash;
-  num_scanned := num_to_scan;
+  progressfile_hash  := sizefile_hash;
+  num_scanned        := num_to_scan;
 
   put_hash_progress;
 end;
@@ -2734,33 +2515,6 @@ begin
   end;
 end;
 
-procedure tthread_share.put_clear_hash_file_name; //synch
-begin
-  with ares_frmmain do begin
-    lbl_hash_file.caption := GetLangStringW(STR_FILE) + ':';
-    lbl_hash_folder.caption := GetLangStringW(STR_FOLDER) + ':';
-    lbl_hash_progress.caption := GetLangStringW(STR_PROGRESS) + ':';
-    progbar_hash_file.position := 0;
-    progbar_hash_file.max := 10;
-  end;
-end;
-
-procedure tthread_share.put_end_hash; //synch
-begin
-  with ares_frmmain do begin
-    progbar_hash_file.position := progbar_hash_file.max;
-    lbl_hash_progress.caption := format_currency(sizefile_hash) + ' ' +
-      GetLangStringW(STR_OF) + ' ' + format_currency(sizefile_hash) +
-      ' ' + STR_BYTES;
-
-  // with progbar_hash_total do position:=max;
-  end;
-end;
-
-
-
-
-
 procedure tthread_share.get_hash_throttle; //synch
 begin
   loc_hash_throttle := vars_global.hash_throttle;
@@ -2768,13 +2522,13 @@ end;
 
 procedure tthread_share.AddmswordProperty(propid: DWORD; Value: Pointer);
 const
-  PID_TITLE = $00000002;
-  PID_SUBJECT = $00000003;
-  PID_AUTHOR = $00000004;
-  PID_KEYWORDS = $00000005;
-  PID_COMMENTS = $00000006;
-  PID_PAGECOUNT = $0000000E;
-  PID_LASTSAVE_DTM = $0000000D;
+  PID_TITLE       = $00000002;
+  PID_SUBJECT     = $00000003;
+  PID_AUTHOR      = $00000004;
+  PID_KEYWORDS    = $00000005;
+  PID_COMMENTS    = $00000006;
+  PID_PAGECOUNT   = $0000000E;
+  PID_LASTSAVE_DTM= $0000000D;
 var
   pagecount: integer;
   pages: string;
@@ -2795,8 +2549,6 @@ var
   end;
 
 begin
-
-
 
   case propid of
     PID_TITLE: Title := PChar(Value);
@@ -3055,14 +2807,27 @@ begin
   end;
 end;
 
+procedure tthread_share.put_end_hash;
+begin
+  with ares_frmmain do begin
+    progbar_hash_file.position := progbar_hash_file.max;
+    lbl_hash_progress.caption := format_currency(sizefile_hash) + ' ' +
+      GetLangStringW(STR_OF) + ' ' + format_currency(sizefile_hash) +
+      ' ' + STR_BYTES;
+
+  // with progbar_hash_total do position:=max;
+  end;
+end;
+
+
 procedure tthread_share.Test;
 begin
 
-  vars_global.data_path := 'd:\temp';
-  vars_global.myshared_folder := 'd:\temp\share';
-  vars_global.lista_shared := TMyList.Create;
-  DHT_hashFiles         := TThreadList.create;
-  DHT_KeywordFiles      := TThreadList.create;
+  vars_global.data_path      := 'd:\temp';
+  vars_global.myshared_folder:= 'd:\temp\share';
+  vars_global.lista_shared   := TMyList.Create;
+  DHT_hashFiles              := TThreadList.create;
+  DHT_KeywordFiles           := TThreadList.create;
 
 
   nihil_vars;
@@ -3079,12 +2844,12 @@ begin
   if not terminated then synchronize(sharedlist_GetGlobal); //<---clear library from frmmain
   if not terminated then sleep(10);
 
-  if not terminated then ICH_load_phash_indexs; //must be before of get_cached_metas
+  if not terminated then ICH_load_phash_indexs; //must be before of load_cached_metas
   if not terminated then sleep(10);
 
-  if not terminated then helper_library_db.get_cached_metas; // fill cached from disk to avoid double scan
+  if not terminated then helper_library_db.load_cached_metas(vars_global.data_path); // fill cached from disk to avoid double scan
   if not terminated then sleep(10);
-  if not terminated then helper_library_db.get_trusted_metas; // fill trusted from disk to assign older meta and shared preferences
+  if not terminated then helper_library_db.load_trusted_metas(vars_global.data_path); // fill trusted from disk to assign older meta and shared preferences
   if not terminated then sleep(10);
 
   if not terminated then init_metareaders;
@@ -3100,6 +2865,70 @@ begin
 
 
   shutdown;
+end;
+
+
+
+{ TMetaReader }
+
+constructor TMetaReader.Create;
+begin
+  try
+    raudio := AllocMem(sizeof(record_audioinfo));
+    fileScan := AllocMem(sizeof(record_file_scan));
+
+    mp3  := TMPEGaudio.create;
+    wav  := twavfile.create;
+    ogg  := TOggVorbis.create;
+    wma  := TWMAfile.create;
+    flac := TFLACfile.create;
+    ape  := Tmonkey.create;
+    vqf  := TTwinVQ.create;
+    aac  := Taacfile.create;
+    mpc  := TMPCFile.create;
+    try
+      exe := tCmtVerNfo.create(nil);
+    except
+      exe := nil;
+    end;
+    immagine := tdcimageinfo.create;
+  except
+  end;
+end;
+
+destructor TMetaReader.Destroy;
+begin
+
+  try
+    if fileScan <> nil then begin
+      fileScan.fname  := '';
+      fileScan.ext    := '';
+      FreeMem(fileScan, sizeof(record_file_scan));
+    end;
+
+    if raudio <> nil then begin
+      raudio^.codec := '';
+      FreeMem(raudio, sizeof(record_audioinfo));
+    end;
+  except
+  end;
+
+  try
+    if mp3 <> nil then mp3.free;
+    if wav <> nil then wav.free;
+    if exe <> nil then exe.free;
+    if ogg <> nil then ogg.free;
+    if wma <> nil then wma.free;
+    if flac <> nil then flac.free;
+    if ape <> nil then ape.free;
+    if vqf <> nil then vqf.free;
+    if aac <> nil then aac.free;
+    if mpc <> nil then mpc.free;
+    if immagine <> nil then immagine.free;
+  except
+  end;
+  
+  inherited;
 end;
 
 end.

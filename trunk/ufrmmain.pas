@@ -1171,7 +1171,21 @@ type
     oldwidth, oldheight, oldleft, oldtop: integer;
     procedure update_status_transfer;
     procedure paintFrame;
-  end;
+
+
+    procedure mainGUI_addlibrarynodes;
+    procedure clear_listviewLib;
+
+    procedure details_library_toggle(sshow: boolean);
+    procedure scan_in_progress_start; //synch
+
+    procedure regular_libraryview_assign(folder: precord_cartella_share; node_parent: PCmtVNode; data_parent: precord_cartella_share);
+    procedure RegFoldersView_update(pfirst_shared_folder: precord_cartella_share);
+
+    procedure hide_scan_folders;
+
+    procedure put_clear_hash_file_name; //synch
+end;
 
 procedure MaximiseForm(MyForm: TForm);
 function Drag_And_Drop_AddFile(FileName: wideString; count: integer): boolean;
@@ -2260,9 +2274,9 @@ begin
   if lista_down_temp = nil then lista_down_temp := tmylist.create;
   if thread_down     = nil then thread_down     := tthread_download.create(true);
   if share           = nil then share           := tthread_share.create(true);
-  if thread_up = nil then thread_up             := tthread_upload.create(true);
-  if client = nil then client                   := tthread_client.create(false);
-  if threadDHT = nil then threadDHT             := tthread_dht.create(false);
+  if thread_up       = nil then thread_up       := tthread_upload.create(true);
+  if client          = nil then client          := tthread_client.create(false);
+  if threadDHT       = nil then threadDHT       := tthread_dht.create(false);
 
   share.paused := false;
   share.juststarted := true;
@@ -2270,10 +2284,6 @@ begin
   share.Resume;
   thread_down.resume;
   thread_up.resume;
-
-
-
-
 
   try
     if WideParamCount = 1 then begin
@@ -2583,7 +2593,7 @@ begin
   end;
 
   try
-    set_NEWtrusted_metas;
+    save_NEWtrusted_metas(vars_global.data_path,vars_global.lista_shared);
   except
   end;
 
@@ -4608,7 +4618,7 @@ begin
   try
     need_rescan := false;
 
-    paused := set_NEWtrusted_metas;
+    paused := save_NEWtrusted_metas(vars_global.data_path,vars_global.lista_shared);
 
     vars_global.scan_start_time := gettickcount;
 
@@ -5897,12 +5907,12 @@ begin
   end;
 
   try
-    paused := set_NEWtrusted_metas;
+    paused := save_NEWtrusted_metas(vars_global.data_path,vars_global.lista_shared);
 
-    scan_start_time := gettickcount;
-    share := tthread_share.create(true);
-    share.paused := paused;
-    share.juststarted := false;
+    scan_start_time  := gettickcount;
+    share            := tthread_share.create(true);
+    share.paused     := paused;
+    share.juststarted:= false;
     share.resume;
   except
   end;
@@ -10083,12 +10093,12 @@ begin
       vars_global.share.terminate;
     end else begin
 
-      paused := set_NEWtrusted_metas;
+      paused := save_NEWtrusted_metas(vars_global.data_path,vars_global.lista_shared);
 
-      vars_global.scan_start_time := gettickcount;
-      vars_global.share := tthread_share.create(true);
-      vars_global.share.paused := paused;
-      vars_global.share.juststarted := false;
+      vars_global.scan_start_time  := gettickcount;
+      vars_global.share            := tthread_share.create(true);
+      vars_global.share.paused     := paused;
+      vars_global.share.juststarted:= false;
       vars_global.share.resume;
     end;
   except
@@ -13210,6 +13220,274 @@ begin
   if btn_opt_chat_stop.enabled then btn_opt_chat_stopclick(btn_opt_chat_stop);
   Tnt_ShellExecuteW(0, 'open', pwidechar(widestring('notepad')), pwidechar(app_path + '\Data\ChatConf.txt'), nil, SW_SHOWNORMAL);
 end;
+
+procedure Tares_frmmain.mainGUI_addlibrarynodes;
+var
+  data_real: ares_types.precord_cartella_share;
+  nodo: pCmtVnode;
+begin
+  try
+
+    with ares_frmmain do begin
+
+      helper_visual_library.add_base_virtualnodes(treeview_lib_virfolders, true);
+
+      treeview_lib_regfolders.beginupdate;
+      clear_treeview(treeview_lib_regfolders, false);
+
+      nodo := treeview_lib_regfolders.Addchild(nil);
+      data_real := treeview_lib_regfolders.getdata(nodo);
+      data_real^.path := GetLangStringW(STR_SHARED_FOLDERS);
+      data_real^.items := 0;
+
+      treeview_lib_regfolders.endupdate;
+
+      if btn_lib_regular_view.down then treeview_lib_regfolders.selected[nodo] := true
+      else begin
+        nodo := treeview_lib_virfolders.getFirst;
+        treeview_lib_virfolders.selected[nodo] := true;
+      end;
+
+    end;
+
+  except
+  end;
+end;
+
+procedure Tares_frmmain.clear_listviewLib;
+var
+  i: integer;
+  reg: tregistry;
+begin
+  try
+    put_clear_hash_file_name;
+
+    details_library_toggle(false);
+
+    with ares_frmmain do begin
+      with listview_lib do begin
+        defaultnodeheight := 18;
+        images            := ares_FrmMain.img_mime_small;
+        header.height     := 21;
+        clear;
+      end;
+
+      reg := tregistry.create;
+      with reg do begin
+        openkey(areskey, true);
+        writestring('GUI.LastLibrary', '');
+        closekey;
+        destroy;
+      end;
+
+      with listview_lib.header do begin
+        for i := 0 to 9 do begin
+          columns[i].text := '';
+          columns[i].width := 0;
+        end;
+        autosizeindex := 10;
+      end;
+
+    end;
+
+  except
+  end;
+end;
+
+procedure Tares_frmmain.put_clear_hash_file_name;
+begin
+  with ares_frmmain do begin
+    lbl_hash_file.caption := GetLangStringW(STR_FILE) + ':';
+    lbl_hash_folder.caption := GetLangStringW(STR_FOLDER) + ':';
+    lbl_hash_progress.caption := GetLangStringW(STR_PROGRESS) + ':';
+    progbar_hash_file.position := 0;
+    progbar_hash_file.max := 10;
+  end;
+end;
+
+procedure Tares_frmmain.details_library_toggle(sshow: boolean);
+begin
+  with ares_frmmain do begin
+    lbl_title_detlib.visible                  := sshow;
+    lbl_folderlib_hint.visible                := sshow;
+    lbl_descript_detlib.visible               := sshow;
+    lbl_url_detlib.visible                    := sshow;
+    lbl_categ_detlib.visible                  := sshow;
+    lbl_author_detlib.visible                 := sshow;
+    if not sshow then lbl_album_detlib.visible:= sshow;
+    lbl_year_detlib.visible                   := sshow;
+    lbl_language_detlib.visible               := sshow;
+    edit_year.visible                         := sshow;
+    chk_lib_fileshared.visible                := sshow;
+    lbl_lib_fileshared.visible                := sshow;
+    edit_title.visible                        := sshow;
+    edit_description.visible                  := sshow;
+    edit_url_library.visible                  := sshow;
+    combocatlibrary.visible                   := sshow;
+    edit_author.visible                       := sshow;
+    if not sshow then edit_album.visible      := sshow;
+    edit_year.visible                         := sshow;
+    edit_language.visible                     := sshow;
+  end;
+end;
+
+procedure Tares_frmmain.scan_in_progress_start;
+var
+  nodo: pCmtVnode;
+begin
+  try
+    vars_global.scan_start_time := gettickcount;
+    vars_global.hashing := true;
+
+    hash_update_GUIpry;
+    ares_FrmMain.panel_hash.capt := ' ' + GetLangStringW(STR_MEDIASEARCHINPROGRESS);
+
+    if ares_frmmain.tabs_pageview.activepage = IDTAB_LIBRARY then begin
+      if ares_FrmMain.btn_lib_virtual_view.down then begin
+        nodo := ares_FrmMain.treeview_lib_virfolders.getfirst;
+        ares_FrmMain.treeview_lib_virfolders.selected[nodo] := true;
+        ufrmmain.ares_FrmMain.treeview_lib_virfoldersClick(nil);
+      end else begin
+        nodo := ares_FrmMain.treeview_lib_regfolders.getfirst;
+        ares_FrmMain.treeview_lib_regfolders.selected[nodo] := true;
+        ufrmmain.ares_FrmMain.treeview_lib_regfoldersClick(nil);
+      end;
+    end;
+
+  except
+  end;
+end;
+
+procedure Tares_frmmain.regular_libraryview_assign(
+  folder: precord_cartella_share; node_parent: PCmtVNode;
+  data_parent: precord_cartella_share);
+var
+  node_child: pCmtVnode;
+  datao: precord_cartella_share;
+begin
+
+  with ares_frmmain do begin
+    with treeview_lib_regfolders do begin
+
+      while (folder <> nil) do begin
+
+        node_child := addchild(node_parent);
+        if data_parent = nil then begin
+          datao := getdata(node_child);
+
+          if length(folder^.path) <= 3 then datao^.display_path := widestrtoutf8str(copy(folder^.path, 1, length(folder^.path)))
+          else datao^.display_path := widestrtoutf8str(extract_fnameW(copy(folder^.path, 1, length(folder^.path))));
+        end else begin
+          datao := getdata(node_child);
+          datao^.display_path := copy(data_parent^.display_path, 1, length(datA_parent^.display_path)) + '\' +
+            widestrtoutf8str(extract_fnameW(copy(folder^.path, 1, length(folder^.path))));
+        end;
+        with datao^ do begin
+          crcpath := folder^.crcpath;
+          path_utf8 := copy(folder^.path_utf8, 1, length(folder^.path_utf8));
+          path := folder^.path;
+          items := folder^.items;
+          items_shared := folder^.items_shared;
+          id := folder^.id;
+        end;
+
+        if folder^.first_child <> nil then
+          regular_libraryview_assign(folder^.first_child, node_child, datao);
+
+        folder := folder^.next;
+      end;
+
+
+    end;
+  end;
+
+end;
+
+procedure Tares_frmmain.RegFoldersView_update(pfirst_shared_folder: precord_cartella_share);
+var
+  nodo_root, nodo_child, prev_node: pCmtVnode;
+  i: integer;
+  data: precord_cartella_share;
+begin
+
+  with ares_frmmain do begin
+
+    with treeview_lib_regfolders do begin
+      beginupdate;
+      clear;
+
+      nodo_root := addchild(nil);
+      data := getdata(nodo_root);
+      with data^ do begin
+        path := GetLangStringW(STR_SHARED_FOLDERS);
+        items := 0;
+        items_shared := 0;
+      end;
+    end;
+
+
+    if pfirst_shared_folder <> nil then
+      regular_libraryview_assign(pfirst_shared_folder, nodo_root, nil);
+
+
+    with treeview_lib_regfolders do begin
+ ////////////
+      i := 0;
+      repeat
+        if i = 0 then nodo_child := getnext(nodo_root)
+        else nodo_child := getnext(nodo_child);
+        if nodo_child = nil then break;
+        inc(i);
+        data := getdata(nodo_child);
+        if data^.items > 0 then continue;
+
+        if nodo_child.childcount = 0 then begin
+
+          if nodo_child.parent = nodo_root then prev_node := nodo_root
+          else prev_node := getPrevious(nodo_child.parent);
+          if prev_node = nodo_root then i := 0;
+
+          deletenode(nodo_child, true);
+          nodo_child := prev_node;
+        end;
+
+      until (not true);
+ ///////////////////////////////////////////////////////////////
+
+
+      Expanded[nodo_root] := true;
+      endupdate;
+      sort(nodo_root, 0, sdAscending);
+    end;
+
+    if btn_lib_regular_view.down then begin
+      treeview_lib_regfolders.selected[nodo_root] := true;
+      ufrmmain.ares_FrmMain.treeview_lib_regfoldersClick(nil);
+    end;
+  end;
+
+end;
+
+
+
+procedure Tares_frmmain.hide_scan_folders;
+begin
+ with ares_frmmain do begin
+    panel_hash.capt := chr(32);
+    lbl_hash_progress.caption := chr(32);
+    lbl_hash_folder.Visible := false;
+    lbl_hash_file.visible := false;
+    lbl_hash_progress.visible := false;
+    lbl_hash_pri.visible := false;
+    progbar_hash_file.visible := false;
+    progbar_hash_total.visible := false;
+    hash_pri_trx.visible := false;
+    lbl_hash_filedet.visible := false;
+  end;
+end;
+
+
+
 
 initialization
   ThemeServices := TThemeServices.Create;
