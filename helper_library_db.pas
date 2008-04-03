@@ -27,32 +27,41 @@ unit helper_library_db;
 interface
 
 uses
-  ares_types, classes2, classes, tntwindows, windows, sysutils;
+  ares_types, classes2, classes,  windows, sysutils;
 
-function set_NEWtrusted_metas: boolean;
-procedure set_trusted_metas; // in synchro da scrivi su form1
-procedure get_trusted_metas;
-procedure get_cached_metas;
-function already_in_DBTOWRITE(hash_sha1: string; crcsha1: word): boolean;
-function find_trusted_file(hash_sha1: string; crcsha1: word): precord_file_trusted;
-procedure set_cached_metas;
-function find_cached_file(hash_sha1: string; crcsha1: word): precord_file_library;
+function  save_NEWtrusted_metas(datapath:WideString;var lista_shared:TMylist): boolean;
+
+procedure save_trusted_metas(datapath:WideString); // in synchro da scrivi su form1
+procedure load_trusted_metas(dataPath:WideString);
+
+procedure load_cached_metas(datapath:WideString);
+function  already_in_DBTOWRITE(hash_sha1: string; crcsha1: word): boolean;
+
+function  find_trusted_file(hash_sha1: string; crcsha1: word): precord_file_trusted;
+procedure save_cached_metas(datapath:WideString);
+function  find_cached_file(hash_sha1: string; crcsha1: word): precord_file_library;
+
 procedure DBFiles_free;
 procedure DBTrustedFiles_free;
-function DB_everseen(path: string; fsize: int64): precord_file_library;
+function  DB_everseen(path: string; fsize: int64): precord_file_library;
 procedure DB_TOWRITE_free;
+
 procedure assign_trusted_metas(pfile: precord_file_library);
 procedure init_cached_dbs;
 
+function  getDBToWrite(index : integer): precord_file_library;
+procedure setDBToWrite(index : integer;pfile:precord_file_library);
+
 var
-  DB_TRUSTED: array[0..255] of pointer;
-  DB_CACHED: array[0..255] of pointer;
-  DB_TOWRITE: array[0..255] of pointer;
+  DB_TRUSTED : array[0..255] of pointer;
+  DB_CACHED  : array[0..255] of pointer;
+  DB_TOWRITE : array[0..255] of pointer;
 
 implementation
 
 uses
-  helper_diskio, vars_global, helper_strings, helper_crypt,
+//  helper_diskio, vars_global, helper_strings, helper_crypt,
+  helper_diskio, helper_strings, helper_crypt,
   vars_localiz, helper_datetime, helper_visual_library,
   helper_stringfinal, const_ares, helper_mimetypes, helper_ICH,debuglog;
 
@@ -62,7 +71,7 @@ var
   i: integer;
 begin
   for i := 0 to 255 do DB_TOWRITE[i] := nil;
-  for i := 0 to 255 do DB_CACHED[i] := nil;
+  for i := 0 to 255 do DB_CACHED[i]  := nil;
   for i := 0 to 255 do DB_TRUSTED[i] := nil;
 end;
 
@@ -80,21 +89,21 @@ begin
     with pfile^ do begin
       if pfile^.amime = ARES_MIME_SOFTWARe then begin
         title := trim(copy(pfiletrust^.title, 1, length(pfiletrust^.title)));
-        artist := trim(copy(pfiletrust^.artist, 1, length(Pfiletrust^.artist)));
+        artist:= trim(copy(pfiletrust^.artist, 1, length(Pfiletrust^.artist)));
         album := trim(copy(pfiletrust^.album, 1, length(pfiletrust^.album)));
       end else begin
         title := copy(pfiletrust^.title, 1, length(pfiletrust^.title));
-        artist := copy(pfiletrust^.artist, 1, length(pfiletrust^.artist));
+        artist:= copy(pfiletrust^.artist, 1, length(pfiletrust^.artist));
         album := copy(pfiletrust^.album, 1, length(pfiletrust^.album));
       end;
       category := copy(pfiletrust^.category, 1, length(pfiletrust^.category));
       language := copy(pfiletrust^.language, 1, length(pfiletrust^.language));
-      comment := copy(pfiletrust^.comment, 1, length(pfiletrust^.comment));
-      url := copy(pfiletrust^.url, 1, length(pfiletrust^.url));
-      year := copy(pfiletrust^.year, 1, length(pfiletrust^.year));
+      comment  := copy(pfiletrust^.comment, 1, length(pfiletrust^.comment));
+      url      := copy(pfiletrust^.url, 1, length(pfiletrust^.url));
+      year     := copy(pfiletrust^.year, 1, length(pfiletrust^.year));
       filedate := pfiletrust^.filedate;
-      corrupt := pfiletrust^.corrupt;
-      shared := pfiletrust^.shared;
+      corrupt  := pfiletrust^.corrupt;
+      shared   := pfiletrust^.shared;
     end;
 
   except
@@ -188,10 +197,7 @@ begin
       end;
 
       DB_TRUSTED[i] := nil;
-
-
     end;
-
 
   except
   end;
@@ -241,7 +247,7 @@ begin
 
 end;
 
-procedure set_cached_metas;
+procedure save_cached_metas(datapath:WideString);
 var
   pfile: precord_file_library;
   i: integer;
@@ -250,10 +256,9 @@ var
   buffer: array[0..4095] of char;
 begin
 
-  tntwindows.Tnt_CreateDirectoryW(pwidechar(data_path + '\Data'), nil);
+  helper_diskio.MyCreateDirectoryW(pwidechar(datapath + '\Data'), nil);
 
-
-  stream := Myfileopen(data_path + '\Data\ShareL.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH);
+  stream := helper_diskio.Myfileopen(datapath + '\Data\ShareL.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH);
   if stream = nil then exit;
 
   stream.size := 0;
@@ -261,8 +266,7 @@ begin
   str := '__ARESDB1.04L_';
   move(str[1], buffer, length(str));
   stream.write(buffer, length(str));
-                //FlushFileBuffers(stream.handle);
-
+                //FlushFileBuffers(stream.handle);                      
 
   str := '';
   try
@@ -364,7 +368,7 @@ begin
 
 end;
 
-procedure get_cached_metas;
+procedure load_cached_metas(datapath:WideString);
 var
   stream: thandlestream;
   buffer, buffer2: array[0..2047] of byte;
@@ -382,8 +386,7 @@ var
 begin
   for i := 0 to 255 do DB_CACHED[i] := nil;
 
-
-  stream := MyFileOpen(data_path + '\data\ShareL.dat', ARES_READONLY_BUT_SEQUENTIAL);
+  stream := MyFileOpen(datapath + '\data\ShareL.dat', ARES_READONLY_BUT_SEQUENTIAL);
   if stream = nil then exit;
 
   letti := stream.read(buffer, 14);
@@ -462,17 +465,17 @@ begin
       reset_pfile_strings(pfile);
 
       pfile^.hash_sha1 := hash_sha1; //20 bytes!
-      pfile^.crcsha1 := crcsha1;
-      pfile^.filedate := 0;
-      pfile^.amime := mime;
-      pfile^.fsize := fsize;
-      pfile^.shared := true;
-      pfile^.param1 := param1;
-      pfile^.param2 := param2;
-      pfile^.param3 := param3;
-      pfile^.shared := true;
+      pfile^.crcsha1   := crcsha1;
+      pfile^.filedate  := 0;
+      pfile^.amime     := mime;
+      pfile^.fsize     := fsize;
+      pfile^.shared    := true;
+      pfile^.param1    := param1;
+      pfile^.param2    := param2;
+      pfile^.param3    := param3;
+      pfile^.shared    := true;
       pfile^.mediatype := mediatype_to_str(pfile^.amime);
-      pfile^.corrupt := false;
+      pfile^.corrupt   := false;
 
 
       move(buffer, buffer2, lun);
@@ -493,20 +496,20 @@ begin
         move(str_detail[2], lun, 2);
         delete(str_detail, 1, 3);
         case fkind of
-          1: begin
-              pfile^.path := copy(str_detail, 1, lun);
+          1               : begin
+              pfile^.path:= copy(str_detail, 1, lun);
             end;
-          2: pfile^.title := copy(str_detail, 1, lun);
-          3: pfile^.artist := copy(str_detail, 1, lun);
-          4: pfile^.album := copy(str_detail, 1, lun);
-          5: pfile^.category := copy(str_detail, 1, lun);
-          6: pfile^.year := copy(str_detail, 1, lun);
-          7: pfile^.vidinfo := copy(str_detail, 1, lun);
-          8: pfile^.language := copy(str_detail, 1, lun);
-          9: pfile^.url := copy(str_detail, 1, lun);
-          10: pfile^.comment := copy(str_detail, 1, lun);
-          17: pfile^.corrupt := true;
-          18: pfile^.hash_of_phash := copy(str_detail, 1, lun);
+          2              : pfile^.title := copy(str_detail, 1, lun);
+          3              : pfile^.artist := copy(str_detail, 1, lun);
+          4              : pfile^.album := copy(str_detail, 1, lun);
+          5              : pfile^.category := copy(str_detail, 1, lun);
+          6              : pfile^.year := copy(str_detail, 1, lun);
+          7              : pfile^.vidinfo := copy(str_detail, 1, lun);
+          8              : pfile^.language := copy(str_detail, 1, lun);
+          9              : pfile^.url := copy(str_detail, 1, lun);
+          10             : pfile^.comment := copy(str_detail, 1, lun);
+          17             : pfile^.corrupt := true;
+          18             : pfile^.hash_of_phash := copy(str_detail, 1, lun);
         end;
         delete(str_detail, 1, lun);
       end; //for params...
@@ -541,7 +544,7 @@ begin
 
 end;
 
-procedure get_trusted_metas;
+procedure load_trusted_metas(datapath:WideString);
 var
   stream: thandlestream;
   buffer, buffer2: array[0..2047] of byte;
@@ -559,7 +562,7 @@ begin
 //for i:=0 to 255 do DB_TRUSTED[i]:=nil;
 
 
-  stream := MyFileOpen(data_path + '\data\ShareH.dat', ARES_READONLY_BUT_SEQUENTIAL);
+  stream := MyFileOpen(datapath + '\data\ShareH.dat', ARES_READONLY_BUT_SEQUENTIAL);
   if stream = nil then exit;
 
   ////////////////////////////////   is it encrypted???
@@ -696,20 +699,18 @@ begin
 end;
 
 
-procedure set_trusted_metas; // in synchro da scrivi su form1
+procedure save_trusted_metas(datapath:WideString); // in synchro da scrivi su form1
 var
   i: integer;
   pfiletrusted: precord_file_trusted;
   str_detail, str: string;
-  stream: thandlestream;
+  stream: THandlestream;
   buffer: array[0..4095] of char;
 begin
 
+  helper_diskio.MyCreateDirectoryW(pwidechar(datapath + '\Data'), nil);
 
-  tntwindows.Tnt_CreateDirectoryW(pwidechar(data_path + '\Data'), nil);
-
-
-  stream := Myfileopen(data_path + '\Data\ShareH.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH);
+  stream := Myfileopen(datapath + '\Data\ShareH.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH);
   if stream = nil then exit;
 
   stream.size := 0; //tronchiamo file (cancellazione) dobbiamo riscrivere da zero
@@ -718,7 +719,6 @@ begin
   move(str[1], buffer, length(str));
   stream.write(buffer, length(str));
   FlushFileBuffers(stream.handle); //boh
-
 
   str := '';
   try
@@ -733,9 +733,9 @@ begin
           continue; //evitiamo corruzione
         end;
 
-        if lowercase(pfiletrusted^.artist) = GetLangStringA(STR_UNKNOW_LOWER) then pfiletrusted^.artist := '';
-        if lowercase(pfiletrusted^.category) = GetLangStringA(STR_UNKNOW_LOWER) then pfiletrusted^.category := '';
-        if lowercase(pfiletrusted^.album) = GetLangStringA(STR_UNKNOW_LOWER) then pfiletrusted^.album := '';
+        if lowercase(pfiletrusted^.artist)    = GetLangStringA(STR_UNKNOW_LOWER) then pfiletrusted^.artist := '';
+        if lowercase(pfiletrusted^.category)  = GetLangStringA(STR_UNKNOW_LOWER) then pfiletrusted^.category := '';
+        if lowercase(pfiletrusted^.album)     = GetLangStringA(STR_UNKNOW_LOWER) then pfiletrusted^.album := '';
 
         str_detail := chr(2) + int_2_word_string(length(pfiletrusted^.title)) + pfiletrusted^.title +
           chr(3) + int_2_word_string(length(pfiletrusted^.artist)) + pfiletrusted^.artist +
@@ -772,7 +772,7 @@ begin
     if length(str) > 0 then begin
       move(str[1], buffer, length(str));
       stream.write(buffer, length(str));
-                                  //FlushFileBuffers(stream.handle);
+      //FlushFileBuffers(stream.handle);
     end;
 
   except
@@ -783,7 +783,7 @@ begin
 end;
 
 
-function set_newtrusted_metas: boolean; //chiamato in chiusura e riapertura thread_share
+function save_NEWtrusted_metas(datapath:WideString;var lista_shared:TMylist): boolean; //chiamato in chiusura e riapertura thread_share
 var //aggiunge in coda file su trusted
   i: integer;
   pfile: precord_file_library;
@@ -796,10 +796,12 @@ begin
 
   result := false;
 
-  tntwindows.Tnt_CreateDirectoryW(pwidechar(data_path + '\data'), nil);
+  helper_diskio.MyCreateDirectoryW( pwidechar(datapath + '\data'), nil);
 
-  if not helper_diskio.FileExistsW(data_path + '\data\ShareH.dat') then stream := Myfileopen(data_path + '\data\ShareH.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH)
-  else stream := Myfileopen(data_path + '\data\ShareH.dat', ARES_WRITEEXISTING_WRITETHROUGH); //open to append  existing
+  if not helper_diskio.FileExistsW(datapath + '\data\ShareH.dat') then
+    stream := Myfileopen(datapath + '\data\ShareH.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH)
+  else
+    stream := Myfileopen(datapath + '\data\ShareH.dat', ARES_WRITEEXISTING_WRITETHROUGH); //open to append  existing
 
   if stream <> nil then begin
     stream.seek(0, sofromend);
@@ -812,8 +814,10 @@ begin
   end;
 
 
-  if not helper_diskio.FileExistsW(data_path + '\data\ShareL.dat') then stream2 := Myfileopen(data_path + '\data\ShareL.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH)
-  else stream2 := Myfileopen(data_path + '\data\ShareL.dat', ARES_WRITEEXISTING_WRITETHROUGH); //open to append  existing
+  if not helper_diskio.FileExistsW(datapath + '\data\ShareL.dat') then
+    stream2 := Myfileopen(datapath + '\data\ShareL.dat', ARES_CREATE_ALWAYSAND_WRITETHROUGH)
+  else
+    stream2 := Myfileopen(datapath + '\data\ShareL.dat', ARES_WRITEEXISTING_WRITETHROUGH); //open to append  existing
 
   if stream2 <> nil then begin //handle al file di settings
     stream2.seek(0, sofromend);
@@ -841,9 +845,9 @@ begin
       pfile^.write_to_disk := false;
 
 
-      if lowercase(pfile^.artist) = GetLangStringA(STR_UNKNOW_LOWER) then pfile^.artist := '';
+      if lowercase(pfile^.artist)   = GetLangStringA(STR_UNKNOW_LOWER) then pfile^.artist := '';
       if lowercase(pfile^.category) = GetLangStringA(STR_UNKNOW_LOWER) then pfile^.category := '';
-      if lowercase(pfile^.album) = GetLangStringA(STR_UNKNOW_LOWER) then pfile^.album := '';
+      if lowercase(pfile^.album)    = GetLangStringA(STR_UNKNOW_LOWER) then pfile^.album := '';
 
       str_detail := chr(2) + int_2_word_string(length(pfile^.title)) + pfile^.title +
         chr(3) + int_2_word_string(length(pfile^.artist)) + pfile^.artist +
@@ -914,6 +918,16 @@ begin
   if stream2 <> nil then FreeHandleStream(Stream2);
 
 
+end;
+
+function getDBToWrite(index : integer): precord_file_library;
+begin
+   result := DB_TOWRITE[index];
+end;
+
+procedure setDBToWrite(index : integer;pfile:precord_file_library);
+begin
+   DB_TOWRITE[index] := pfile;
 end;
 
 

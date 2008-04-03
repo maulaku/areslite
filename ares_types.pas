@@ -677,12 +677,12 @@ type //library local/remote(browse)
   precord_file_library = ^record_file_library;
   record_file_library = record
     downloaded, being_downloaded, already_in_lib: boolean; //pvt browse
-    guid_search: tguid; //compare result private chat
-    hash_sha1: string; //sha1 20 bytes
+    guid_search: tguid;                                    //compare result private chat
+    hash_sha1: string;                                     //sha1 20 bytes
     hash_of_phash: string;
     crcsha1: word;
     ext: string;
-    filedate: tdatetime; //per assegniare orario ingresso in library
+    filedate: tdatetime;                                   //per assegniare orario ingresso in library
     title, album, artist, category, mediatype, vidinfo, comment, language, path, url, year, keywords_genre: string;
     param1, param2, param3: integer;
     folder_id: word;
@@ -690,8 +690,8 @@ type //library local/remote(browse)
     imageindex: integer;
     amime: byte;
     shared, corrupt, write_to_disk, previewing: boolean;
-    phash_index: cardinal; //punto in db_hash per veloce ritrovamento in thread upload
-    next: precord_file_library; //per facilitare library scan
+    phash_index: cardinal;                                  //punto in db_hash per veloce ritrovamento in thread upload
+    next: precord_file_library;                             //per facilitare library scan
   end;
 
 type

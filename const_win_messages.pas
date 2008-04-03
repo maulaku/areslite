@@ -37,16 +37,18 @@ const
   WM_DROPFILES                           =          $0233;
   WM_ACTIVATE                            =          $0006;
   WM_COPYDATA                            =          $004A;
+
   WM_THREADSEARCHDIR_END                 =          WM_USER+2;
   WM_USERSHOW                            =          WM_USER+3;
-  WM_THREAD_PRIVCHAT_END                 =          wm_user+15;
-  WM_PRIVCHAT_SHOWTRANVIEW               =          wm_user+19;
+  WM_THREAD_PRIVCHAT_END                 =          WM_USER+15;
+  WM_PRIVCHAT_SHOWTRANVIEW               =          WM_USER+19;
   WM_USER_QUIT                           =          WM_USER+43;
   WM_PREVIEW_START                       =          WM_USER+143;
   WM_PRIVATECHAT_EVENT                   =          WM_USER+144;
   WM_THREADSHARE_END                     =          WM_USER+147;
   WM_THREADCHATSERVER_END                =          WM_USER+148;
   WM_THREADCHATCLIENT_END                =          WM_USER+149;
+  
   WM_ERASEBKGND                          =          $0014;
 
   SC_MYMAXIMIZE = WM_USER+200;

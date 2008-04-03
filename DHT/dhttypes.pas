@@ -32,102 +32,102 @@ unit dhttypes;
 interface
 
 uses
- classes,classes2,int128,sysutils,contnrs,dhtUtils,windows,keywfunc,blcksock;
-
- type
- precord_DHT_keywordFilePublishReq=^record_DHT_keywordFilePublishReq;
- record_DHT_keywordFilePublishReq=record
-  keyW:string;
-  crc:word;  // last two bytes of 20 byte sha1
-  fileHashes:tmystringlist;
- end;
-
- type
- precord_dht_source=^record_dht_source;
- record_dht_source=record
-  ip:cardinal;
-  raw:string;
-  lastSeen:cardinal;
-  prev,next:precord_dht_source;
- end;
-
- type
- precord_DHT_firewallcheck=^record_DHT_firewallcheck;
- record_DHT_firewallcheck=record
-  RemoteIp:cardinal;
-  RemoteUDPPort:word;
-  RemoteTCPPort:word;
-  started:cardinal;
-  sockt:HSocket;
- end;
-
-
- type
- precord_DHT_hash=^record_dht_hash;
- record_dht_hash=record
-  hashValue:array[0..19] of byte;
-  crc:word;
-  count:word; // number of items
-  lastSeen:cardinal;
-  firstSource:precord_dht_source;
-  prev,next:precord_dht_hash;
- end;
-
- type
- precord_DHT_hashfile=^record_DHT_hashfile;
- record_DHT_hashfile=record
-  HashValue:array[0..19] of byte;
- end;
-
- type
- precord_dht_storedfile=^record_dht_storedfile;
- record_dht_storedfile=record
-
-  hashValue:array[0..19] of byte;
-  crc:word;
-
-  amime:byte;
-  ip:cardinal; //last publish source is available immediately
-  port:word;
-
-  count:word;
-  lastSeen:cardinal;
-
-   fsize:int64;
-   param1,param3:cardinal;
-   info:string;
-
-   numKeywords:byte;
-   keywords:PWordsArray;
-
-  prev,next:precord_dht_storedfile;
- end;
-
- type
- PDHTKeyWordItem=^TDHTKeyWordItem;
- TDHTKeywordItem = packed record
-   share       : precord_dht_storedfile;
-   prev, next  : PDHTKeywordItem;
- end;
- PDHTKeyword = ^TDHTKeyword;
- TDHTKeyword = packed record // structure that manages one keyword
-   keyword     : array of char; // keyword
-   count       : cardinal;
-   crc         : word;
-   firstitem   : PDHTKeywordItem; // pointer to first full item
-   prev, next  : PDHTKeyword; // pointer to previous and next PKeyword items in global list
- end;
+  classes, classes2, int128, sysutils, contnrs, dhtUtils, windows, keywfunc, blcksock;
 
 type
-tdhtsearchtype=(
-               UNDEFINED,
-               NODE,
-		           NODECOMPLETE,
-		           KEYWORD,
-		           STOREFILE,
-		           STOREKEYWORD,
-		           FINDSOURCE
-	            );
+  precord_DHT_keywordFilePublishReq = ^record_DHT_keywordFilePublishReq;
+  record_DHT_keywordFilePublishReq = record
+    keyW      : string;
+    crc       : word; // last two bytes of 20 byte sha1
+    fileHashes: tmystringlist;
+  end;
+
+type
+  precord_dht_source = ^record_dht_source;
+  record_dht_source = record
+    ip: cardinal;
+    raw: string;
+    lastSeen: cardinal;
+    prev, next: precord_dht_source;
+  end;
+
+type
+  precord_DHT_firewallcheck = ^record_DHT_firewallcheck;
+  record_DHT_firewallcheck = record
+    RemoteIp: cardinal;
+    RemoteUDPPort: word;
+    RemoteTCPPort: word;
+    started: cardinal;
+    sockt: HSocket;
+  end;
+
+
+type
+  precord_DHT_hash = ^record_dht_hash;
+  record_dht_hash = record
+    hashValue: array[0..19] of byte;
+    crc: word;
+    count: word; // number of items
+    lastSeen: cardinal;
+    firstSource: precord_dht_source;
+    prev, next: precord_dht_hash;
+  end;
+
+type
+  precord_DHT_hashfile = ^record_DHT_hashfile;
+  record_DHT_hashfile = record
+    HashValue: array[0..19] of byte;
+  end;
+
+type
+  precord_dht_storedfile = ^record_dht_storedfile;
+  record_dht_storedfile = record
+
+    hashValue: array[0..19] of byte;
+    crc: word;
+
+    amime: byte;
+    ip: cardinal; //last publish source is available immediately
+    port: word;
+
+    count: word;
+    lastSeen: cardinal;
+
+    fsize: int64;
+    param1, param3: cardinal;
+    info: string;
+
+    numKeywords: byte;
+    keywords: PWordsArray;
+
+    prev, next: precord_dht_storedfile;
+  end;
+
+type
+  PDHTKeyWordItem = ^TDHTKeyWordItem;
+  TDHTKeywordItem = packed record
+    share: precord_dht_storedfile;
+    prev, next: PDHTKeywordItem;
+  end;
+  PDHTKeyword = ^TDHTKeyword;
+  TDHTKeyword = packed record // structure that manages one keyword
+    keyword: array of char; // keyword
+    count: cardinal;
+    crc: word;
+    firstitem: PDHTKeywordItem; // pointer to first full item
+    prev, next: PDHTKeyword; // pointer to previous and next PKeyword items in global list
+  end;
+
+type
+  tdhtsearchtype = (
+    UNDEFINED,
+    NODE,
+    NODECOMPLETE,
+    KEYWORD,
+    STOREFILE,
+    STOREKEYWORD,
+    FINDSOURCE
+    );
 
 
 implementation
@@ -135,3 +135,4 @@ implementation
 
 
 end.
+d.

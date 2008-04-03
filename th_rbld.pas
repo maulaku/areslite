@@ -50,26 +50,26 @@ type
     function findNode(nodo_root: pCmtVnode; pathS: string): pCmtVnode;
     procedure shutdown;
   public
-    info_video: TDSMediaInfo;
-    nomefile: string; // read fnomefile write fnomefile;
-    title: string; // read ftitle write ftitle;
-    artist: string; // read fartist write fartist;
-    album: string; // read falbum write falbum;
-    category: string; // read fcategory write fcategory;
-    comment: string; // read fcomment write fcomment;
-    language: string; // read flanguage write flanguage;
-    url: string; // read furl write furl;
-    keyword_genre: string; // read fkeyword_genre write fkeyword_genre;
-    year: string; // read fyear write fyear;
-    handle_download: cardinal; // read fid write fid;
-    size: int64; // read fsize write fsize;
-    amime: integer; // read ftipo write ftipo;
-    vidinfo: string;
-    crcsha1_paragone: word; //verifica!
-    hash_sha1_paragone: string;
+    info_video            : TDSMediaInfo;
+    nomefile              : string; // read fnomefile write fnomefile;
+    title                 : string; // read ftitle write ftitle;
+    artist                : string; // read fartist write fartist;
+    album                 : string; // read falbum write falbum;
+    category              : string; // read fcategory write fcategory;
+    comment               : string; // read fcomment write fcomment;
+    language              : string; // read flanguage write flanguage;
+    url                   : string; // read furl write furl;
+    keyword_genre         : string; // read fkeyword_genre write fkeyword_genre;
+    year                  : string; // read fyear write fyear;
+    handle_download       : cardinal; // read fid write fid;
+    size                  : int64; // read fsize write fsize;
+    amime                 : integer; // read ftipo write ftipo;
+    vidinfo               : string;
+    crcsha1_paragone      : word; //verifica!
+    hash_sha1_paragone    : string;
     hash_of_phash_paragone: string;
-    in_subfolder: string;
-    point_of_phash_db: cardinal;
+    in_subfolder          : string;
+    point_of_phash_db     : cardinal;
   end;
 
 implementation
@@ -101,20 +101,20 @@ end;
 
 procedure tth_rbld.shutdown;
 begin
-  nomefile := '';
-  title := '';
-  artist := '';
-  album := '';
-  category := '';
-  comment := '';
-  language := '';
-  url := '';
-  keyword_genre := '';
-  year := '';
-  vidinfo := '';
-  hash_sha1_paragone := '';
-  hash_of_phash_paragone := '';
-  in_subfolder := '';
+  nomefile              := '';
+  title                 := '';
+  artist                := '';
+  album                 := '';
+  category              := '';
+  comment               := '';
+  language              := '';
+  url                   := '';
+  keyword_genre         := '';
+  year                  := '';
+  vidinfo               := '';
+  hash_sha1_paragone    := '';
+  hash_of_phash_paragone:= '';
+  in_subfolder          := '';
 end;
 
 procedure tth_rbld.segnala_fine_treeview_download; //synch
@@ -558,7 +558,7 @@ begin
     inc(vars_global.my_shared_count);
     addfile_tofresh_downloads(pfilez);
   end;
-  helper_library_db.set_newtrusted_metas; //write to db aswell
+  helper_library_db.save_NEWtrusted_metas(vars_global.data_path,vars_global.lista_shared); //write to db aswell
 
 
   try
